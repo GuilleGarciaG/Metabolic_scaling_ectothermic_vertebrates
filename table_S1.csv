@@ -21,8 +21,8 @@ ID,group,species,species_phylo,experiment,temp,b,L,log10_L,mass_mid.g,min_mass.g
 20,water-breather,Ameiurus nebulosus,Ameiurus nebulosus,aneb_beam_smr,10,0.998,0.0199614,-1.699809003,80.24961059,23,280,standard,3
 21,water-breather,Ameiurus nebulosus,Ameiurus nebulosus,aneb_beam_smr,20,0.903,0.066462,-1.177426594,94.07443861,30,295,standard,3
 22,water-breather,Ameiurus nebulosus,Ameiurus nebulosus,aneb_beam_smr,30,0.874,0.1092367,-0.961631428,81.24038405,22,300,standard,3
-23,water-breather,Anabas testudineus,Anabas testudineus,ate_ghos,21,0.9329,0.1472282,-0.832008998,27.39525506,9.5,79,ng,29
-24,water-breather,Anabas testudineus,Anabas testudineus,ate_ghos,31.5,0.89921,0.1874682,-0.727072391,29.84962311,11,81,ng,29
+23,water-breather,Anabas testudineus,Anabas testudineus,ate_ghos,21,0.9329,0.1472282,-0.832008998,27.39525506,9.5,79,NA,29
+24,water-breather,Anabas testudineus,Anabas testudineus,ate_ghos,31.5,0.89921,0.1874682,-0.727072391,29.84962311,11,81,NA,29
 25,water-breather,Anarhichas lupus,Anarhichas lupus,alup_stei_rou,7,0.83,0.0751668,-1.123973938,440.2028504,28.8415,6718.732,routine,65
 26,water-breather,Anarhichas lupus,Anarhichas lupus,alup_stei_rou,12,0.73,0.1401507,-0.853404729,187.6061572,6.9065,5096.0773,routine,65
 27,water-breather,Anguilla anguilla,Anguilla anguilla,aang_dega_bas,18,1.291,0.0118279,-1.927092356,49.49747468,5,490,basal,17
@@ -64,9 +64,9 @@ ID,group,species,species_phylo,experiment,temp,b,L,log10_L,mass_mid.g,min_mass.g
 63,water-breather,Mayaheros urophthalmus,Cichlasoma urophthalmum,mur_pala,25,0.321,0.4382171,-0.35831068,23.29020184,4.1986,129.1951,resting,54
 64,water-breather,Mayaheros urophthalmus,Cichlasoma urophthalmum,mur_pala,30,0.28,1.3243045,0.121987855,10.93719046,4.0599,29.4646,resting,54
 65,water-breather,Mayaheros urophthalmus,Cichlasoma urophthalmum,mur_pala,36,0.404,1.6527436,0.218205484,15.0489985,2.0736,109.2189,resting,54
-66,water-breather,Clarias batrachus,Clarias batrachus,cbat_patr_ng,20,0.7806,0.092500879,-1.03385414,65.65150417,22.16,194.5,ng,56
-67,water-breather,Clarias batrachus,Clarias batrachus,cbat_patr_ng,25.5,0.6737,0.143865279,-0.842044008,54.38749856,17,174,ng,56
-68,water-breather,Clarias batrachus,Clarias batrachus,cbat_patr_ng,30.5,0.7613,0.098095266,-1.008351951,91.77409765,34.5,244.13,ng,56
+66,water-breather,Clarias batrachus,Clarias batrachus,cbat_patr_ng,20,0.7806,0.092500879,-1.03385414,65.65150417,22.16,194.5,NA,56
+67,water-breather,Clarias batrachus,Clarias batrachus,cbat_patr_ng,25.5,0.6737,0.143865279,-0.842044008,54.38749856,17,174,NA,56
+68,water-breather,Clarias batrachus,Clarias batrachus,cbat_patr_ng,30.5,0.7613,0.098095266,-1.008351951,91.77409765,34.5,244.13,NA,56
 69,water-breather,Colossoma macropomum,Colossoma macropomum,cmac_sain_rou,25,0.64,0.274510487,-0.56144106,37.28741827,0.5865,2086,routine,61
 70,water-breather,Colossoma macropomum,Colossoma macropomum,cmac_sain_rou,30,0.64,0.474434115,-0.32382409,26.80467348,0.347,1975,routine,61
 71,water-breather,Coregonus albula,Coregonus albula,calb_ohlb_smr,4,0.944,0.0660634,-1.180039079,27.65863337,10.2,75,standard,53
@@ -107,9 +107,9 @@ ID,group,species,species_phylo,experiment,temp,b,L,log10_L,mass_mid.g,min_mass.g
 106,water-breather,Harpagifer bispinis,Harpagifer bispinis,hbisp_vane_rou,10,0.8056,0.046741886,-1.330293768,5.870853361,4.3929,7.846,routine,71
 107,water-breather,Harpagifer bispinis,Harpagifer bispinis,hbisp_vane_rou,4,0.8922,0.015589891,-1.807156921,5.870853361,4.3929,7.846,routine,71
 108,water-breather,Harpagifer bispinis,Harpagifer bispinis,hbisp_vane_rou,2,0.964,0.006565106,-2.182758257,5.812437394,4.3929,7.6906,routine,71
-109,water-breather,Heteropneustes fossilis,Heteropneustes fossilis,hfos_mun,20,0.833,0.081318572,-1.089810256,43.62589577,17.3215,109.8758,ng,51
-110,water-breather,Heteropneustes fossilis,Heteropneustes fossilis,hfos_mun,25,0.763,0.170413416,-0.768496218,36.76703576,13.7056,98.632,ng,51
-111,water-breather,Heteropneustes fossilis,Heteropneustes fossilis,hfos_mun,30.5,0.624,0.104685516,-0.980113402,47.98403811,18.6155,123.6854,ng,51
+109,water-breather,Heteropneustes fossilis,Heteropneustes fossilis,hfos_mun,20,0.833,0.081318572,-1.089810256,43.62589577,17.3215,109.8758,NA,51
+110,water-breather,Heteropneustes fossilis,Heteropneustes fossilis,hfos_mun,25,0.763,0.170413416,-0.768496218,36.76703576,13.7056,98.632,NA,51
+111,water-breather,Heteropneustes fossilis,Heteropneustes fossilis,hfos_mun,30.5,0.624,0.104685516,-0.980113402,47.98403811,18.6155,123.6854,NA,51
 112,water-breather,Hippoglossoides platessoides,Hippoglossoides platessoides,hpla_maki,1,0.5456,0.0187803,-1.726297475,316.3844247,241.647,414.2369,routine,46
 113,water-breather,Hippoglossoides platessoides,Hippoglossoides platessoides,hpla_maki,3,0.87051,0.019498,-1.710009934,216.1173696,71.554,652.7479,routine,46
 114,water-breather,Hippoglossoides platessoides,Hippoglossoides platessoides,hpla_maki,6,0.76369,0.0219513,-1.658539755,164.3345476,46.3107,583.1452,routine,46
@@ -332,11 +332,11 @@ ID,group,species,species_phylo,experiment,temp,b,L,log10_L,mass_mid.g,min_mass.g
 331,air-breather,Acrantophis dumerili,Acrantophis dumerili,adur_chap,20,0.757,0.011427,-1.942067773,2076.498495,1071,4026,resting,12
 332,air-breather,Acrantophis dumerili,Acrantophis dumerili,adur_chap,30,0.616,0.029255,-1.533799898,2076.498495,1071,4026,resting,12
 333,air-breather,Acrantophis dumerili,Acrantophis dumerili,adur_chap,34,0.689,0.045015,-1.346642746,2076.498495,1071,4026,resting,12
-334,air-breather,Acris crepitans,Acris crepitans,acre_dun_april,5,1.19,0.043968,-1.356863289,1.338954816,0.83,2.16,ng,24
-335,air-breather,Acris crepitans,Acris crepitans,acre_dun_april,15,1,0.051056,-1.291953213,1.374081511,0.79,2.39,ng,24
-336,air-breather,Acris crepitans,Acris crepitans,acre_dun_april,25,1.55,0.074928,-1.12535586,1.136661779,0.68,1.9,ng,24
-337,air-breather,Acris crepitans,Acris crepitans,acre_dun_may,5,1,0.12504,-0.902951035,1.098362417,0.58,2.08,ng,24
-338,air-breather,Acris crepitans,Acris crepitans,acre_dun_may,25,0.71,0.30706,-0.512776754,1.006578363,0.68,1.49,ng,24
+334,air-breather,Acris crepitans,Acris crepitans,acre_dun_april,5,1.19,0.043968,-1.356863289,1.338954816,0.83,2.16,NA,24
+335,air-breather,Acris crepitans,Acris crepitans,acre_dun_april,15,1,0.051056,-1.291953213,1.374081511,0.79,2.39,NA,24
+336,air-breather,Acris crepitans,Acris crepitans,acre_dun_april,25,1.55,0.074928,-1.12535586,1.136661779,0.68,1.9,NA,24
+337,air-breather,Acris crepitans,Acris crepitans,acre_dun_may,5,1,0.12504,-0.902951035,1.098362417,0.58,2.08,NA,24
+338,air-breather,Acris crepitans,Acris crepitans,acre_dun_may,25,0.71,0.30706,-0.512776754,1.006578363,0.68,1.49,NA,24
 339,air-breather,Agkistrodon piscivorus conanti,Agkistrodon piscivorus,apis_mccu,30,0.748,0.053797786,-1.269235597,434.7413024,70,2700,standard MR,49
 340,air-breather,Agkistrodon piscivorus conanti,Agkistrodon piscivorus,apis_mccu,25,0.777,0.037611792,-1.424675974,434.7413024,70,2700,standard MR,49
 341,air-breather,Agkistrodon piscivorus conanti,Agkistrodon piscivorus,apis_mccu,20,0.765,0.02434016,-1.613676571,434.7413024,70,2700,standard MR,49
@@ -347,8 +347,8 @@ ID,group,species,species_phylo,experiment,temp,b,L,log10_L,mass_mid.g,min_mass.g
 346,air-breather,Boa constrictor,Boa constrictor,bcon_chap,20,0.748,0.016025,-1.795201962,695.413546,31,15600,resting,12
 347,air-breather,Boa constrictor,Boa constrictor,bcon_chap,30,0.743,0.042913,-1.367411123,695.413546,31,15600,resting,12
 348,air-breather,Boa constrictor,Boa constrictor,bcon_chap,34,0.836,0.053447,-1.272076667,695.413546,31,15600,resting,12
-349,air-breather,Bothrops moojeni,Bothrops moojeni,bmo_cruz,20,0.65,0.183132157,-0.737235389,112.8381141,7.4,1720.6,ng,15
-350,air-breather,Bothrops moojeni,Bothrops moojeni,bmo_cruz,30,0.65,0.210465314,-0.676819468,112.8381141,7.4,1720.6,ng,15
+349,air-breather,Bothrops moojeni,Bothrops moojeni,bmo_cruz,20,0.65,0.183132157,-0.737235389,112.8381141,7.4,1720.6,NA,15
+350,air-breather,Bothrops moojeni,Bothrops moojeni,bmo_cruz,30,0.65,0.210465314,-0.676819468,112.8381141,7.4,1720.6,NA,15
 351,air-breather,Candoia carinatus,Candoia carinata,ccar_chap,20,0.668,0.018117,-1.741913716,100.6637969,9.8,1034,resting,12
 352,air-breather,Candoia carinatus,Candoia carinata,ccar_chap,30,0.71,0.045943,-1.33778065,100.6637969,9.8,1034,resting,12
 353,air-breather,Candoia carinatus,Candoia carinata,ccar_chap,34,0.697,0.073651,-1.132821352,100.6637969,9.8,1034,resting,12
@@ -459,13 +459,13 @@ ID,group,species,species_phylo,experiment,temp,b,L,log10_L,mass_mid.g,min_mass.g
 458,air-breather,Tupinambis merianae,Salvator merianae,tmer_tol_spri,17,0.59,0.036265322,-1.440508462,920.7605552,270,3140,standard MR,69
 459,air-breather,Tupinambis merianae,Salvator merianae,tmer_tol_spri,25,1.12,0.069902938,-1.155504571,920.7605552,270,3140,standard MR,69
 460,air-breather,Tupinambis merianae,Salvator merianae,tmer_tol_spri,30,1.13,0.104196874,-0.98214531,920.7605552,270,3140,standard MR,69
-461,air-breather,Sceloporus occidentalis,Sceloporus occidentalis,socc_daw,20,0.54,0.337821276,-0.471313002,5.549747688,2,15.3998497,ng,16
-462,air-breather,Sceloporus occidentalis,Sceloporus occidentalis,socc_daw,30,0.64,0.900548075,-0.045493098,5.577858725,1.881270625,16.53802889,ng,16
-463,air-breather,Sceloporus occidentalis,Sceloporus occidentalis,socc_daw,35,0.57,1.074626462,0.031257531,6.306192339,2.433994585,16.33859913,ng,16
-464,air-breather,Sceloporus occidentalis,Sceloporus occidentalis,socc_daw,40,0.68,1.46244091,0.165078327,5.443603869,1.790885745,16.54646208,ng,16
-465,air-breather,Lygosoma laterale,Scincella lateralis,llat_huds,18.5,0.402,0.194841797,-0.710317874,0.709010234,0.28859219,1.741888828,ng,38
-466,air-breather,Lygosoma laterale,Scincella lateralis,llat_huds,30,0.633,0.505981267,-0.295865562,0.671965469,0.34666649,1.302512946,ng,38
-467,air-breather,Lygosoma laterale,Scincella lateralis,llat_huds,36,0.795,0.597429865,-0.223713071,0.796430453,0.445318859,1.424375938,ng,38
+461,air-breather,Sceloporus occidentalis,Sceloporus occidentalis,socc_daw,20,0.54,0.337821276,-0.471313002,5.549747688,2,15.3998497,NA,16
+462,air-breather,Sceloporus occidentalis,Sceloporus occidentalis,socc_daw,30,0.64,0.900548075,-0.045493098,5.577858725,1.881270625,16.53802889,NA,16
+463,air-breather,Sceloporus occidentalis,Sceloporus occidentalis,socc_daw,35,0.57,1.074626462,0.031257531,6.306192339,2.433994585,16.33859913,NA,16
+464,air-breather,Sceloporus occidentalis,Sceloporus occidentalis,socc_daw,40,0.68,1.46244091,0.165078327,5.443603869,1.790885745,16.54646208,NA,16
+465,air-breather,Lygosoma laterale,Scincella lateralis,llat_huds,18.5,0.402,0.194841797,-0.710317874,0.709010234,0.28859219,1.741888828,NA,38
+466,air-breather,Lygosoma laterale,Scincella lateralis,llat_huds,30,0.633,0.505981267,-0.295865562,0.671965469,0.34666649,1.302512946,NA,38
+467,air-breather,Lygosoma laterale,Scincella lateralis,llat_huds,36,0.795,0.597429865,-0.223713071,0.796430453,0.445318859,1.424375938,NA,38
 468,air-breather,Mabuya brevicollis,Trachylepis brevicollis,mbrev_zari_spri,20,0.52,0.119596016,-0.922283287,14.49137675,1.5,140,resting,86
 469,air-breather,Mabuya brevicollis,Trachylepis brevicollis,mbrev_zari_spri,25,0.57,0.180207224,-0.744227803,14.49137675,1.5,140,resting,86
 470,air-breather,Mabuya brevicollis,Trachylepis brevicollis,mbrev_zari_spri,30,0.56,0.27174471,-0.565838901,14.49137675,1.5,140,resting,86
@@ -506,10 +506,10 @@ ID,group,species,species_phylo,experiment,temp,b,L,log10_L,mass_mid.g,min_mass.g
 505,air-breather,Uromastyx philbyi,Uromastyx ornata,uphi_zari_sprin,30,0.747,0.106125007,-0.974182268,87.42324634,40.74,187.6,standard MR,87
 506,air-breather,Uromastyx philbyi,Uromastyx ornata,uphi_zari_sprin,35,0.712,0.138950716,-0.857139211,87.42324634,40.74,187.6,standard MR,87
 507,air-breather,Uromastyx philbyi,Uromastyx ornata,uphi_zari_sprin,40,0.763,0.199014061,-0.701116238,87.42324634,40.74,187.6,standard MR,87
-508,air-breather,Uta stansburiana,Uta stansburiana,usta_daw,20,0.64,0.525675042,-0.279282642,3.892523233,2.400287182,6.312468455,ng,16
-509,air-breather,Uta stansburiana,Uta stansburiana,usta_daw,30,0.47,0.903911205,-0.04387423,3.893273878,2.402424286,6.309285822,ng,16
-510,air-breather,Uta stansburiana,Uta stansburiana,usta_daw,35,0.54,0.967339421,-0.014421114,4.200989905,2.727219333,6.471175958,ng,16
-511,air-breather,Uta stansburiana,Uta stansburiana,usta_daw,40,0.55,1.69727596,0.22975246,3.895251949,2.408485674,6.299804027,ng,16
+508,air-breather,Uta stansburiana,Uta stansburiana,usta_daw,20,0.64,0.525675042,-0.279282642,3.892523233,2.400287182,6.312468455,NA,16
+509,air-breather,Uta stansburiana,Uta stansburiana,usta_daw,30,0.47,0.903911205,-0.04387423,3.893273878,2.402424286,6.309285822,NA,16
+510,air-breather,Uta stansburiana,Uta stansburiana,usta_daw,35,0.54,0.967339421,-0.014421114,4.200989905,2.727219333,6.471175958,NA,16
+511,air-breather,Uta stansburiana,Uta stansburiana,usta_daw,40,0.55,1.69727596,0.22975246,3.895251949,2.408485674,6.299804027,NA,16
 512,air-breather,Varanus acanthurus,Varanus acanthurus,vaca_thom,25,0.9597,0.079954141,-1.097159038,40.33360881,19.6,83,standard MR,66
 513,air-breather,Varanus acanthurus,Varanus acanthurus,vaca_thom,35,1.2588,0.159036198,-0.798504015,40.33360881,19.6,83,standard MR,66
 514,air-breather,Varanus acanthurus,Varanus acanthurus,vaca_thom,45,0.8497,0.278880136,-0.554582418,40.33360881,19.6,83,standard MR,66
