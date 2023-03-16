@@ -29,7 +29,6 @@ There are two datasets used in the analysis, which are included in the appendix 
 
 * **Table S2**, file: **table_S2.csv** contains data on metabolic scaling regressions performed at various temperatures from experiments in animals during different activity levels. These experiments measured from low activity levels as resting to routine metabolism (i.e., none or some spontaneous activity) to high activity levels as active and maximum metabolism (i.e., sustained activity or until exhaustion) by forcing locomotion. The columns are as in Table S1, plus three additional columns:
   * *experiment2* label for a set of scaling regressions measured at a single temperature in the same experiment, containing at least two regressions measured at different activity levels, whereas other conditions (e.g., metabolic state of animals) remain the same
-  * *L_state_study* metabolic state of animals as reported in the original study
   * *comp_L* label for the minimum and maximum activity levels that were measured in an experiment (e.g., "rest_max" means a experiment included measurements on resting and maximum metabolism).
   * *L_state* metabolic state of animals in each scaling regression as reported in the experiments 
 
