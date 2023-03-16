@@ -44,12 +44,12 @@ library(mvtnorm)
 
 source("temperaturefuncs.R")
 
-fitt <- FALSE #fit model with student-t errors?
-fitgaussian <- FALSE #fit model with Gaussian errors?
-fittsimulated <- TRUE #fit student-t model to data simulated under posterior mean parameters estimated from real data?
-tdiagnostics <- TRUE #diagnostics for model with student-t errors
-processtsimulated <- TRUE #plot estimates from student-t model fitted to simulated data
-simfitname <- "../Model_outputs/simfitt" #base for names in which saved fits to simulated data will be stored
+fitt <- FALSE # fit model with student-t errors?
+fitgaussian <- FALSE # fit model with Gaussian errors?
+fittsimulated <- TRUE # fit student-t model to data simulated under posterior mean parameters estimated from real data?
+tdiagnostics <- TRUE # diagnostics for model with student-t errors
+processtsimulated <- TRUE # plot estimates from student-t model fitted to simulated data
+simfitname <- "../Model_outputs/simfitt" # base for names in which saved fits to simulated data will be stored
 
 # ------------------------------------------------------------------------------
 set.seed(1234)# we need this to replicate the results
