@@ -40,15 +40,17 @@ library(cowplot)
 # data sorting
 library(dplyr)
 
+# Computes t probabilities, quantiles, random deviates and densities
 library(mvtnorm)
 
+# call functions to check model performance
 source("temperaturefuncs.R")
 
-fitt <- FALSE # fit model with student-t errors?
+fitt <- TRUE # fit model with student-t errors?
 fitgaussian <- FALSE # fit model with Gaussian errors?
-fittsimulated <- TRUE # fit student-t model to data simulated under posterior mean parameters estimated from real data?
-tdiagnostics <- TRUE # diagnostics for model with student-t errors
-processtsimulated <- TRUE # plot estimates from student-t model fitted to simulated data
+fittsimulated <- FALSE # fit student-t model to data simulated under posterior mean parameters estimated from real data?
+tdiagnostics <- FALSE # diagnostics for model with student-t errors
+processtsimulated <- FALSE # plot estimates from student-t model fitted to simulated data
 simfitname <- "../Model_outputs/simfitt" # base for names in which saved fits to simulated data will be stored
 
 # ------------------------------------------------------------------------------
@@ -216,8 +218,8 @@ if(fitt){
   #  and Tail_ESS are effective sample size measures, and Rhat is the potential
   #  scale reduction factor on split chains (at convergence, Rhat = 1).
   
-  # save model (so that they don't need to be rerun for every session) ####
-  # note: saved models are too large to be pushed in git standard repositories, save them elsewhere
+  # create a folder named 'Model_outputs', and save model (so that they don't need to be rerun for every session) ####
+  # note: saved models are too large to be pushed in git standard repositories
   
   saveRDS(m_all.temp_complex.info,"../Model_outputs/m_all.temp.rds")
   m_all.temp <- readRDS("../Model_outputs/m_all.temp.rds") # rename saved model
@@ -354,7 +356,7 @@ if(fitgaussian){
 }
 #-------------------------------------------------------------------------------
 # Save data on the R session and packages versions for reproducibility shake ####
-sink("../R_session/Bayesian_models_temp_R_session.txt")
+sink("../R_session/Bayesian_models_temp_R_session.txt") # Create folder named 'R_session' 
 sessionInfo()
 sink()
 ################################################################################

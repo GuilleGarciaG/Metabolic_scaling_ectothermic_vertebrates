@@ -40,8 +40,6 @@ library(dplyr)
 
 fitt <- TRUE #fit model with student-t errors?
 fitgaussian <- FALSE #fit model with Gaussian errors?
-#fittsimulated <- FALSE #fit student-t model to data simulated under posterior mean parameters estimated from real data?
-#tdiagnostics <- FALSE #diagnostics for model with student-t errors
 
 # ------------------------------------------------------------------------------
 set.seed(1234)# we need this to replicate the results
@@ -210,7 +208,7 @@ if(fitt){
   #  and Tail_ESS are effective sample size measures, and Rhat is the potential
   #  scale reduction factor on split chains (at convergence, Rhat = 1).
   
-  # save model (so that they don't need to be rerun for every session) ####
+  # create a folder named 'Model_outputs', and save model (so that they don't need to be rerun for every session) ####
   # note: saved models are too large to be pushed in git standard repositories, save them elsewhere
   
   saveRDS(m_all.act_complex.info,"../Model_outputs/m_all.act.rds")
@@ -287,7 +285,7 @@ if(fitgaussian){
 
 #-------------------------------------------------------------------------------
 # Save data on the R session and packages versions for reproducibility shake ####
-sink("../R_session/Bayesian_models_act_R_session.txt")
+sink("../R_session/Bayesian_models_act_R_session.txt") # Create folder named 'R_session' 
 sessionInfo()
 sink()
 ################################################################################
