@@ -13,7 +13,7 @@ García-Gómez G., et al. (to be completed), (2023). Combining theoretical appro
 ## Data inputs
 There are two datasets used in the analysis, which are included in the appendix of manuscript as **Table S1** and **Table S2**. These datasets contain data on intra-specific metabolic scaling of water- and air-breathing ectothermic vertebrates. Table S1 is used to test the effect of temperature, mediated by metabolic level, on the scaling slopes. Table S2 is used to test the effect of activity level, mediated by metabolic level, on the scaling slopes.
 
-* **Table S1**, file: **Metabolic_scaling_temperature_all.csv** contains data on metabolic scaling regressions performed at various temperatures from experiments in inactive animals. These experiments measured mostly resting or routine metabolism, which may include some spontaneous activity. The columns are:
+* **Table S1**, file: **table_S1.csv** contains data on metabolic scaling regressions performed at various temperatures from experiments in inactive animals. These experiments measured mostly resting or routine metabolism, which may include some spontaneous activity. The columns are:
   * *group* whether the species is water- or air-breather
   * *species* name of the species as reported in the original study
   * *species_phylo* name of the species as recorded in Open Tree of Life       (https://tree.opentreeoflife.org) 
@@ -26,7 +26,7 @@ There are two datasets used in the analysis, which are included in the appendix 
   * *max_mass.g* maximum body mass (in g) of the mass range of the scaling regression
   * *study_id* identification number of the original study from which the data were compiled (see word file with the reference list for Table S1 and S2)
 
-* **Table S2**, file: **Metabolic_scaling_activity_all.csv** contains data on metabolic scaling regressions performed at various temperatures from experiments in animals during different activity levels. These experiments measured from low activity levels as resting to routine metabolism (i.e., none or some spontaneous activity) to high activity levels as active and maximum metabolism (i.e., sustained activity or until exhaustion) by forcing locomotion. The columns are as in Table S1, plus three additional columns:
+* **Table S2**, file: **table_S2.csv** contains data on metabolic scaling regressions performed at various temperatures from experiments in animals during different activity levels. These experiments measured from low activity levels as resting to routine metabolism (i.e., none or some spontaneous activity) to high activity levels as active and maximum metabolism (i.e., sustained activity or until exhaustion) by forcing locomotion. The columns are as in Table S1, plus three additional columns:
   * *experiment2* label for a set of scaling regressions measured at a single temperature in the same experiment, containing at least two regressions measured at different activity levels, whereas other conditions (e.g., metabolic state of animals) remain the same  
   * *comp_L* label for the minimum and maximum activity levels that were measured in an experiment (e.g., "rest_max" means a experiment included measurements on resting and maximum metabolism).
   * *L_state* metabolic state of animals in each scaling regression as reported in the experiments 
