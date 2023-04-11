@@ -8,7 +8,21 @@ García-Gómez G., et al. (to be completed), (2023). Combining theoretical appro
 
 ## Scripts
 * **Model_temperature_test.R** This script contains all the code necessary to reproduce the results from the Bayesian model analysing the relationship between the scaling slope and the *temperature-increased metabolic level* within ectothermic vertebrate species. 
-* **Model_activity_test.R** This script contains all the code necessary to reproduce the results from the Bayesian model analysing the relationship between the scaling slope and the *activity-increased metabolic level* within ectothermic vertebrate species. 
+* **Model_activity_test.R** This script contains all the code necessary to reproduce the results from the Bayesian model analysing the relationship between the scaling slope and the *activity-increased metabolic level* within ectothermic vertebrate species.
+
+* The latter scripts provide the option to run just the model with student-t (as in the present manuscript) or with Gaussian errors, as follows:
+fitt: set TRUE to fit the model with student-t errors
+fitgaussian: set TRUE to fit the model with Gaussian errors
+
+(see lines 49-50 in Model_temperature_test.R, and 41-42 in Model_activity_test.R)
+
+* Additionally, Model_temperature_test.R provides the option to (1) simulate 10 datasets under the temperature-effect model, with posterior mean parameter values and the same structure as the real data, and fitting the model to these simulated data sets; (2) check model residuals; and (3) plot estimates of the model fitted simulated data, as follows:
+
+fittsimulated: set TRUE to fit the student-t model to data simulated under posterior mean parameters estimated from real data
+tdiagnostics: set TRUE to get diagnostics for the model with student-t errors
+processtsimulated: set TRUE to plot estimates from student-t model fitted to simulated data
+
+(see lines 51-53 in Model_temperature_test.R)
 
 ## Data inputs
 There are two datasets used in the analysis, which are included in the appendix of manuscript as **Table S1** and **Table S2**. These datasets contain data on intra-specific metabolic scaling of water- and air-breathing ectothermic vertebrates. Table S1 is used to test the effect of temperature, mediated by metabolic level, on the scaling slopes. Table S2 is used to test the effect of activity level, mediated by metabolic level, on the scaling slopes.
