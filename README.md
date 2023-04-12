@@ -26,7 +26,7 @@ Additionally, Model_temperature_test.R provides the option to (1) simulate 10 da
 
 (see lines 51-53 in Model_temperature_test.R)
 
-Last, the number iterations of models can be changed in line 180 of Model_temperature_test.R and line 169 of Model_activity_test.R.
+Last, the number of iterations in these models can be changed in line 180 of Model_temperature_test.R and line 169 of Model_activity_test.R.
 
 ## Data inputs
 There are two datasets used in the analysis, which are included in the appendix of manuscript as **Table S1** and **Table S2**. These datasets contain data on intra-specific metabolic scaling of water- and air-breathing ectothermic vertebrates. Table S1 is used to test the effect of temperature, mediated by metabolic level, on the scaling slopes. Table S2 is used to test the effect of activity level, mediated by metabolic level, on the scaling slopes.
