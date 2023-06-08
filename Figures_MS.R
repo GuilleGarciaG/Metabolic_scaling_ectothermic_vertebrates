@@ -1,8 +1,8 @@
 ################################################################################
 # Script to reproduce Figures in the manuscript
 # (note that these were edited in the paper to add silhouettes and text)
-# Author: Guillermo García-Gómez (guillegar.gz@gmail.com) & Matthew Spencer
-# Date: 16032023
+# Authors: Guillermo García-Gómez (guillegar.gz@gmail.com) & Matthew Spencer
+# Date: 08062023
 # Operating System: Windows 10 Pro 21H2
 # ------------------------------------------------------------------------------
 # Cite as: ?
@@ -50,28 +50,27 @@ a_act <- all_act %>%
 
 # Figure 1 ####
 
-# Create a function for the variation in the scaling slope b with temperature and activity 
-# (based on equation given in Glazier 2010, Biological Reviews)
+# Create a function for the variation in the scaling slope b with temperature and activity #
 
-simulatedata <- function(n, massrange,
+# This is a conceptual schematic based on equations (2) and (3) given in Glazier (2010), 
+# to illustrate the typical predictions of the Metabolic Level Boundaries Hypothesis
+
+simulatedata <- function(n,
                          b_m, b_SA, 
                          LT0, Q10,
                          Trange, T0, T1, T2,
                          b_a, AS, act_L) {
   
-  # Generate a log sequence of numbers for equal-spaced values of the mass range in a log scale,
-  # and calculate body mass at the geometric midpoint of such mass range
-  x <- exp((log(massrange[1])+log(massrange[2]))/2)
+  # Generate a log sequence of temperature values:
   
-  # Model mass range 
+  # Temperature range
   temp <- seq(from = Trange[1], to = Trange[2], length.out = n)
-  Mm <- rep(x, length(temp)) 
   
-  # Model metabolic level L, whose temperature dependence is described by Q10
+  # Model metabolic level L, whose temperature dependence is determined by Q10
   # i.e., L increases exponentially with temperature
   L <- (LT0 * Q10 ^ ((temp - T0) / 10))
   
-  # Model slope b:
+  # Modelling slope b:
   
   # Temperature effects #
   p <- seq(from = 1, to = 0, length.out = n) # relative influence of V-related processes in b (0: no influence, 1, total influence)
@@ -85,11 +84,12 @@ simulatedata <- function(n, massrange,
   # generate a sequence of activity levels:
   act_L <- seq(from = Act_level[1], to = Act_level[2], length.out = n)
   
+  # calculate three starting temperatures (cold, reference, hot):
   Lr_T1 = LT0 * Q10 ^ ((T1 - T0) / 10) # resting L at cold temperature (T1)
   Lr_T0 = LT0 * Q10 ^ ((T0 - T0) / 10) # resting L at reference temperature (T0)
   Lr_T2 = LT0 * Q10 ^ ((T2 - T0) / 10) # resting L at hot temperature (T2)
   
-  # Assuming the contribution of V-related processes (p) to L decreases with temperature
+  # Assuming that the contribution of V-related processes (p) to L decreases with temperature
   # (p decreases from cold (T1) to hot temperature (T2)):
   p_T1 <- 0.9 
   p_T0 <- 0.5
@@ -118,7 +118,7 @@ simulatedata <- function(n, massrange,
   ba_T0 <- (1 - z2) * (br_T0) + z2 * (b_a) # change in b as activity increases at reference temperature T0
   ba_T2 <- (1 - z3) * (br_T2) + z3 * (b_a) # change in b as activity increases at hot temperature T2
   
-  return(data.frame(Mm = Mm, L = L,
+  return(data.frame(L = L,
                     p = p, br = br, temp = temp,
                     act_L, p_T1 = p_T1, p_T0 = p_T0, p_T2 = p_T2,
                     br_T1 = br_T1, br_T0 = br_T0, br_T2 = br_T2,
@@ -131,11 +131,8 @@ simulatedata <- function(n, massrange,
 
 { # Generate values for the function #
   
-  # Number of mass values:
+  # Number of temperature values:
   n <- 1e2
-  
-  # Mass range for a general ectothermic vertebrate:
-  massrange <- c(0.001, 1000)  # (1 mg to 1 kg)
   
   # Temperature effects:
   
@@ -156,9 +153,7 @@ simulatedata <- function(n, massrange,
   
   # Metabolic level (L) at reference temperature (T0):
   LT0 = 0.1
-  #LmT0 = LT0*0.35
-  #T0 <- 15 + 273 #reference temperature in Kelvin
-  
+
   # Mass-scaling (b) of V-related (i.e., maintenance) and SA-related physiological processes:
   b_m = 1 # V-related processes
   b_SA = 2/3 # SA-related processes
@@ -172,16 +167,15 @@ simulatedata <- function(n, massrange,
   Act_level = c(0, 1)
   
   # Aerobic scope (AS):
-  AS = 5 # 5 times the L at rest
+  AS = 5 # i.e., 5 times the L at rest (this is just an illustrative example)
   
-  # Mass-scaling (b) of V-related physiological processes due to muscular activity:
+  # Mass-scaling (b) of V-related physiological processes due to muscular work:
   b_a = 1
   
 }
 
 # Simulate data using function and given values:
 simdata <- simulatedata(n = n, 
-                        massrange = massrange, 
                         Trange = Trange,
                         LT0 = LT0, 
                         b_SA = b_SA, 
@@ -202,7 +196,7 @@ b_L_total <- data.frame(cbind(temp = c(T0, T1, T2),
 # Generate Figure 1:
 
 #  Change in metabolic scaling slope (b) vs metabolic level (L) 
-#  under different temperature and (muscular) activity level:
+#  under different temperature and activity level:
 
 (Fig_1 <- ggplot(simdata, aes(x = log(L), y = br)) +  #
     geom_line(lwd = 2, lty = 1, aes(col = temp))+
@@ -215,9 +209,9 @@ b_L_total <- data.frame(cbind(temp = c(T0, T1, T2),
     geom_point(data = b_L_total, aes(x = log(L_act), y = b_act), alpha=1, size = 6, pch = 1) + #
     scale_colour_gradient2(low = "blue", mid ="lightblue", high = "red", midpoint = 20) + # Temperature
     geom_hline(yintercept = c(2/3,1),linetype = "dashed") +
-    scale_x_continuous(bquote(''~log~'Metabolic level ('~italic(L)~')'), 
+    scale_x_continuous(bquote(""~log~"Metabolic level ("~italic(L)~")"), 
                        limits=c(min(log(simdata$L))-0.25, max(log(simdata$L_T2))+0.3)) +
-    scale_y_continuous("Metabolic scaling slope ("~italic(b)~")", breaks=seq(0.4,1.6,0.1), limits=c(0.57,1.1))+
+    scale_y_continuous("Metabolic scaling slope ( "~italic(b)~")", breaks=seq(0.4,1.6,0.1), limits=c(0.57,1.1))+
     labs(expression("Temperature ("*degree*C*")")) +
     theme_classic() +
     theme(legend.position = "none", # legend is not shown in last version of the figure
@@ -251,8 +245,8 @@ post_temp %>%
             gamma_notwater = b_log10_L) %>%
   gather(key, value) %>%
   group_by(key) %>%
-  dplyr::summarise(mean = mean(value), lower_95ci = quantile(value, probs = c(0.05)),
-                   upper_95ci = quantile(value, probs = c(0.95)))
+  dplyr::summarise(mean = mean(value), lower_95ci = quantile(value, probs = c(0.025)),
+                   upper_95ci = quantile(value, probs = c(0.975)))
 
 
 # Plot water-breathing species data and mean estimate for log10 temperature-increased L #
@@ -273,20 +267,20 @@ post_temp %>%
     geom_vline(xintercept = 0, lty = 2) +
     scale_fill_brewer(palette = "Blues", direction = -1, na.translate = FALSE) +
     theme_bw() + 
-    theme(legend.position = "none",plot.background = element_rect(fill='transparent', color=NA)))
+    theme(legend.position = "none", plot.background = element_rect(fill ="transparent", color = NA)))
 
 
 # Plot data of temperature-increased L in water-breathers:
 
-(plot_wtemp <- ggplot(w_temp, aes(x = log10(L), y = b, group= experiment)) +  # Set up canvas with outcome variable on y-axis
+(plot_wtemp <- ggplot(w_temp, aes(x = log10(L), y = b, group = experiment)) +  # Set up canvas with outcome variable on y-axis
     geom_line(color="gray60")+
-    geom_point(aes(color = temp), size=3, stroke=1.5,alpha=0.5) + # Plot the actual points
-    scale_color_gradient2(low = "blue", mid="lightblue", high = "red", midpoint=17, 
+    geom_point(aes(color = temp), size = 3, stroke = 1.5, alpha = 0.5) + # Plot the actual points
+    scale_color_gradient2(low = "blue", mid ="lightblue", high = "red", midpoint = 17, 
                           limits = c(min(all_temp$temp), max(all_temp$temp))) + # Temperature code: colour mapped here
     geom_hline(yintercept = c(2/3,1),linetype = "dashed") +
     scale_x_continuous(bquote(''~log[10]~'Metabolic level' ~italic(L)~ '('*'mg'~O[2]~ g^-1~h^-1*')'), 
-                       breaks=seq(-2.5, 0.5, 1), limits=c(-2.6,0.8))+
-    scale_y_continuous("Slope"  ~italic(b)~ "", breaks=seq(0.2,1.6,0.2), limits=c(0.20,1.6))+
+                       breaks=seq(-2.5, 0.5, 1), limits = c(-2.6,0.8))+
+    scale_y_continuous("Slope"  ~italic(b)~ "", breaks = seq(0.2,1.6,0.2), limits = c(0.20,1.6))+
     labs(col = expression("T ("*degree*C*")")) +
     theme_classic() +
     theme(#legend.position = "none",
@@ -299,7 +293,7 @@ post_temp %>%
 
 # altogether:
 
-(Fig_2A <- plot_wtemp + theme(text = element_text(size=13),
+(Fig_2A <- plot_wtemp + theme(text = element_text(size = 13),
                               panel.grid.major = element_blank(),
                               panel.grid.minor = element_blank()) +
     annotation_custom(ggplotGrob(wt_logL_estimate), xmin = -0.55, xmax = 0.95,  
@@ -325,20 +319,20 @@ post_temp %>%
     geom_vline(xintercept = 0, lty = 2) +
     scale_fill_brewer(palette = "Greens", direction = -1, na.translate = FALSE) +
     theme_bw() + 
-    theme(legend.position = "none",plot.background = element_rect(fill='transparent', color=NA)))
+    theme(legend.position = "none", plot.background = element_rect(fill= "transparent", color = NA)))
 
 
 # Plot data of temperature-increased L in air-breathers:
 
-(plot_atemp <- ggplot(a_temp, aes(x = log10(L), y = b, group= experiment)) +  # Set up canvas with outcome variable on y-axis
+(plot_atemp <- ggplot(a_temp, aes(x = log10(L), y = b, group = experiment)) +  # Set up canvas with outcome variable on y-axis
     geom_line(color="gray60")+
     geom_point(aes(color = temp), size=3, stroke=1.5,alpha=0.5) + # Plot the actual points
     scale_color_gradient2(low = "blue", mid="lightblue", high = "red", midpoint=17, 
                           limits = c(min(all_temp$temp), max(all_temp$temp))) + # Temperature code: colour mapped here
     geom_hline(yintercept = c(2/3,1),linetype = "dashed") +
     scale_x_continuous(bquote(''~log[10]~'Metabolic level' ~italic(L)~ '('*'mg'~O[2]~ g^-1~h^-1*')'), 
-                       breaks=seq(-2.5, 0.5, 1), limits=c(-2.6,0.8))+
-    scale_y_continuous("Slope"  ~italic(b)~ "", breaks=seq(0.2,1.6,0.2), limits=c(0.20,1.6))+
+                       breaks=seq(-2.5, 0.5, 1), limits = c(-2.6,0.8))+
+    scale_y_continuous("Slope"  ~italic(b)~ "", breaks = seq(0.2,1.6,0.2), limits = c(0.20,1.6))+
     labs(col = expression("T ("*degree*C*")")) +
     theme_classic() +
     theme(axis.title = element_text(size = 15),
@@ -367,8 +361,8 @@ post_act %>%
             gamma_notwater = b_log10_L) %>%
   gather(key, value) %>%
   group_by(key) %>%
-  dplyr::summarise(mean = mean(value), lower_95ci = quantile(value, probs = c(0.05)),
-                   upper_95ci = quantile(value, probs = c(0.95)))
+  dplyr::summarise(mean = mean(value), lower_95ci = quantile(value, probs = c(0.025)),
+                   upper_95ci = quantile(value, probs = c(0.975)))
 
 # Plot water-breathing species data and mean estimate for log10 activity-increased L #
 
@@ -387,19 +381,19 @@ post_act %>%
     geom_vline(xintercept = 0, lty = 2) +
     scale_fill_brewer(palette = "Blues", direction = -1, na.translate = FALSE) +
     theme_bw() + 
-    theme(legend.position = "none", plot.background = element_rect(fill='transparent', color=NA)))
+    theme(legend.position = "none", plot.background = element_rect(fill = "transparent", color = NA)))
 
 # Plot data of temperature-increased L in water-breathers:
 
-(plot_wact <- ggplot(w_act, aes(x = log10(L), y = b, group= experiment2)) +  # Set up canvas with outcome variable on y-axis
+(plot_wact <- ggplot(w_act, aes(x = log10(L), y = b, group = experiment2)) +  # Set up canvas with outcome variable on y-axis
     geom_line(color="gray60")+
-    geom_point(aes(color = temp), size=3, stroke=1.5, alpha=0.5) + # Plot the actual points
+    geom_point(aes(color = temp), size=3, stroke = 1.5, alpha = 0.5) + # Plot the actual points
     scale_color_gradient2(low = "blue", mid="lightblue", high = "red", midpoint=17, 
                           limits = c(min(all_temp$temp), max(all_temp$temp))) + # Temperature code: colour mapped here
     geom_hline(yintercept = c(2/3,1),linetype = "dashed") +
     scale_x_continuous(bquote(''~log[10]~'Metabolic level' ~italic(L)~ '('*'mg'~O[2]~ g^-1~h^-1*')'), 
-                       breaks=seq(-2.5, 0.5, 1), limits=c(-2.6,0.8))+
-    scale_y_continuous("Slope"  ~italic(b)~ "", breaks=seq(0.2,1.6,0.2), limits=c(0.20,1.6))+
+                       breaks = seq(-2.5, 0.5, 1), limits = c(-2.6,0.8))+
+    scale_y_continuous("Slope"  ~italic(b)~ "", breaks = seq(0.2,1.6,0.2), limits = c(0.20,1.6))+
     labs(col = expression("T ("*degree*C*")")) +
     theme_classic() +
     theme(#legend.position = "none",
@@ -437,14 +431,14 @@ post_act %>%
     geom_vline(xintercept = 0, lty = 2) +
     scale_fill_brewer(palette = "Greens", direction = -1, na.translate = FALSE) +
     theme_bw() + 
-    theme(legend.position = "none",plot.background = element_rect(fill='transparent', color=NA)))
+    theme(legend.position = "none",plot.background = element_rect(fill = "transparent", color = NA)))
 
 # Plot data of temperature-increased L in water-breathers:
 
 (plot_aact <- ggplot(a_act, aes(x = log10(L), y = b, group= experiment2)) +  # Set up canvas with outcome variable on y-axis
     geom_line(color="gray60")+
-    geom_point(aes(color = temp), size=3, stroke=1.5,alpha=0.5) + # Plot the actual points
-    scale_color_gradient2(low = "blue", mid="lightblue", high = "red", midpoint=17, 
+    geom_point(aes(color = temp), size = 3, stroke = 1.5, alpha = 0.5) + # Plot the actual points
+    scale_color_gradient2(low = "blue", mid = "lightblue", high = "red", midpoint = 17, 
                           limits = c(min(all_temp$temp), max(all_temp$temp))) + # Temperature code: colour mapped here
     geom_hline(yintercept = c(2/3,1),linetype = "dashed") +
     scale_x_continuous(bquote(''~log[10]~'Metabolic level' ~italic(L)~ '('*'mg'~O[2]~ g^-1~h^-1*')'), 
@@ -461,7 +455,7 @@ post_act %>%
       panel.grid.minor = element_blank()))
 
 # altogether:
-(Fig_2D <- plot_aact + theme(text = element_text(size=13),
+(Fig_2D <- plot_aact + theme(text = element_text(size = 13),
                              panel.grid.major = element_blank(),
                              panel.grid.minor = element_blank()) +
     annotation_custom(ggplotGrob(aa_logL_estimate), xmin = -0.55, xmax = 0.95,  
@@ -627,8 +621,8 @@ w_act_minL <- w_min_to_max_L_Tadj %>%
                               b = mean(b),
                               L = mean(L_at20_w)))
 
-# Mean values of species, using mean values from experiments
-# if more than 1 experiment was available for a species:
+# Mean values of species, using mean values from experiments,
+# if more than 1 experiment were available for a species:
 
 # Max. L
 (w_act_maxL_mean_spp <- ddply(w_act_maxL_mean_exp, .(species), summarize,
@@ -660,82 +654,59 @@ w_act_minL <- w_min_to_max_L_Tadj %>%
 # Dataset of mean b and L values:
 (df_bL_20C_w <- data.frame(state = c("minimal","maximal"),
                            b_mean = c(w_b.min$y, w_b.max$y),
-                           b_maxci = c(w_b.min$ymax, w_b.max$ymax),
-                           b_minci = c(w_b.min$ymin, w_b.max$ymin),
+                           b_max = c(w_b.min$ymax, w_b.max$ymax),
+                           b_min = c(w_b.min$ymin, w_b.max$ymin),
                            log10_L_mean = c(w_min.L$y, w_max.L$y),
-                           log10_L_maxci = c(w_min.L$ymax, w_max.L$ymax),
-                           log10_L_minci = c(w_min.L$ymin, w_max.L$ymin)))
+                           log10_L_max = c(w_min.L$ymax, w_max.L$ymax),
+                           log10_L_min = c(w_min.L$ymin, w_max.L$ymin)))
 
-#
-{  # Generate values for the function #
-  
-  # Number of mass values:
-  n <- 1e2 
-  
-  # Mass range for a general ectothermic vertebrate:
-  massrange <- c(0.1, 1000) # (1 mg to 1 kg)
-  
-  # Mean resting (minimal) metabolic level L among species: 
-  L_rmr = 10^(w_min.L$y) # in mg O2 g-1 h-1
-  
-  # Factorial aerobic scope value - times that L increases from minimal to maximal L
-  FAS = 10
-  
-  # Mean slope b of resting (minimal) metabolic level L among species:
-  b_rmr = mean(w_b.min$y)
-  
-  # Predicted slope b at maximum activity:
-  b_mmr = 1
-  
-  # Activity level values (0: no activity, 1: maximum activity):
-  act_level <- seq(from = 0, to = 1, length.out = 100)
-}
 
-# simulate data for water-breathers:
-simdata.w <- simulatedata(n = n, massrange = massrange, 
-                          act_level = act_level, FAS =FAS,
-                          L_rmr = L_rmr, b_rmr = b_rmr, b_mmr = b_mmr)
+# Quantification of the relationship between b and L (derived from Glazier 2008, 2009, 2010)
+mmid <- exp((log(1000) + log(0.1)) / 2)
 
-# check simulated data:
-plot(log(resp)~ log(mass), simdata.w)
+# Mean slope b of resting (minimal) metabolic level L among species:
+b_min_w = mean(w_b.min$y)
 
-{
-  # Perform linear regressions (ordinary least squares, ols) of 
-  # simulated log Metabolic rates vs. log Masses, 
-  # so we can get values of slopes b and L as activity level increases:
-  
-  (ols_w <- simdata.w %>%
-     group_by(Act_L) %>% # group by activity level
-     do(tidy(lm(log10(resp)~log10(mass), data=.))))  # for each group create ols using simulated log(mass) and log(resp) values
-  
-  # Slopes (b) vs activity level:
-  ols_res_w <- as.data.frame(ols_w)
-  
-  # b values:
-  slope_b_w <- ols_res_w %>%
-    filter(term == "log10(mass)") %>%
-    dplyr::rename(slope = estimate)
-  
-  # Regression intercepts:
-  intercept_w <- ols_res_w %>%
-    filter(term == "(Intercept)") %>%
-    dplyr::select(estimate) %>%
-    dplyr::rename(intercept = estimate)
-  
-  # Calculate Mass midpoints of regressions:
-  mass.midpoint_w <- exp((log(min(simdata.w$mass)) + log(max(simdata.w$mass)))/2)
-  
-  # Dataframe: OLS data + geometric midpoint of mass range
-  ols_data_w <- cbind(slope_b_w, intercept_w, mass.midpoint_w)
-  
-  # Calculate the metabolic level at each activity level:
-  ols_data_w <- ols_data_w %>%
-    mutate(metabolic.level_L = (10^(intercept+(log10(mass.midpoint_w))*slope))/(mass.midpoint_w))
-  
-  # Check visually the simulated regression lines:
-  plot(slope ~ log10(metabolic.level_L), data = ols_data_w)
-  
-}
+# Mean resting (minimal) metabolic level (L_min) among species: 
+L_min_w = 10^(w_min.L$y) # in mg O2 g-1 h-1
+
+# (Theoretical) maximal metabolic level (L_max):
+L_max_w = L_min_w * 10
+
+# Calculate scaling coefficient (a) to get inactive metabolic rate (R_min)
+# at the geometric mass midpoint (mmid):
+a_w <- (L_min_w * mmid) / (mmid ^ b_min_w)
+
+# Calculate maximal a' (a'_max) to get max. metabolic rate 
+aprime_max_w <- L_max_w - L_min_w
+
+# Generate a sequence of 100 values to recreate the increase from
+# R_min to max. metabolic rate with activity (R_act):
+aprime_w <- seq(from = 0, to = aprime_max_w, length.out = 100)
+
+# Obtain metabolic level (L) values:
+L_w <- a_w * mmid ^ (b_min_w - 1) + aprime_w
+
+# Calculate R_min:
+R_min_w <- a_w * mmid ^ b_min_w
+
+# Calculate total metabolic rate (R_min + R_act):
+Rtotal_w <- R_min_w + aprime_w * mmid
+
+# Get the change in slope b as metabolic rate increases with activity
+
+# (first derivative of log total resp with respect to log m 
+# evaluated at geometric midpoint)
+
+# b_hat_w <- 1 + (b_min_w - 1) * R_min_w / Rtotal_w # eq. [5] in Appendix  (A6)
+b_hat_w <- 1 + (b_min_w - 1) * (L_min_w / L_w) # eq. [6] in Appendix  (A6)
+
+# data frame:
+df_w <- data.frame(b_hat_w, L_w, aprime_w)
+
+plot(b_hat_w ~ log10(L_w), type = "l", xlab = "log L", 
+     ylab = "dlog(total r) / dlog(m) at geometric mass midpoint",
+     data = df_w)
 
 
 # Air-breathing species:
@@ -767,8 +738,8 @@ a_act_minL <- a_min_to_max_L_Tadj %>%
                               b = mean(b),
                               L = mean(L_at20_a)))
 
-# Mean values of species, using mean values from experiments
-# if more than 1 experiment was available for a species:
+# Mean values of species, using mean values from experiments,
+# if more than 1 experiment were available for a species:
 
 # Max. L
 (a_act_maxL_mean_spp <- ddply(a_act_maxL_mean_exp, .(species), summarize,
@@ -800,83 +771,59 @@ a_act_minL <- a_min_to_max_L_Tadj %>%
 # Dataset of mean b and L values:
 (df_bL_20C_a <- data.frame(state = c("minimal","maximal"),
                            b_mean = c(a_b.min$y, a_b.max$y),
-                           b_maxci = c(a_b.min$ymax, a_b.max$ymax),
-                           b_minci = c(a_b.min$ymin, a_b.max$ymin),
+                           b_max = c(a_b.min$ymax, a_b.max$ymax),
+                           b_min = c(a_b.min$ymin, a_b.max$ymin),
                            log10_L_mean = c(a_min.L$y, a_max.L$y),
-                           log10_L_maxci = c(a_min.L$ymax, a_max.L$ymax),
-                           log10_L_minci = c(a_min.L$ymin, a_max.L$ymin)))
+                           log10_L_max = c(a_min.L$ymax, a_max.L$ymax),
+                           log10_L_min = c(a_min.L$ymin, a_max.L$ymin)))
 
-#
-{  # Generate values for the function #
-  
-  # Number of mass values:
-  n <- 1e2 
-  
-  # Mass range for a general ectothermic vertebrate:
-  massrange <- c(0.1, 1000) # (1 mg to 1 kg)
-  
-  # Mean resting (minimal) metabolic level L among species: 
-  L_rmr = 10^(a_min.L$y) # in mg O2 g-1 h-1
-  
-  # Factorial aerobic scope value - times that L increases from minimal to maximal L
-  FAS = 10
-  
-  # Mean slope b of resting (minimal) metabolic level L among species:
-  b_rmr = mean(a_b.min$y)
-  
-  # Predicted slope b at maximum activity:
-  b_mmr = 1
-  
-  # Activity level values (0: no activity, 1: maximum activity):
-  act_level <- seq(from = 0, to = 1, length.out = 100)
-}
+# Quantification of the relationship between b and L (derived from Glazier 2008, 2009, 2010)
+mmid <- exp((log(1000) + log(0.1)) / 2)
 
-# simulate data for air-breathers:
-simdata.a <- simulatedata(n = n, massrange = massrange, 
-                          act_level = act_level, FAS =FAS,
-                          L_rmr = L_rmr, b_rmr = b_rmr, b_mmr = b_mmr)
+# Mean slope b of resting (minimal) metabolic level L among species:
+b_min_a = mean(a_b.min$y)
 
-# check simulated data:
-summary(simdata.a)
-plot(log(resp)~ log(mass), simdata.a)
+# Mean resting (minimal) metabolic level (L_min) among species: 
+L_min_a = 10^(a_min.L$y) # in mg O2 g-1 h-1
 
-{
-  # Perform linear regressions (ordinary least squares, ols) of 
-  # simulated log Metabolic rates vs. log Masses, 
-  # so we can get values of slopes b and L as activity level increases:
-  
-  (ols_a <- simdata.a %>%
-     group_by(Act_L) %>% # group by activity level
-     do(tidy(lm(log10(resp)~log10(mass), data=.))))  # for each group create ols using simulated log(mass) and log(resp) values
-  
-  # Slopes (b) vs activity level:
-  ols_res_a <- as.data.frame(ols_a)
-  
-  # b values:
-  slope_b_a <- ols_res_a %>%
-    filter(term == "log10(mass)") %>%
-    dplyr::rename(slope = estimate)
-  
-  # Regression intercepts:
-  intercept_a <- ols_res_a %>%
-    filter(term == "(Intercept)") %>%
-    dplyr::select(estimate) %>%
-    dplyr::rename(intercept = estimate)
-  
-  # Calculate Mass midpoints of regressions:
-  mass.midpoint_a <- exp((log(min(simdata.a$mass)) + log(max(simdata.a$mass)))/2)
-  
-  # Dataframe: OLS data + geometric midpoint of mass range
-  ols_data_a <- cbind(slope_b_a, intercept_a, mass.midpoint_a)
-  
-  # Calculate the metabolic level at each activity level:
-  ols_data_a <- ols_data_a %>%
-    mutate(metabolic.level_L = (10^(intercept+(log10(mass.midpoint_a))*slope))/(mass.midpoint_a))
-  
-  # Check visually the simulated regression lines:
-  plot(slope ~ log10(metabolic.level_L), data = ols_data_a)
-  
-}
+# (Theoretical) maximal metabolic level (L_max):
+L_max_a = L_min_a * 10
+
+# Calculate scaling coefficient (a) to get inactive metabolic rate (R_min)
+# at the geometric mass midpoint (mmid):
+a_a <- (L_min_a * mmid) / (mmid ^ b_min_a)
+
+# Calculate maximal a' (a'_max) to get max. metabolic rate 
+aprime_max_a <- L_max_a - L_min_a
+
+# Generate a sequence of 100 values to recreate the increase from
+# R_min to max. metabolic rate with activity (R_act):
+aprime_a <- seq(from = 0, to = aprime_max_a, length.out = 100)
+
+# Obtain metabolic level (L) values:
+L_a <- a_a * mmid ^ (b_min_a - 1) + aprime_a
+
+# Calculate R_min:
+R_min_a <- a_a * mmid ^ b_min_a
+
+# Calculate total metabolic rate (R_min + R_act):
+Rtotal_a <- R_min_a + aprime_a * mmid
+
+# Get the change in slope b as metabolic rate increases with activity
+
+# (first derivative of log total resp with respect to log m 
+# evaluated at geometric midpoint)
+
+# b_hat_a <- 1 + (b_min_a - 1) * R_min_a / Rtotal_a # eq. [5] in Appendix  (A6)
+b_hat_a <- 1 + (b_min_a - 1) * (L_min_a / L_a) # eq. [6] in Appendix  (A6)
+
+# data frame:
+df_a <- data.frame(b_hat_a, L_a, aprime_a)
+
+# plot to check
+plot(b_hat_a ~ log10(L_a), type = "l", xlab = "log L", 
+     ylab = "dlog(total r) / dlog(m) at geometric mass midpoint",
+     data = df_a)
 
 
 # PLOTS:
@@ -886,10 +833,10 @@ plot(log(resp)~ log(mass), simdata.a)
 (Fig_3A.p <- ggplot(df_bL_20C_w, aes(y= b_mean, x=10^(log10_L_mean)), group = state) +  #
     geom_line(data = w_20C_spp, aes(y = b, x = L, group = species), color="gray80", alpha = 0.5) + 
     geom_point(data = w_20C_spp, aes(y = b, x = L, group = species, col = state), size=2, alpha=0.5) +
-    geom_errorbar(aes(ymax = b_maxci,
-                      ymin = b_minci, col = state), width = 0, size=1.5, alpha=0.5) +
-    geom_errorbarh(aes(xmax = 10^(log10_L_maxci),
-                       xmin = 10^(log10_L_minci), col = state), height = 0, size=1.5, alpha=0.45) +
+    geom_errorbar(aes(ymax = b_max,
+                      ymin = b_min, col = state), width = 0, size=1.5, alpha=0.5) +
+    geom_errorbarh(aes(xmax = 10^(log10_L_max),
+                       xmin = 10^(log10_L_min), col = state), height = 0, size=1.5, alpha=0.45) +
     geom_point(aes(fill=state, col =state), alpha=1, size=5, pch=21) + #
     scale_colour_manual(values=c("purple", "green")) +
     scale_fill_manual(values=c("purple", "green")) +
@@ -909,7 +856,7 @@ plot(log(resp)~ log(mass), simdata.a)
 # plot prediction of the raise in b with activity increased-L by 10-fold:
 (Fig_3A <- 
     Fig_3A.p + 
-    geom_line(data=ols_data_w, aes(x = metabolic.level_L, y = slope),
+    geom_line(data = df_w, aes(x = L_w, y = b_hat_w),
               lty = 4, alpha=0.45, size=1.2))
 
 # Air-breathing species:
@@ -917,10 +864,10 @@ plot(log(resp)~ log(mass), simdata.a)
 (Fig_3B.p <- ggplot(df_bL_20C_a, aes(y= b_mean, x=10^(log10_L_mean)), group = state) +  #
     geom_line(data = a_20C_spp, aes(y = b, x = L, group = species), color="gray80", alpha = 0.5) +
     geom_point(data = a_20C_spp, aes(y = b, x = L, group = species, col = state), size=2, alpha=0.5) +
-    geom_errorbar(aes(ymax = b_maxci,
-                      ymin = b_minci, col = state), width = 0, size=1.5, alpha=0.45) +
-    geom_errorbarh(aes(xmax = 10^(log10_L_maxci),
-                       xmin = 10^(log10_L_minci), col = state), height = 0, size=1.5, alpha=0.5) +
+    geom_errorbar(aes(ymax = b_max,
+                      ymin = b_min, col = state), width = 0, size=1.5, alpha=0.45) +
+    geom_errorbarh(aes(xmax = 10^(log10_L_max),
+                       xmin = 10^(log10_L_min), col = state), height = 0, size=1.5, alpha=0.5) +
     geom_point(aes(fill=state, col =state), alpha=1, size=5, pch=21) + #
     scale_colour_manual(values=c("purple", "green")) + # Activity level
     scale_fill_manual(values=c("purple", "green")) + # Activity level
@@ -940,7 +887,7 @@ plot(log(resp)~ log(mass), simdata.a)
 # plot prediction of the raise in b with activity increased-L by 10-fold:
 (Fig_3B <- 
     Fig_3B.p + 
-    geom_line(data=ols_data_a, aes(x = metabolic.level_L, y = slope),
+    geom_line(data = df_a, aes(x = L_a, y = b_hat_a),
               lty = 4, alpha=0.45, size=1.2))
 
 # Merge plots for water- and air-breathing species:
