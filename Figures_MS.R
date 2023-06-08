@@ -504,69 +504,16 @@ legend_Fig_2 <- get_legend(
 # Figure 3 ####
 
 # Graphical representation of the quantitative prediction 
-# on the change in slopes b raising with activity-increased L 
+# on the change in slopes b with activity-increased L 
 
-# Generate a function to simulate the increase in b with activity, from b at resting MR to b at MMR:
-
-simulatedata <- function(n, massrange, act_level, L_rmr, FAS, b_rmr, b_mmr) {
-  
-  # Generate a log sequence of numbers for equal-spaced values 
-  # of the mass range in a log scale:
-  log_M <- seq(from = log10(massrange[1]), to = log10(massrange[2]), length.out = n)
-  
-  # Generate (anti-log) mass values:
-  x <- 10^(log_M)
-  mass <- rep(x, length(act_level)) # same length as activity level values
-  
-  # Model activity level:
-  Act_L <- sort(rep(act_level, n))
-  
-  # Calculate the geometric mean of the mass range:
-  Mm = exp((log(min(mass)) + log(max(mass)))/2)
-  
-  # Calculate the scaling coefficient (a) 
-  # of resting (non-active) metabolic rate (rmr)
-  # given a reference value of L at rest (L rmr):
-  a_rmr = (L_rmr * Mm) / (Mm ^ b_rmr)
-  
-  # Resting metabolic rate at a reference L at rest:
-  R_rmr = a_rmr * mass ^ b_rmr
-  
-  # Model metabolic level at maximal metabolic rate (L mmr),
-  # calculated as L at rest multiplied by a factorial aerobic scope (FAS)
-  # i.e., ratio between MMR / RMR:
-  L_mmr = L_rmr * FAS
-  
-  # Calculate aerobic scope (AS) as difference between L mmr and L rmr:
-  L_AS = L_mmr - L_rmr
-  
-  # Model active metabolic level (L act), as the proportion of aerobic scope
-  # being used by the animal, as a value of activity level (Act_L):
-  L_act = Act_L * L_AS
-  
-  # Calculate scaling coefficient (a) of active metabolic rate (R act) 
-  # at a reference value of active metabolic level (L act)
-  a_act = (L_act * Mm) / (Mm ^ b_mmr)
-  
-  # Calculate active metabolic rate:
-  R_act <- a_act * mass ^ b_mmr
-  
-  # Model total respiration rate as the sum of resting and
-  # active metabolic rates:
-  resp <- R_rmr + R_act
-  
-  return(data.frame(mass = mass, Act_L = Act_L, resp = resp))
-}
-
-
-# Give real values to the function:
+# First, we get real reference values for this quantification
 # (Note that all values are adjusted at 20 degrees Celsius
 # to compare between water- and air-breathing species)
 
-# Correct metabolic levels to a common temperature of T = 20 degrees C 
+# Correct metabolic levels to a common temperature of T = 20 degrees C :
 
 # Linear mixed-effects models (LMM) for the effect of temperature on metabolic level L
-# using the data from inactive or minimal active animals only:
+# using data from inactive or minimal active animals only:
 
 # LMM for water-breathers:
 (lmer_L_wtemp <- 
@@ -578,7 +525,7 @@ simulatedata <- function(n, massrange, act_level, L_rmr, FAS, b_rmr, b_mmr) {
     summary(lmer(log10(L) ~ temp + (temp|experiment),
                  control = lmerControl(optimizer ="Nelder_Mead"), data = a_temp)))
 
-# Calculating Q10 following estimates from the LMM
+# Calculate Q10 following estimates from the LMM:
 
 # Q10 in water-breathers:
 (L_at0w <- 10^((coef(lmer_L_wtemp)[1] + coef(lmer_L_wtemp)[2]*(0)))) # estimated L at T = 0 degrees C
@@ -594,7 +541,7 @@ simulatedata <- function(n, massrange, act_level, L_rmr, FAS, b_rmr, b_mmr) {
 
 # Water-breathing species:
 
-# get data on experiments that measured resting (minimum activity) to maximum L:
+# get data of experiments that measured resting (minimum activity) to maximum L:
 w_act_minL_maxL <- w_act %>% 
   filter(comp_L == "rest_max")
 
@@ -622,7 +569,7 @@ w_act_minL <- w_min_to_max_L_Tadj %>%
                               L = mean(L_at20_w)))
 
 # Mean values of species, using mean values from experiments,
-# if more than 1 experiment were available for a species:
+# when more than 1 experiment were available for a species:
 
 # Max. L
 (w_act_maxL_mean_spp <- ddply(w_act_maxL_mean_exp, .(species), summarize,
@@ -641,7 +588,7 @@ w_act_minL <- w_min_to_max_L_Tadj %>%
 
 (w_20C_spp <- rbind(w_20C_spp_maxL,w_20C_spp_minL)) # water-breathers' dataset
 
-# Calculating overall means and 95% confidence intervals for min. L and max. L:
+# Calculating overall means and standard deviations for min. L and max. L:
 
 # Metabolic level (L)
 (w_min.L <- mean_sd(log10(w_act_minL_mean_spp$L))) # in log10
@@ -651,7 +598,7 @@ w_act_minL <- w_min_to_max_L_Tadj %>%
 (w_b.min <- mean_sd(w_act_minL_mean_spp$b))
 (w_b.max <- mean_sd(w_act_maxL_mean_spp$b))
 
-# Dataset of mean b and L values:
+# Dataset of mean +/- sd of b and L values:
 (df_bL_20C_w <- data.frame(state = c("minimal","maximal"),
                            b_mean = c(w_b.min$y, w_b.max$y),
                            b_max = c(w_b.min$ymax, w_b.max$ymax),
@@ -661,8 +608,9 @@ w_act_minL <- w_min_to_max_L_Tadj %>%
                            log10_L_min = c(w_min.L$ymin, w_max.L$ymin)))
 
 
-# Quantification of the relationship between b and L (derived from Glazier 2008, 2009, 2010)
-mmid <- exp((log(1000) + log(0.1)) / 2)
+# Quantification of the relationship between b and L (derived from Glazier 2008, 2009, 2010) #
+
+mmid <- exp((log(1000) + log(0.1)) / 2) # reference body mass of 10 g (geometric mass-midpoint from a standard size range of a ectothermic vertebrate)
 
 # Mean slope b of resting (minimal) metabolic level L among species:
 b_min_w = mean(w_b.min$y)
@@ -698,7 +646,6 @@ Rtotal_w <- R_min_w + aprime_w * mmid
 # (first derivative of log total resp with respect to log m 
 # evaluated at geometric midpoint)
 
-# b_hat_w <- 1 + (b_min_w - 1) * R_min_w / Rtotal_w # eq. [5] in Appendix  (A6)
 b_hat_w <- 1 + (b_min_w - 1) * (L_min_w / L_w) # eq. [6] in Appendix  (A6)
 
 # data frame:
@@ -758,7 +705,7 @@ a_act_minL <- a_min_to_max_L_Tadj %>%
 
 (a_20C_spp <- rbind(a_20C_spp_maxL, a_20C_spp_minL)) # water-breathers' dataset
 
-# Calculating overall means and 95% confidence intervals for min. L and max. L:
+# Calculating overall means and standard deviations for min. L and max. L:
 
 # Metabolic level (L)
 (a_min.L <- mean_sd(log10(a_act_minL_mean_spp$L))) # in log10
@@ -768,7 +715,7 @@ a_act_minL <- a_min_to_max_L_Tadj %>%
 (a_b.min <- mean_sd(a_act_minL_mean_spp$b))
 (a_b.max <- mean_sd(a_act_maxL_mean_spp$b))
 
-# Dataset of mean b and L values:
+# Dataset of mean +/- sd of b and L values:
 (df_bL_20C_a <- data.frame(state = c("minimal","maximal"),
                            b_mean = c(a_b.min$y, a_b.max$y),
                            b_max = c(a_b.min$ymax, a_b.max$ymax),
@@ -778,7 +725,7 @@ a_act_minL <- a_min_to_max_L_Tadj %>%
                            log10_L_min = c(a_min.L$ymin, a_max.L$ymin)))
 
 # Quantification of the relationship between b and L (derived from Glazier 2008, 2009, 2010)
-mmid <- exp((log(1000) + log(0.1)) / 2)
+mmid <- exp((log(1000) + log(0.1)) / 2)# reference body mass of 10 g (geometric mass-midpoint from a standard size range of a ectothermic vertebrate)
 
 # Mean slope b of resting (minimal) metabolic level L among species:
 b_min_a = mean(a_b.min$y)
@@ -814,7 +761,6 @@ Rtotal_a <- R_min_a + aprime_a * mmid
 # (first derivative of log total resp with respect to log m 
 # evaluated at geometric midpoint)
 
-# b_hat_a <- 1 + (b_min_a - 1) * R_min_a / Rtotal_a # eq. [5] in Appendix  (A6)
 b_hat_a <- 1 + (b_min_a - 1) * (L_min_a / L_a) # eq. [6] in Appendix  (A6)
 
 # data frame:
@@ -915,8 +861,8 @@ plot(b_hat_a ~ log10(L_a), type = "l", xlab = "log L",
    tidyr::gather(key, value) %>%
    group_by(key) %>%
    dplyr::summarise(mean = mean(value),
-                    CI_lower = quantile(value, probs = c(0.05)),
-                    CI_upper = quantile(value, probs = c(0.95)))%>%
+                    CI_lower = quantile(value, probs = c(0.025)),
+                    CI_upper = quantile(value, probs = c(0.975)))%>%
    as.data.frame())
 
 # Effect of activity-increased L:
@@ -928,8 +874,8 @@ plot(b_hat_a ~ log10(L_a), type = "l", xlab = "log L",
     tidyr::gather(key, value) %>%
     group_by(key) %>%
     dplyr::summarise(mean = mean(value),
-                     CI_lower = quantile(value, probs = c(0.05)),
-                     CI_upper = quantile(value, probs = c(0.95))) %>%
+                     CI_lower = quantile(value, probs = c(0.025)),
+                     CI_upper = quantile(value, probs = c(0.975))) %>%
     as.data.frame())
 
 
@@ -963,8 +909,8 @@ plot(b_hat_a ~ log10(L_a), type = "l", xlab = "log L",
 # The estimated change in b with a 10-fold increase in L by warming:
 (b_Lmin.wtemp_L0.1 <- as.numeric(temp_effect_L[3,2] + temp_effect_L[2,2] * log10(0.01)))
 (b_Lmin.wtemp_L1 <- as.numeric(temp_effect_L[3,2] + temp_effect_L[2,2] * log10(0.1)))
-# b_Lmin.wtemp_L0.1/b_Lmin.wtemp_L1
-b_Lmin.wtemp_L1 - b_Lmin.wtemp_L0.1
+
+b_Lmin.wtemp_L1 - b_Lmin.wtemp_L0.1 # b decreases ca. 0.1
 
 # Air-breathers:
 
@@ -984,9 +930,10 @@ mean_sd(spp_mean_a$mean_b) # overall mean b and standard deviation within specie
 (mean_log10L_a <- mean(spp_mean_a$mean_log10L))
 
 # The estimated change in b with a 10-fold increase in L by warming:
+# (we found no consistent change in b with temperature-increased L)
 # (b_Lmin.atemp_L0.1 <- as.numeric(temp_effect_L[3,2] + temp_effect_L[1,2] * log10(0.01)))
 # (b_Lmin.atemp_L1 <- as.numeric(temp_effect_L[3,2] + temp_effect_L[1,2] * log10(0.1)))
-# b_Lmin.atemp_L0.1/b_Lmin.atemp_L1
+# b_Lmin.atemp_L0.1 - b_Lmin.atemp_L1
 
 # Calculate boundaries at a reference mass:
 # the midpoint of the mass range covered in each dataset (water- or air-breathing species)
@@ -1045,6 +992,7 @@ summary(a_act$temp) # 25 degrees C for air-breathers' data
 # temperature-increased L, according to the model's mean estimates:
 
 # Water-breathers:
+# We found no consistent change in b with log10 L:
 (b_Lmin.wact <- as.numeric(act_effect_L[3,2] + act_effect_L[2,2] * log10(min(L_at15_w))))
 (b_Lmax.wact <- as.numeric(act_effect_L[3,2] + act_effect_L[2,2] * log10(max(L_at15_w))))
 
@@ -1059,20 +1007,21 @@ mean_sd(spp_mean_w$mean_b) # overall mean b and standard deviation within specie
 (mean_b_w <- mean(spp_mean_w$mean_b))
 (mean_log10L_w <- mean(spp_mean_w$mean_log10L))
 
-# The estimated change in b with a 10-fold increase in L by warming:
+# The estimated change in b with a 10-fold increase in L by activity:
+# (we found no consistent change in b with activity-increased L)
 # (b_L_act_L0.1w <- as.numeric(act_effect_L[3,2] + act_effect_L[2,2] * log10(0.1)))
 # (b_L_act_L1w <- as.numeric(act_effect_L[3,2] + act_effect_L[2,2] * log10(1)))
-# b_L_act_L1w/b_L_act_L0.1w
+# b_L_act_L1w - b_L_act_L0.1w
 
 # Air-breathers:
 (b_Lmin.aact <- as.numeric(act_effect_L[3,2] + act_effect_L[1,2] * log10(min(L_at25_a))))
 (b_Lmax.aact <- as.numeric(act_effect_L[3,2] + act_effect_L[1,2] * log10(max(L_at25_a))))
 
-# The estimated change in b with a 10-fold increase in L by warming:
+# The estimated change in b with a 10-fold increase in L by activity:
 (b_L_act_L0.01a <- as.numeric(act_effect_L[3,2] + act_effect_L[1,2] * log10(0.01)))
 (b_L_act_L0.1a <- as.numeric(act_effect_L[3,2] + act_effect_L[1,2] * log10(0.1)))
-# b_L_act_L1a/b_L_act_L0.1a
-b_L_act_L0.1a - b_L_act_L0.01a
+
+b_L_act_L0.1a - b_L_act_L0.01a # b increases ca. 0.2
 
 # Calculate boundaries at a reference mass:
 # the midpoint of the mass range covered in each dataset (water- or air-breathing species)
