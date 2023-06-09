@@ -54,7 +54,7 @@ processtsimulated <- FALSE # plot estimates from student-t model fitted to simul
 simfitname <- "../Model_outputs/simfitt" # base for names in which saved fits to simulated data will be stored
 
 # ------------------------------------------------------------------------------
-set.seed(1234)# we need this to replicate the results
+set.seed(1234)# to replicate the results
 
 # General STAN specifications
 rstan::rstan_options(auto_write = TRUE) # write objects to the hard disk to avoid recompilation 

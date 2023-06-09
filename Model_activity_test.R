@@ -42,7 +42,7 @@ fitt <- TRUE #fit model with student-t errors?
 fitgaussian <- FALSE #fit model with Gaussian errors?
 
 # ------------------------------------------------------------------------------
-set.seed(1234)# we need this to replicate the results
+set.seed(1234)# to replicate the results
 
 # General STAN specifications
 rstan::rstan_options(auto_write = TRUE) # write objects to the hard disk to avoid recompilation 
