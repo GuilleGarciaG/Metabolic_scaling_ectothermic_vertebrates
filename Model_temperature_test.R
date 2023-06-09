@@ -1,7 +1,7 @@
 ################################################################################
 # Script to fit phylogenetic multilevel model using brms: Part 1
 # Title: Temperature effect on metabolic scaling of ectothermic vertebrates
-# Author: Guillermo García-Gómez (guillegar.gz@gmail.com) & Matthew Spencer
+# Authors: Guillermo García-Gómez (guillegar.gz@gmail.com) & Matthew Spencer
 # Date: 16032023
 # Operating System: Windows 10 Pro 21H2
 # ------------------------------------------------------------------------------
