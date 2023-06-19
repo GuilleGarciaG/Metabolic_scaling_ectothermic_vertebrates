@@ -1,10 +1,10 @@
 # Intraspecific response of metabolic scaling to temperature and activity in water- and air-breathing ectothermic vertebrates
 This repository contains codes and data needed to reproduce the analyses and figures of the manuscript:
 
-García-Gómez G., et al. (to be completed), (2023). Combining theoretical approaches to understanding the intraspecific variation in metabolic scaling: responses to temperature and activity differ between water- and air-breathing ectothermic vertebrates. To be submitted to Ecology Letters.
+García-Gómez, G., Hirst A., Spencer, M., and Atkinson, D. (2023). Responses of intraspecific metabolic scaling to temperature and activity differ between water- and air-breathing ectothermic vertebrates.
 
 ## Cite the repository as:
-(citation here)
+García-Gómez, G., Hirst A., Spencer, M., and Atkinson, D. (2023). Responses of intraspecific metabolic scaling to temperature and activity differ between water- and air-breathing ectothermic vertebrates.
 
 ## Scripts
 * **Model_temperature_test.R** This script contains all the code necessary to reproduce the results from the Bayesian model analysing the relationship between the scaling slope and the *temperature-increased metabolic level* within ectothermic vertebrate species. 
@@ -45,10 +45,12 @@ There are two datasets used in the analysis, which are included in the appendix 
   * *L_state_study* metabolic state of animals as reported in the original study ("NA" if this state is not reported)
   * *study_id* identification number of the original study from which the data were compiled (see word file with the reference list for Table S1 and S2)
 
-* **Table S2**, file: **table_S2.csv** contains data on metabolic scaling regressions performed at various temperatures from experiments in animals during different activity levels. These experiments measured from low activity levels as resting to routine metabolism (i.e., none or some spontaneous activity) to high activity levels as active and maximum metabolism (i.e., sustained activity or until exhaustion) by forcing locomotion. The columns are as in Table S1, plus three additional columns:
+* **Table S2**, file: **table_S2.csv** contains data on metabolic scaling regressions performed at various temperatures from experiments in animals at different activity levels. These experiments measured from low activity levels as resting to routine metabolism (i.e., none or some spontaneous activity) to high activity levels as active and maximum metabolism (i.e., sustained activity or until exhaustion) by forcing locomotion. The columns are as in Table S1, plus three additional columns:
   * *experiment2* label for a set of scaling regressions measured at a single temperature in the same experiment, containing at least two regressions measured at different activity levels, whereas other conditions (e.g., metabolic state of animals) remain the same
   * *comp_L* label for the minimum and maximum activity levels that were measured in an experiment (e.g., "rest_max" means a experiment included measurements on resting and maximum metabolism).
-  * *L_state* metabolic state of animals in each scaling regression as reported in the experiments 
+  * *L_state* metabolic state of animals in each scaling regression as reported in the experiments
+
+Some of the compiled studies here were present in both Table S1 and S2, since these studies contained metabolic scaling regressions of animals at various temperatures as well as activity levels (e.g., Du Preez et al. 1988;  Wright 1986; Hölker 2003; Gifford et al. 2013; see reference list), measuring from resting or routine (Table S1) to active states (Table S2).
 
 ## Notes
 All data processing was carried out in the R software version 4.0.2. The R folder contains the scripts to reproduce the statistical analyses and figures presented in this manuscript. To improve clarity, figures were slightly edited by the addition of side annotations and shapes.
@@ -57,7 +59,7 @@ All data processing was carried out in the R software version 4.0.2. The R folde
 The R packages used for each R script are enlisted in the corresponding R session files.
 
 ## Licence
-This repository was provided by the authors under the (X replace with type of license) License.
+This repository was provided by the authors under the (*replace with type of license) License.
 
 ## Further information
 In case of further questions, please contact: Guillermo García-Gómez, email: guillegar.gz@gmail.com
