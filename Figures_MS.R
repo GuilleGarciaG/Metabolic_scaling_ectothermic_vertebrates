@@ -646,7 +646,7 @@ Rtotal_w <- R_min_w + aprime_w * mmid
 # (first derivative of log total resp with respect to log m 
 # evaluated at geometric midpoint)
 
-b_hat_w <- 1 + (b_min_w - 1) * (L_min_w / L_w) # eq. [6] in Appendix  (A6)
+b_hat_w <- 1 + (b_min_w - 1) * (L_min_w / L_w) # eq. [7] in Appendix  (A6)
 
 # data frame:
 df_w <- data.frame(b_hat_w, L_w, aprime_w)
@@ -761,7 +761,7 @@ Rtotal_a <- R_min_a + aprime_a * mmid
 # (first derivative of log total resp with respect to log m 
 # evaluated at geometric midpoint)
 
-b_hat_a <- 1 + (b_min_a - 1) * (L_min_a / L_a) # eq. [6] in Appendix  (A6)
+b_hat_a <- 1 + (b_min_a - 1) * (L_min_a / L_a) # eq. [7] in Appendix  (A6)
 
 # data frame:
 df_a <- data.frame(b_hat_a, L_a, aprime_a)
