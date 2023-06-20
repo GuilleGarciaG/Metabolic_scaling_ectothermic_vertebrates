@@ -50,7 +50,7 @@ There are two datasets used in the analysis, which are included in the appendix 
   * *comp_L* label for the minimum and maximum activity levels that were measured in an experiment (e.g., "rest_max" means a experiment included measurements on resting and maximum metabolism).
   * *L_state* metabolic state of animals in each scaling regression as reported in the experiments
 
-Some of the compiled studies here were present in both Table S1 and S2, since these studies contained metabolic scaling regressions of animals at various temperatures as well as activity levels (e.g., Du Preez et al. 1988;  Wright 1986; Hölker 2003; Gifford et al. 2013; see reference list), measuring from resting or routine (Table S1) to active states (Table S2).
+Some of the compiled studies here are present in both Table S1 and S2, since these studies contained metabolic scaling regressions of animals at various temperatures as well as activity levels (e.g., Du Preez et al. 1988;  Wright 1986; Hölker 2003; Gifford et al. 2013; see list of references), measuring from resting or routine (Table S1) to active states (Table S2).
 
 ## Notes
 All data processing was carried out in the R software version 4.0.2. The R folder contains the scripts to reproduce the statistical analyses and figures presented in this manuscript. To improve clarity, figures were slightly edited by the addition of side annotations and shapes.
