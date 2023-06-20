@@ -37,7 +37,7 @@ There are two datasets used in the analysis, which are included in the appendix 
   * *species_phylo* name of the species as recorded in Open Tree of Life       (https://tree.opentreeoflife.org) 
   * *experiment* label for the experiment from which a set of scaling regressions was produced. Each experiment contains at least two regressions measured at two temperatures, whereas other conditions (e.g., metabolic state of animals) remain the same  
   * *temp* experimental temperature (in degrees Celsius) at which the scaling regression was measured. If the originial study reported temperature ranges instead of a single temperature for each regression, the mean temperatures of the ranges were used
-  * *b* metabolic scaling exponent or allometric slope of a linear regression between log metabolic rate and log body mass. 
+  * *b* metabolic scaling exponent or allometric slope (dimensionless) of a linear regression between log metabolic rate and log body mass. 
   * *L* metabolic level (in mg O<sub>2</sub> g<sup>-1</sup> h<sup>-1</sup>) 
   * *log10_L* log<sub>10</sub>-transformed metabolic level (in mg O<sub>2</sub> g<sup>-1</sup> h<sup>-1</sup>) 
   * *mass_mid.g* body mass (in g) at the geometric midpoint of the mass range of the scaling regression
