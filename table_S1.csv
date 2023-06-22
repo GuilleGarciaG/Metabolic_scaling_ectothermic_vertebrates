@@ -1,4 +1,4 @@
-ID,group,species,species_phylo,experiment,temp,b,L,log10_L,mass_mid.g,min_mass.g,max_mass.g,L_state_study,study_id
+ID,group,species,species_phylo,experiment,temp,b,L,log10_L,mass_mid.g,min_mass.g,max_mass.g,L_state,study_id
 1,water-breather,Abramis brama,Abramis brama,abra_holk_smr,5,0.65,0.017990026,-1.744968209,25.64589253,1.2522,525.2544,standard,35
 2,water-breather,Abramis brama,Abramis brama,abra_holk_smr,10,0.72,0.031977134,-1.495160463,34.23703261,2.1976,533.3895,standard,35
 3,water-breather,Abramis brama,Abramis brama,abra_holk_smr,15,0.73,0.053203814,-1.274057233,28.94655612,1.5278,548.4449,standard,35
