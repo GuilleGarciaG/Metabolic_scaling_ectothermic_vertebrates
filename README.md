@@ -4,7 +4,7 @@ This repository contains codes and data needed to reproduce the analyses and fig
 García-Gómez, G., Hirst A., Spencer, M., and Atkinson, D. (2023). Responses of intraspecific metabolic scaling to temperature and activity differ between water- and air-breathing ectothermic vertebrates.
 
 ## Cite the repository as:
-García-Gómez, G., Hirst A., Spencer, M., and Atkinson, D. (2023). Responses of intraspecific metabolic scaling to temperature and activity differ between water- and air-breathing ectothermic vertebrates.
+García-Gómez, G., Hirst A., Spencer, M., and Atkinson, D. (2023). Draft version of data and code of manuscript: Responses of intraspecific metabolic scaling to temperature and activity differ between water- and air-breathing ectothermic vertebrates. OSF: https://osf.io/n6m5j/
 
 ## Scripts
 * **Model_temperature_test.R** This script contains all the code necessary to reproduce the results from the Bayesian model analysing the relationship between the scaling slope and the *temperature-increased metabolic level* within ectothermic vertebrate species. 
