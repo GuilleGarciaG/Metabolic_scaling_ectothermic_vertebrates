@@ -59,7 +59,7 @@ All data processing was carried out in the R software version 4.0.2. The R folde
 The R packages used for each R script are enlisted in the corresponding R session files.
 
 ## Licence
-This repository was provided by the authors under the (*replace with type of license) License.
+This repository was provided by the authors under the MIT License.
 
 ## Further information
 In case of further questions, please contact: Guillermo García-Gómez, email: guillegar.gz@gmail.com
