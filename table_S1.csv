@@ -132,8 +132,8 @@ ID,group,species,species_phylo,experiment,temp,b,L,log10_L,mass_mid.g,min_mass.g
 131,water-breather,Leiostomus xanthurus,Leiostomus xanthurus,lxan_hod,15,0.44,0.1469437,-0.832849029,54.13125229,20,144,resting,37
 132,water-breather,Leiostomus xanthurus,Leiostomus xanthurus,lxan_hod,20,0.48,0.2282187,-0.641648773,72.96014626,29,185,resting,37
 133,water-breather,Leiostomus xanthurus,Leiostomus xanthurus,lxan_hod,25,0.48,0.3934069,-0.405158027,30.98386677,4,240,resting,37
-134,water-breather,Plectropomus leopardus,Leiostomus xanthurus,pleo_mess,28.5,0.747,0.103608704,-0.984603759,223.3271143,21,2375,standard,50
-135,water-breather,Plectropomus leopardus,Leiostomus xanthurus,pleo_mess,33,0.799,0.155347916,-0.808694568,223.3271143,21,2375,standard,50
+134,water-breather,Plectropomus leopardus,Plectropomus leopardus,pleo_mess,28.5,0.747,0.103608704,-0.984603759,223.3271143,21,2375,standard,50
+135,water-breather,Plectropomus leopardus,Plectropomus leopardus,pleo_mess,33,0.799,0.155347916,-0.808694568,223.3271143,21,2375,standard,50
 136,water-breather,Lichia amia,Lichia amia,lami_dupr_rou,15,0.73,0.171004818,-0.766991653,75.46522378,17,335,routine,20
 137,water-breather,Lichia amia,Lichia amia,lami_dupr_rou,20,0.71,0.181430242,-0.74129032,73.53910524,16,338,routine,20
 138,water-breather,Lichia amia,Lichia amia,lami_dupr_rou,25,0.73,0.285744856,-0.544021579,103.4891299,30,357,routine,20
