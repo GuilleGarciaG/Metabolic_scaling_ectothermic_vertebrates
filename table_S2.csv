@@ -1,282 +1,282 @@
-ID,group,species,species_phylo,experiment,experiment2,temp,b,L,log10_L,mass_mid.g,min_mass.g,max_mass.g,L_state_study,comp_L,L_state,study_id
-1,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_5,5,0.65,0.017990026,-1.744968209,25.64589253,1.252177678,525.2543751,standard,rest_rout,minimal,19
-2,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_10,10,0.72,0.031977134,-1.495160463,34.23703261,2.197595674,533.3894745,standard,rest_rout,minimal,19
-3,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_15,15,0.73,0.053203814,-1.274057233,28.94655612,1.527779849,548.4449292,standard,rest_rout,minimal,19
-4,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_20,20,0.7,0.079228494,-1.101118599,35.9215676,2.349050203,549.3109585,standard,rest_rout,minimal,19
-5,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_23,23,0.69,0.106424533,-0.972958247,35.20916637,2.607219321,475.4818231,standard,rest_rout,minimal,19
-6,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_5,5,0.68,0.037179504,-1.429696408,25.64589253,1.252177678,525.2543751,routine,rest_rout,routine,19
-7,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_10,10,0.78,0.061590773,-1.210484345,34.23703261,2.197595674,533.3894745,routine,rest_rout,routine,19
-8,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_15,15,0.67,0.094526792,-1.024445081,28.94655612,1.527779849,548.4449292,routine,rest_rout,routine,19
-9,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_20,20,0.68,0.119211342,-0.923682423,35.9215676,2.349050203,549.3109585,routine,rest_rout,routine,19
-10,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_23,23,0.68,0.148132773,-0.829348847,35.20916637,2.607219321,475.4818231,routine,rest_rout,routine,19
-11,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_15,15,0.83,0.096903208,-1.013661845,236.8543856,25,2244,active,rest_act,active,9
-12,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_15,15,0.83,0.082478007,-1.083661842,236.8543856,25,2244,routine,rest_act,routine,9
-13,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_15,15,0.85,0.068206817,-1.166172217,236.8543856,25,2244,standard,rest_act,minimal,9
-14,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_20,20,0.72,0.15594986,-0.807015011,284.2006334,41,1970,active,rest_act,active,9
-15,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_20,20,0.79,0.12154546,-0.915261258,284.2006334,41,1970,routine,rest_act,routine,9
-16,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_20,20,0.84,0.099407693,-1.002580005,284.2006334,41,1970,standard,rest_act,minimal,9
-17,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_25,25,0.67,0.210136725,-0.677498041,396.7152631,81,1943,active,rest_act,active,9
-18,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_25,25,0.8,0.169943367,-0.769695782,396.7152631,81,1943,routine,rest_act,routine,9
-19,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_25,25,0.83,0.128309433,-0.891741414,396.7152631,81,1943,standard,rest_act,minimal,9
-20,water-breather,Chalcalburnus chalcoides,Alburnus chalcoides,ccha_kauf,ccha_kauf,20,0.776,0.497797739,-0.30294708,0.067527772,0.008,0.57,standard,rest_rout,minimal,23
-21,water-breather,Chalcalburnus chalcoides,Alburnus chalcoides,ccha_kauf,ccha_kauf,20,0.787,0.545018839,-0.263588486,0.067527772,0.008,0.57,routine,rest_rout,routine,23
-22,water-breather,Chalcalburnus chalcoides,Alburnus chalcoides,ccha_kauf,ccha_kauf,20,0.874,1.527014118,0.183843052,0.067527772,0.008,0.57,active,NA,active,23
-23,water-breather,Carassius auratus,Carassius auratus,caur_huan,caur_huan,25,0.776,0.093868035,-1.027482273,38.17787317,4.5,323.9,resting,rest_max,minimal,20
-24,water-breather,Carassius auratus,Carassius auratus,caur_huan,caur_huan,25,0.785,0.344354006,-0.46299486,38.17787317,4.5,323.9,maximum,rest_max,maximal,20
-25,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_4,4,0.944,0.06606335,-1.180039407,27.65863337,10.2,75,standard,rest_act,minimal,31
-26,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_8,8,0.843,0.0976128,-1.010493229,24.80040322,10.2,60.3,standard,rest_act,minimal,31
-27,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_15,15,0.712,0.162257955,-0.789794002,31.11655508,13.3,72.8,standard,rest_act,minimal,31
-28,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_4,4,0.89293,0.074343531,-1.128756816,27.65863337,10.2,75,active MR - speed 1,rest_act,active,31
-29,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_8,8,0.88667,0.093191433,-1.03062401,24.80040322,10.2,60.3,active MR - speed 1,rest_act,active,31
-30,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_15,15,0.73,0.161793955,-0.791037709,31.11655508,13.3,72.8,active MR - speed 1,rest_act,active,31
-31,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_4,4,0.9403,0.078075128,-1.107487295,27.65863337,10.2,75,active MR - speed 2,rest_act,active,31
-32,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_8,8,0.8871,0.095074841,-1.021934392,24.80040322,10.2,60.3,active MR - speed 2,rest_act,active,31
-33,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_15,15,0.74151,0.168463812,-0.773493376,31.11655508,13.3,72.8,active MR - speed 2,rest_act,active,31
-34,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_4,4,0.9826,0.086910479,-1.060927856,27.65863337,10.2,75,active MR - speed 3,rest_act,active,31
-35,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_8,8,0.95702,0.101231614,-0.994683839,24.80040322,10.2,60.3,active MR - speed 3,rest_act,active,31
-36,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_15,15,0.79264,0.182575829,-0.738556719,31.11655508,13.3,72.8,active MR - speed 3,rest_act,active,31
-37,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_4,4,1.05268,0.107205148,-0.969784359,27.65863337,10.2,75,active MR - speed 4,rest_act,active,31
-38,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_8,8,1.09916,0.119592661,-0.922295471,24.80040322,10.2,60.3,active MR - speed 4,rest_act,active,31
-39,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_15,15,0.89592,0.209338662,-0.679150556,31.11655508,13.3,72.8,active MR - speed 4,rest_act,active,31
-40,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_4,4,1.10502,0.131407775,-0.881378938,27.65863337,10.2,75,active MR - speed 5,rest_act,active,31
-41,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_8,8,1.21042,0.155755004,-0.807557992,24.80040322,10.2,60.3,active MR - speed 5,rest_act,active,31
-42,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_15,15,0.99136,0.251866585,-0.598829446,31.11655508,13.3,72.8,active MR - speed 5,rest_act,active,31
-43,water-breather,Coreius guichenoti,Coreius guichenoti,cgui_luo,cgui_luo,25,0.728,0.142485704,-0.846228707,34.48303931,3.6,330.3,resting,rest_max,minimal,26
-44,water-breather,Coreius guichenoti,Coreius guichenoti,cgui_luo,cgui_luo,25,0.732,0.347473522,-0.459078284,34.48303931,3.6,330.3,maximum,rest_max,maximal,26
-45,water-breather,Ctenopharyngodon idellus,Ctenopharyngodon idella,cide_zhan,cide_zhan,25,0.831,0.126241678,-0.898797241,42.84857057,4,459,standard,rest_max,minimal,44
-46,water-breather,Ctenopharyngodon idellus,Ctenopharyngodon idella,cide_zhan,cide_zhan,25,0.863,0.493656343,-0.306575278,42.84857057,4,459,maximum,rest_max,maximal,44
-47,water-breather,Cyclopterus lumpus,Cyclopterus lumpus,clum_kill,clum_kill,11,0.821,0.132516782,-0.877729119,21.76448245,0.162899792,2907.877847,standard,rest_max,minimal,24
-48,water-breather,Cyclopterus lumpus,Cyclopterus lumpus,clum_kill,clum_kill,11,0.872,0.292648815,-0.53365323,13.93284273,0.162899792,1191.678051,maximal,rest_max,maximal,24
-49,water-breather,Cyprinus carpio,Cyprinus carpio,ccar_luo,ccar_luo,25,0.814,0.132233608,-0.878658152,82.70217651,14.5,471.7,resting,rest_max,minimal,26
-50,water-breather,Cyprinus carpio,Cyprinus carpio,ccar_luo,ccar_luo,25,0.771,0.416187106,-0.380711379,82.70217651,14.5,471.7,maximum,rest_max,maximal,26
-51,water-breather,Danio rerio,Danio rerio,drar_luca,drar_luca,28,0.969,0.291082498,-0.535983907,0.179726678,0.060574219,0.533257865,standard,rest_max,minimal,25
-52,water-breather,Danio rerio,Danio rerio,drar_luca,drar_luca,28,0.931,0.910072889,-0.040923823,0.181559712,0.056094595,0.587648937,active,rest_max,maximal,25
-53,water-breather,Esox lucius,Esox lucius,eluc_arms,eluc_arms,15,0.8,0.054728859,-1.261783606,227.2443619,40,1291,resting,rest_max,minimal,1
-54,water-breather,Esox lucius,Esox lucius,eluc_arms,eluc_arms,15,0.99,0.153444061,-0.814049916,227.2443619,40,1291,maximum,rest_max,maximal,1
-55,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_2,2,0.82,0.03900106,-1.408923589,82.45978028,16.35396061,415.7778977,standard,rest_max,minimal,38
-56,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_2,2,0.871,0.157977802,-0.801403933,118.2765674,29.98089108,466.6087597,maximum,rest_max,maximal,38
-57,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_5,5,0.889,0.053584369,-1.270961879,81.20194955,15.02818399,438.7593747,standard,rest_max,minimal,38
-58,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_5,5,0.931,0.183517777,-0.73632186,108.056312,28.08633279,415.7241405,maximum,rest_max,maximal,38
-59,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_10,10,0.884,0.074055242,-1.130444195,74.90640273,12.40109514,452.4575537,standard,rest_max,minimal,38
-60,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_10,10,0.904,0.252714116,-0.597370499,96.1669927,19.93428253,463.9289362,maximum,rest_max,maximal,38
-61,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_15,15,0.922,0.09792378,-1.00911183,91.82737995,18.92527767,445.5558252,standard,rest_max,minimal,38
-62,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_15,15,0.843,0.255661342,-0.592334936,125.2203015,34.03109453,460.7587301,maximum,rest_max,maximal,38
-63,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_20,20,0.847,0.135414922,-0.868333476,76.65359311,15.61693477,376.243701,standard,rest_max,minimal,38
-64,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_20,20,0.797,0.279752214,-0.553226468,107.3179214,28.67006669,401.7129213,maximum,rest_max,maximal,38
-65,water-breather,Hypophthalmichthys molitrix,Hypophthalmichthys molitrix,hmol_luo,hmol_luo,25,0.868,0.134217089,-0.872192185,55.44727225,8.4,366,resting,rest_max,minimal,26
-66,water-breather,Hypophthalmichthys molitrix,Hypophthalmichthys molitrix,hmol_luo,hmol_luo,25,0.748,0.427899908,-0.368657807,55.44727225,8.4,366,maximum,rest_max,maximal,26
-67,water-breather,Hypophthalmichthys nobilis,Hypophthalmichthys nobilis,hnob_luo,hnob_luo,25,0.86,0.112114723,-0.950337352,79.87477699,22.6,282.3,resting,rest_max,minimal,26
-68,water-breather,Hypophthalmichthys nobilis,Hypophthalmichthys nobilis,hnob_luo,hnob_luo,25,0.735,0.374939711,-0.42603856,79.87477699,22.6,282.3,maximum,rest_max,maximal,26
-69,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_15,15,0.78,0.137055254,-0.863104311,75.46522378,17,335,standard,rest_act,minimal,7
-70,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_15,15,0.73,0.171004818,-0.766991653,75.46522378,17,335,routine,rest_act,routine,7
-71,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_15,15,0.71,0.216497761,-0.664546591,75.46522378,17,335,active,rest_act,active,7
-72,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_15,15,0.65,0.247052127,-0.607211403,75.46522378,17,335,induced active,rest_act,active,7
-73,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_20,20,0.85,0.169833066,-0.76997775,73.53910524,16,338,standard,rest_act,minimal,7
-74,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_20,20,0.71,0.181430242,-0.74129032,73.53910524,16,338,routine,rest_act,routine,7
-75,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_20,20,0.64,0.274191127,-0.561946603,73.53910524,16,338,active,rest_act,active,7
-76,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_20,20,0.61,0.515297276,-0.287942153,73.53910524,16,338,induced active,rest_act,active,7
-77,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_25,25,0.8,0.249471566,-0.602978947,103.4891299,30,357,standard,rest_act,minimal,7
-78,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_25,25,0.73,0.285744856,-0.544021579,103.4891299,30,357,routine,rest_act,routine,7
-79,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_25,25,0.67,0.32740457,-0.484915263,103.4891299,30,357,active,rest_act,active,7
-80,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_25,25,0.69,0.393896963,-0.404617368,103.4891299,30,357,induced active,rest_act,active,7
-81,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_10,10,0.45,0.116248139,-0.934613991,373.2720188,51,2732,induced active,rest_act,active,10
-82,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_10,10,0.7,0.068927475,-1.161607631,373.2720188,51,2732,routine,rest_act,routine,10
-83,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_15,15,0.52,0.211913746,-0.673840871,253.416653,52,1235,induced active,rest_act,active,10
-84,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_15,15,0.55,0.157860757,-0.801725819,253.416653,52,1235,active,res_act,active,10
-85,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_15,15,0.62,0.122051366,-0.913457356,253.416653,52,1235,routine,rest_act,routine,10
-86,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_15,15,0.69,0.101113956,-0.995188898,253.416653,52,1235,standard,rest_act,minimal,10
-87,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_20,20,0.59,0.286158608,-0.543393185,331.490573,47,2338,induced active,rest_act,active,10
-88,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_20,20,0.66,0.236069455,-0.626960203,331.490573,47,2338,active,rest_act,active,10
-89,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_20,20,0.71,0.190135564,-0.720936643,331.490573,47,2338,routine,rest_act,routine,10
-90,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_20,20,0.75,0.154839658,-0.810117797,331.490573,47,2338,standard,rest_act,minimal,10
-91,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_25,25,0.68,0.398935366,-0.399097461,337.6210894,69,1652,induced active,rest_act,active,10
-92,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_25,25,0.62,0.330519255,-0.480803235,337.6210894,69,1652,active,rest_act,active,10
-93,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_25,25,0.71,0.255126415,-0.593244574,337.6210894,69,1652,routine,rest_act,routine,10
-94,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_25,25,0.78,0.20594227,-0.686254505,337.6210894,69,1652,standard,rest_act,minimal,10
-95,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_10,10,0.69,0.113689471,-0.944279754,56.98245344,17,191,active,rest_act,active,10
-96,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_10,10,0.7,0.078212768,-1.106722344,56.98245344,17,191,routine,rest_act,routine,10
-97,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_15,15,0.59,0.347784968,-0.458689193,50.59644256,16,160,induced active,rest_act,active,10
-98,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_15,15,0.47,0.24935404,-0.603183591,50.59644256,16,160,active,rest_act,active,10
-99,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_15,15,0.57,0.17267458,-0.762771592,50.59644256,16,160,routine,rest_act,routine,10
-100,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_15,15,0.61,0.121728762,-0.914606795,50.59644256,16,160,standard,rest_act,minimal,10
-101,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_20,20,0.58,0.481743155,-0.317184447,98.468269,48,202,induced active,rest_act,active,10
-102,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_20,20,0.66,0.27056976,-0.567720744,98.468269,48,202,active,rest_act,active,10
-103,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_20,20,0.71,0.20986696,-0.678055928,98.468269,48,202,routine,rest_act,routine,10
-104,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_25,25,0.64,0.541530407,-0.266377153,85.97674104,48,154,induced active,rest_act,active,10
-105,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_25,25,0.73,0.434227311,-0.362282865,85.97674104,48,154,active,rest_act,active,10
-106,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_25,25,0.71,0.315521905,-0.500970485,85.97674104,48,154,routine,rest_act,routine,10
-107,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_25,25,0.65,0.24152754,-0.617033342,85.97674104,48,154,standard,rest_act,minimal,10
-108,water-breather,Myliobatis aquila,Myliobatis aquila,maqu_dupr,maqu_dupr_10,10,0.78,0.05156606,-1.28763605,878.6182334,323,2390,routine,rest_act,routine,9
-109,water-breather,Myliobatis aquila,Myliobatis aquila,maqu_dupr,maqu_dupr_15,15,0.69,0.094888558,-1.022786153,879.9772724,324,2390,active,rest_act,active,9
-110,water-breather,Myliobatis aquila,Myliobatis aquila,maqu_dupr,maqu_dupr_15,15,0.77,0.074605624,-1.127228433,879.9772724,324,2390,routine,rest_act,routine,9
-111,water-breather,Myliobatis aquila,Myliobatis aquila,maqu_dupr,maqu_dupr_20,20,0.78,0.135303353,-0.868691441,584.4929426,157,2176,active,rest_act,active,9
-112,water-breather,Myliobatis aquila,Myliobatis aquila,maqu_dupr,maqu_dupr_20,20,0.73,0.110400133,-0.957030403,584.4929426,157,2176,routine,rest_act,routine,9
-113,water-breather,Myliobatis aquila,Myliobatis aquila,maqu_dupr,maqu_dupr_20,20,0.68,0.094325829,-1.025369369,584.4929426,157,2176,standard,rest_act,minimal,9
-114,water-breather,Myliobatis aquila,Myliobatis aquila,maqu_dupr,maqu_dupr_25,25,0.72,0.14212308,-0.847335389,597.3072911,161,2216,routine,rest_act,routine,9
-115,water-breather,Myliobatis aquila,Myliobatis aquila,maqu_dupr,maqu_dupr_25,25,0.68,0.120674831,-0.918383301,597.3072911,161,2216,standard,rest_act,minimal,9
-116,water-breather,Mylopharyngodon piceus,Mylopharyngodon piceus,mpic_lv,mpic_lv,25,0.833,0.132141846,-0.87895963,27.34538352,3.7,202.1,resting,rest_max,minimal,27
-117,water-breather,Mylopharyngodon piceus,Mylopharyngodon piceus,mpic_lv,mpic_lv,25,0.775,0.894748741,-0.048298904,27.34538352,3.7,202.1,maximum,rest_max,maximal,27
-118,water-breather,Myoxocephalus scorpius,Myoxocephalus scorpius,msco_kill,msco_kill,3,0.818,0.127103421,-0.89584276,2.360282653,0.019685191,283.0012846,standard,rest_max,minimal,24
-119,water-breather,Myoxocephalus scorpius,Myoxocephalus scorpius,msco_kill,msco_kill,3,0.865,0.274012135,-0.562230203,2.189684047,0.016602432,288.7960174,maximal,rest_max,maximal,24
-120,water-breather,Neolamprologus pulcher,Neolamprologus pulcher,npul_grant,npul_grant,27,0.86,0.124058438,-0.906373691,2.749545417,0.9,8.4,standard,rest_rout,minimal,16
-121,water-breather,Neolamprologus pulcher,Neolamprologus pulcher,npul_grant,npul_grant,27,0.86,0.15618032,-0.806373692,2.749545417,0.9,8.4,routine,rest_rout,routine,16
-122,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_wies,omyk_wies_4,4,0.96,0.100350783,-0.998479235,0.748331477,0.08,7,routine,rest_max,minimal,40
-123,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_wies,omyk_wies_4,4,1.11,0.340930504,-0.467334139,0.748331477,0.08,7,maximum,rest_max,maximal,40
-124,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_wies,omyk_wies_12,12,0.93,0.220740971,-0.656117051,0.748331477,0.08,7,routine,rest_max,minimal,40
-125,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_wies,omyk_wies_12,12,1.14,0.611433278,-0.213650928,0.748331477,0.08,7,maximum,rest_max,maximal,40
-126,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_5_sal0,5,0.7838,0.061632982,-1.210186819,70.3562364,33,150,standard metabolism,rest_max,minimal,35
-127,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_5_sal7.5,5,0.7345,0.06151325,-1.211031327,64.27285586,27,153,standard metabolism,rest_max,minimal,35
-128,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_5_sal15,5,0.8682,0.064168119,-1.192680691,64.59102105,28,149,standard metabolism,rest_max,minimal,35
-129,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_5_sal30,5,0.6234,0.085376054,-1.068663922,70,25,196,standard metabolism,rest_max,minimal,35
-130,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_15_sal0,15,0.7834,0.116671991,-0.933033391,85.38149682,54,135,standard metabolism,rest_max,minimal,35
-131,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_15_sal7.5,15,0.8408,0.097222467,-1.012233363,80.53570637,47,138,standard metabolism,rest_max,minimal,35
-132,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_15_sal15,15,0.7743,0.118458027,-0.926435505,68.93475176,24,198,standard metabolism,rest_max,minimal,35
-133,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_15_sal30,15,0.6226,0.157959872,-0.801453227,56.33826408,23,138,standard metabolism,rest_max,minimal,35
-134,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_5_sal0,5,0.7836,0.113303602,-0.945756283,70.3562364,33,150,18.5 cm/sec,NA,active,35
-135,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_5_sal7.5,5,0.7197,0.100440731,-0.998090135,64.27285586,27,153,18.5 cm/sec,NA,active,35
-136,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_5_sal15,5,0.7557,0.118542735,-0.926125057,64.59102105,28,149,18.5 cm/sec,NA,active,35
-137,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_5_sal30,5,0.7075,0.130079489,-0.885791178,70,25,196,18.5 cm/sec,NA,active,35
-138,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_15_sal0,15,0.7829,0.175590464,-0.755499074,85.38149682,54,135,18.5 cm/sec,NA,active,35
-139,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_15_sal7.5,15,0.7332,0.140372578,-0.852717724,80.53570637,47,138,18.5 cm/sec,NA,active,35
-140,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_15_sal15,15,0.794,0.187621121,-0.726718274,68.93475176,24,198,18.5 cm/sec,NA,active,35
-141,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_15_sal30,15,0.6249,0.205198235,-0.687826379,56.33826408,23,138,18.5 cm/sec,NA,active,35
-142,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_5_sal0,5,0.7909,0.189465014,-0.722470974,70.3562364,33,150,45.1 cm/sec,NA,active,35
-143,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_5_sal7.5,5,0.7614,0.149418584,-0.825595384,64.27285586,27,153,45.1 cm/sec,NA,active,35
-144,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_5_sal15,5,0.8184,0.195062029,-0.709827263,64.59102105,28,149,45.1 cm/sec,NA,active,35
-145,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_5_sal30,5,0.8099,0.208711732,-0.680453138,70,25,196,45.1 cm/sec,NA,active,35
-146,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_15_sal0,15,0.8982,0.284306749,-0.546212831,85.38149682,54,135,45.1 cm/sec,NA,active,35
-147,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_15_sal7.5,15,0.9601,0.228955489,-0.64024894,80.53570637,47,138,45.1 cm/sec,NA,active,35
-148,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_15_sal15,15,0.8218,0.286807372,-0.54240969,68.93475176,24,198,45.1 cm/sec,NA,active,35
-149,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_15_sal30,15,0.8558,0.342085086,-0.465865859,56.33826408,23,138,45.1 cm/sec,NA,active,35
-150,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_5_sal0,5,0.8564,0.239677545,-0.620372652,70.3562364,33,150,52.7 cm/sec,NA,active,35
-151,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_5_sal7.5,5,0.8421,0.18941416,-0.722587558,64.27285586,27,153,52.7 cm/sec,NA,active,35
-152,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_5_sal15,5,0.9017,0.258618791,-0.587339923,64.59102105,28,149,52.7 cm/sec,NA,active,35
-153,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_5_sal30,5,0.9389,0.275273567,-0.56023549,70,25,196,52.7 cm/sec,NA,active,35
-154,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_15_sal0,15,0.9337,0.445092814,-0.351549417,85.38149682,54,135,72.7 cm/sec,NA,active,35
-155,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_15_sal7.5,15,0.828,0.365232977,-0.437430017,80.53570637,47,138,72.7 cm/sec,NA,active,35
-156,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_15_sal15,15,0.8758,0.464371945,-0.333134026,68.93475176,24,198,72.7 cm/sec,NA,active,35
-157,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_15_sal30,15,1.0059,0.47493015,-0.323370259,56.33826408,23,138,72.7 cm/sec,NA,active,35
-158,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_5_sal0,5,1.0437,0.358944352,-0.444972876,70.3562364,33,150,max. swimming speed,rest_max,maximal,35
-159,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_5_sal7.5,5,1.0465,0.259820422,-0.585326716,64.27285586,27,153,max. swimming speed,rest_max,maximal,35
-160,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_5_sal15,5,1.0552,0.353119339,-0.452078497,64.59102105,28,149,max. swimming speed,rest_max,maximal,35
-161,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_5_sal30,5,0.959,0.403692778,-0.39394902,70,25,196,max. swimming speed,rest_max,maximal,35
-162,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_15_sal0,15,0.9916,0.58772822,-0.230823456,85.38149682,54,135,max. swimming speed,rest_max,maximal,35
-163,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_15_sal7.5,15,1.1581,0.470258633,-0.327663223,80.53570637,47,138,max. swimming speed,rest_max,maximal,35
-164,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_15_sal15,15,1.05,0.584684944,-0.233078089,68.93475176,24,198,max. swimming speed,rest_max,maximal,35
-165,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_15_sal30,15,1.1919,0.559344258,-0.252320816,56.33826408,23,138,max. swimming speed,rest_max,maximal,35
-166,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret73,oner_bret73_5.3,5.3,0.9141,0.038040695,-1.419751557,100,5,2000,standard,NA,minimal,4
-167,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret73,oner_bret73_5.3,5.3,0.9989,0.464341822,-0.333162199,100,5,2000,active,NA,active,4
-168,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret73,oner_bret73_15,15,0.8465,0.073877436,-1.131488186,100,5,2000,standard,NA,minimal,4
-169,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret73,oner_bret73_15,15,0.9632,0.803003608,-0.095282503,100,5,2000,active,NA,active,4
-170,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret73,oner_bret73_20,20,0.8844,0.127352019,-0.894994165,46.9041576,1,2200,standard,NA,minimal,4
-171,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret73,oner_bret73_20,20,0.9947,0.807070821,-0.093088354,46.9041576,1,2200,active,NA,active,4
-172,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret65,oner_bret65,15,0.775,0.091281855,-1.039615543,64.80740698,3,1400,standard,rest_max,minimal,3
-173,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret65,oner_bret65,15,0.846,0.157764689,-0.801990194,64.80740698,3,1400,1/4 maximum,NA,active,3
-174,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret65,oner_bret65,15,0.89,0.277792994,-0.556278711,64.80740698,3,1400,1/2 maximum,NA,active,3
-175,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret65,oner_bret65,15,0.926,0.439480668,-0.357060224,64.80740698,3,1400,3/4 maximum,NA,active,3
-176,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret65,oner_bret65,15,0.97,0.786414044,-0.104348739,64.80740698,3,1400,maximum,rest_max,maximal,3
-177,water-breather,Pagothenia borchgrevinki,Pagothenia borchgrevinki,pbor_fors,pbor_fors,0,0.801,0.056391731,-1.248784574,73.8774903,27.33627592,199.6571731,"resting, 1 days after capture (routine)",NA,minimal (some stress),11
-178,water-breather,Pagothenia borchgrevinki,Pagothenia borchgrevinki,pbor_fors,pbor_fors,0,0.828,0.052236983,-1.282021914,50.57113327,19.1478396,133.5628235,"resting,  2-4  days after capture (routine)",rest_max,minimal,11
-179,water-breather,Pagothenia borchgrevinki,Pagothenia borchgrevinki,pbor_fors,pbor_fors,0,0.823,0.211866106,-0.673938515,66.36900487,30.35075974,145.1312865,maximum,rest_max,maximal,11
-180,water-breather,Perca fluviatilis,Perca fluviatilis,pflu_chris,pflu_chris_15,15,0.823,0.304038561,-0.517071332,73.25036323,6.005270974,893.4843635,maximum,rest_max,maximal,5
-181,water-breather,Perca fluviatilis,Perca fluviatilis,pflu_chris,pflu_chris_20,20,0.883,0.338935335,-0.469883152,60.99947356,4.489251258,828.8544259,maximum,rest_max,maximal,5
-182,water-breather,Perca fluviatilis,Perca fluviatilis,pflu_chris,pflu_chris_25,25,0.822,0.418779153,-0.378014946,78.22442713,7.044109314,868.6777457,maximum,rest_max,maximal,5
-183,water-breather,Perca fluviatilis,Perca fluviatilis,pflu_chris,pflu_chris_28,28,0.793,0.468509876,-0.32928125,55.01601509,5.071810792,596.7813154,maximum,rest_max,maximal,5
-184,water-breather,Perca fluviatilis,Perca fluviatilis,pflu_chris,pflu_chris_15,15,0.8508,0.070747383,-1.15028962,73.25036323,6.005270974,893.4843635,standard,rest_max,minimal,5
-185,water-breather,Perca fluviatilis,Perca fluviatilis,pflu_chris,pflu_chris_20,20,0.87515,0.078601718,-1.104567962,60.99947356,4.489251258,828.8544259,standard,rest_max,minimal,5
-186,water-breather,Perca fluviatilis,Perca fluviatilis,pflu_chris,pflu_chris_25,25,0.8409,0.126022829,-0.899550774,78.22442713,7.044109314,868.6777457,standard,rest_max,minimal,5
-187,water-breather,Perca fluviatilis,Perca fluviatilis,pflu_chris,pflu_chris_28,28,0.85493,0.162019483,-0.790432758,55.01601509,5.071810792,596.7813154,standard,rest_max,minimal,5
-188,water-breather,Plectropomus leopardus,Plectropomus leopardus,pleo_mess,pleo_mess_28.5,28.5,0.747,0.103608704,-0.984603759,223.3271143,21,2375,standard,rest_max,minimal,28
-189,water-breather,Plectropomus leopardus,Plectropomus leopardus,pleo_mess,pleo_mess_33,33,0.799,0.155347916,-0.808694568,223.3271143,21,2375,standard,rest_max,minimal,28
-190,water-breather,Plectropomus leopardus,Plectropomus leopardus,pleo_mess,pleo_mess_28.5,28.5,0.74,0.392334646,-0.406343339,223.3271143,21,2375,maximum,rest_max,maximal,28
-191,water-breather,Plectropomus leopardus,Plectropomus leopardus,pleo_mess,pleo_mess_33,33,0.789,0.421853627,-0.374838213,223.3271143,21,2375,maximum,rest_max,maximal,28
-192,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_15,15,0.57,0.0939668,-1.027025563,576.1354008,139,2388,induced active,rest_act,active,8
-193,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_15,15,0.7,0.081628653,-1.08815737,576.1354008,139,2388,active,rest_act,active,8
-194,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_15,15,0.78,0.068027513,-1.167315406,576.1354008,139,2388,routine,rest_act,routine,8
-195,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_15,15,0.86,0.056692624,-1.246473441,576.1354008,139,2388,standard,rest_act,minimal,8
-196,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_20,20,0.57,0.122855375,-0.910605838,308.8737606,77,1239,induced active,rest_act,active,8
-197,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_20,20,0.6,0.179509565,-0.745912405,308.8737606,77,1239,active,rest_act,active,8
-198,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_20,20,0.74,0.135724089,-0.867343065,308.8737606,77,1239,routine,rest_act,routine,8
-199,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_25,25,0.54,0.355368701,-0.449320825,285.1315486,60,1355,induced active,rest_act,active,8
-200,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_25,25,0.54,0.309513199,-0.509320826,285.1315486,60,1355,active,rest_act,active,8
-201,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_25,25,0.61,0.258542738,-0.587467656,285.1315486,60,1355,routine,rest_act,routine,8
-202,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_25,25,0.66,0.206673411,-0.684715393,285.1315486,60,1355,standard,rest_act,minimal,8
-203,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_5,5,0.8,0.022153083,-1.654565825,24.49489743,3,200,standard,rest_rout,minimal,18
-204,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_10,10,0.8,0.043251256,-1.364001276,24.49489743,3,200,standard,rest_rout,minimal,18
-205,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_15,15,0.68,0.058571103,-1.232316597,24.49489743,3,200,standard,rest_rout,minimal,18
-206,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_20,20,0.73,0.095713994,-1.019024561,24.49489743,3,200,standard,rest_rout,minimal,18
-207,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_23,23,0.82,0.109085774,-0.962231883,24.49489743,3,200,standard,rest_rout,minimal,18
-208,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_5,5,0.92,0.043357275,-1.362938021,24.49489743,3,200,routine,rest_rout,routine,18
-209,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_10,10,0.65,0.084551885,-1.072876706,24.49489743,3,200,routine,rest_rout,routine,18
-210,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_15,15,0.67,0.099533913,-1.002028922,24.49489743,3,200,routine,rest_rout,routine,18
-211,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_20,20,0.73,0.133240626,-0.875363336,24.49489743,3,200,routine,rest_rout,routine,18
-212,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_23,23,0.75,0.150133483,-0.82352244,24.49489743,3,200,routine,rest_rout,routine,18
-213,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_wie,rrut_wie_15,15,0.74197,0.566091981,-0.247112997,0.104344621,0.0154,0.707,routine,rest_rout,active,41
-214,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_wie,rrut_wie_20,20,0.7277,0.825666809,-0.083195173,0.107450454,0.0164,0.704,routine,rest_rout,active,41
-215,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_wie,rrut_wie_15,15,0.78164,0.312715718,-0.504850289,0.104344621,0.0154,0.707,standard,rest_rout,minimal,41
-216,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_wie,rrut_wie_20,20,0.78987,0.437013692,-0.359504956,0.107450454,0.0164,0.704,standard,rest_rout,minimal,41
-217,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_kauf,rrut_kauf,20,0.768,0.612028623,-0.213228267,0.037416574,0.005,0.28,standard,rest_rout,minimal,23
-218,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_kauf,rrut_kauf,20,0.763,0.669122767,-0.174494193,0.037416574,0.005,0.28,routine,rest_rout,routine,23
-219,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_kauf,rrut_kauf,20,0.844,1.675246721,0.224078777,0.037416574,0.005,0.28,active,NA,active,23
-220,water-breather,Salmo salar,Salmo salar,ssal_cutt,ssal_cutt,9,0.85,0.17895235,-0.747262594,3.057711563,1.04,8.99,standard,NA,minimal,6
-221,water-breather,Salmo salar,Salmo salar,ssal_cutt,ssal_cutt,9,0.83,0.322069137,-0.49205089,3.057711563,1.04,8.99,active,NA,active,6
-222,water-breather,Salmo trutta,Salmo trutta,strut_nor,strut_nor,15,1.092,0.075967678,-1.119371148,34.39258641,20.5,57.7,standard,rest_max,minimal,30
-223,water-breather,Salmo trutta,Salmo trutta,strut_nor,strut_nor,15,0.867,0.591458478,-0.228075739,34.39258641,20.5,57.7,maximum,rest_max,maximal,30
-224,water-breather,Salmo trutta,Salmo trutta,strut_auer,strut_auer,11.5,0.85,0.102920053,-0.987499999,8.254041853,5.377192145,12.67003393,standard,rest_max,minimal,2
-225,water-breather,Salmo trutta,Salmo trutta,strut_auer,strut_auer,11.5,0.82,0.653130553,-0.185,8.254041853,5.377192145,12.67003393,maximum,rest_max,maximal,2
-226,water-breather,Salvelinus fontinalis,Salvelinus fontinalis,sfon_job,sfon_job_5,5,0.8562,0.03834429,-1.416299299,54.27522455,5.5,535.6,standard,NA,minimal,22
-227,water-breather,Salvelinus fontinalis,Salvelinus fontinalis,sfon_job,sfon_job_10,10,0.855,0.077420898,-1.111141796,61.67657578,4,951,standard,NA,minimal,22
-228,water-breather,Salvelinus fontinalis,Salvelinus fontinalis,sfon_job,sfon_job_15,15,0.85,0.096078597,-1.017373347,56.66568627,3.8,845,standard,NA,minimal,22
-229,water-breather,Salvelinus fontinalis,Salvelinus fontinalis,sfon_job,sfon_job_20,20,0.801,0.137842601,-0.860616541,55.47530982,4.3,715.7,standard,NA,minimal,22
-230,water-breather,Salvelinus fontinalis,Salvelinus fontinalis,sfon_job,sfon_job_5,5,0.8632,0.229015313,-0.640135478,86.35600732,12.4,601.4,active,NA,active,22
-231,water-breather,Salvelinus fontinalis,Salvelinus fontinalis,sfon_job,sfon_job_10,10,0.8351,0.381077328,-0.418986889,67.53147414,7,651.5,active,NA,active,22
-232,water-breather,Salvelinus fontinalis,Salvelinus fontinalis,sfon_job,sfon_job_15,15,0.9005,0.408790428,-0.388499282,84.84432804,7.2,999.8,active,NA,active,22
-233,water-breather,Salvelinus fontinalis,Salvelinus fontinalis,sfon_job,sfon_job_20,20,0.7612,0.621812115,-0.206340821,51.38093031,4.4,600,active,NA,active,22
-234,water-breather,Sander vitreus,Sander vitreus,svvi_tarb,svvi_tarb,20,0.882,0.073930628,-1.131175605,223.3293532,74,674,resting,NA,minimal,37
-235,water-breather,Sander vitreus,Sander vitreus,svvi_tarb,svvi_tarb,20,0.965,0.151942877,-0.818319655,151.5519713,72,319,swimming,NA,active,37
-236,water-breather,Spinibarbus sinensis,Spinibarbus sinensis,ssin_pang,ssin_pang,25,0.7218,0.156399233,-0.805765381,17.14380355,10.1,29.1,resting,rest_max,minimal,32
-237,water-breather,Spinibarbus sinensis,Spinibarbus sinensis,ssin_pang,ssin_pang,25,0.8745,0.887164002,-0.051996089,17.14380355,10.1,29.1,maximum,rest_max,maximal,32
-238,water-breather,Tautogolabrus adspersus,Tautogolabrus adspersus,tads_nori,tads_nori,15,0.821,0.115268579,-0.938289061,2.962128458,0.451,19.455,standard,rest_max,minimal,29
-239,water-breather,Tautogolabrus adspersus,Tautogolabrus adspersus,tads_nori,tads_nori,15,0.842,0.193737826,-0.712785578,2.962128458,0.451,19.455,routine,rest_rout,routine,29
-240,water-breather,Tautogolabrus adspersus,Tautogolabrus adspersus,tads_nori,tads_nori,15,0.899,0.483906847,-0.315238233,2.962128458,0.451,19.455,active,rest_max,maximal,29
-241,water-breather,Trachurus capensis,Trachurus capensis,tcap_geis,tcap_geis,18,0.8549,0.364755434,-0.437998229,0.144222051,0.001,20.8,standard-routine,rest_rout,minimal,14
-242,water-breather,Trachurus capensis,Trachurus capensis,tcap_geis,tcap_geis,18,0.7738,0.647986082,-0.188434322,0.144222051,0.001,20.8,routine,rest_rout,routine,14
-243,water-breather,Trachurus trachurus,Trachurus trachurus,ttra_herr,ttra_herr,13,0.725,0.095845308,-1.018429143,23.36664289,1.4,390,standard,rest_rout,minimal,17
-244,water-breather,Trachurus trachurus,Trachurus trachurus,ttra_herr,ttra_herr,13,0.752,0.127242709,-0.895367093,23.36664289,1.4,390,routine,rest_rout,routine,17
-245,water-breather,Macrozoarces americanus,Zoarces americanus,mame_kill,mame_kill,8,0.834,0.095989597,-1.017775832,18.46527348,0.169716324,2009.036707,standard,rest_max,minimal,24
-246,water-breather,Macrozoarces americanus,Zoarces americanus,mame_kill,mame_kill,8,0.926,0.250470882,-0.601242755,19.48506501,0.189613795,2002.321398,maximal,rest_max,maximal,24
-247,air-breather,Testudo gigantea,Aldabrachelys gigantea,tgig_hugh,tgig_hugh,25.5,0.82,0.05713,-1.243135776,2045.262819,118,35450,minimal O2 uptake,rest_max,minimal,21
-248,air-breather,Testudo gigantea,Aldabrachelys gigantea,tgig_hugh,tgig_hugh,25.5,0.969,0.19745,-0.704542862,1838.368842,119,28400,maximal O2 uptake,rest_max,maximal,21
-249,air-breather,Bufo americanus,Anaxyrus americanus,bame_taig1,bame_taig_pred,20,0.76821,0.16496,-0.782621352,0.176523657,0.06592,0.4727033,resting,rest_max,minimal,36
-250,air-breather,Bufo americanus,Anaxyrus americanus,bame_taig2,bame_taig_postd,20,0.69693,0.05711,-1.24328784,9.487418399,0.834429,107.8715,resting,rest_max,minimal,36
-251,air-breather,Bufo americanus,Anaxyrus americanus,bame_taig1,bame_taig_pred,20,1.24,1.04778,0.020270104,0.132936075,0.047,0.376,maximum O2 consumption,rest_max,maximal,36
-252,air-breather,Bufo americanus,Anaxyrus americanus,bame_taig2,bame_taig_postd,20,1.02,1.54692,0.189467854,7.401073165,0.643,85.188,maximum O2 consumption,rest_max,maximal,36
-253,air-breather,Bufo woodhousei fowleri,Anaxyrus fowleri,bwoo_walt,bwoo_walt,22.75,0.968,1.58375,0.199686628,11.85247653,2.92,48.11,maximal O2 consumption,rest_max,maximal,39
-254,air-breather,Bufo woodhousei fowleri,Anaxyrus fowleri,bwoo_walt,bwoo_walt,22.75,1.084,0.1147,-0.940436582,11.6356693,2.88,47.01,resting,rest_max,minimal,39
-255,air-breather,Chalcides ocellatus,Chalcides ocellatus,coce_poug,coce_poug,33,0.663,0.14334,-0.8436326,10.28494045,4.3,24.6,standard MR,rest_max,minimal,33
-256,air-breather,Chalcides ocellatus,Chalcides ocellatus,coce_poug,coce_poug,33,0.626,0.18708,-0.727972639,10.28494045,4.3,24.6,resting,NA,minimal,33
-257,air-breather,Chalcides ocellatus,Chalcides ocellatus,coce_poug,coce_poug,33,0.767,1.4878,0.172544554,10.28494045,4.3,24.6,exercise MR,rest_max,maximal,33
-258,air-breather,Chelonia mydas,Chelonia mydas,cmyd_pran,cmyd_pran,25,0.826,0.03547,-1.450138812,2060.339778,30,141500,minimal O2 uptake,rest_max,minimal,34
-259,air-breather,Chelonia mydas,Chelonia mydas,cmyd_pran,cmyd_pran,25,0.944,0.17318,-0.761502265,2060.339778,30,141500,maximal O2 uptake,rest_max,maximal,34
-260,air-breather,Cocodrylus porosus,Crocodylus porosus,cpor_wrig,cpor_wrig_20,20,0.649,0.05021,-1.299209779,447.0145412,49,4078,resting,rest_max,minimal,43
-261,air-breather,Cocodrylus porosus,Crocodylus porosus,cpor_wrig,cpor_wrig_20,20,0.824,0.2273,-0.643400564,447.0145412,49,4078,maximal,rest_max,maximal,43
-262,air-breather,Cocodrylus porosus,Crocodylus porosus,cpor_wrig,cpor_wrig_25,25,0.729,0.06836,-1.165197946,447.0145412,49,4078,resting,rest_max,minimal,43
-263,air-breather,Cocodrylus porosus,Crocodylus porosus,cpor_wrig,cpor_wrig_25,25,0.888,0.28198,-0.549781694,447.0145412,49,4078,maximal,rest_max,maximal,43
-264,air-breather,Cocodrylus porosus,Crocodylus porosus,cpor_wrig,cpor_wrig_30,30,0.732,0.09157,-1.038246786,447.0145412,49,4078,resting,rest_max,minimal,43
-265,air-breather,Cocodrylus porosus,Crocodylus porosus,cpor_wrig,cpor_wrig_30,30,1.127,0.28096,-0.551355506,447.0145412,49,4078,maximal,rest_max,maximal,43
-266,air-breather,Cocodrylus porosus,Crocodylus porosus,cpor_wrig,cpor_wrig_33,33,0.793,0.11788,-0.928559873,447.0145412,49,4078,resting,rest_max,minimal,43
-267,air-breather,Cocodrylus porosus,Crocodylus porosus,cpor_wrig,cpor_wrig_33,33,0.561,0.68322,-0.165439429,447.0145412,49,4078,maximal,rest_max,maximal,43
-268,air-breather,Amphibolurus nuchalis,Ctenophorus nuchalis,anuc_garl,anuc_garl,40,0.948,4.92711,0.692592258,7.899367063,1.3,48,maximal O2 consumption,rest_max,maximal,13
-269,air-breather,Amphibolurus nuchalis,Ctenophorus nuchalis,anuc_garl,anuc_garl,40,0.83,0.4072,-0.390192231,7.899367063,1.3,48,standard MR,rest_max,minimal,13
-270,air-breather,Ctenosaura similis,Ctenosaura similis,csim_garl,csim_garl,40,0.858,0.34576,-0.46122525,102.6116429,12.00244808,877.2501395,standard MR,rest_max,minimal,12
-271,air-breather,Ctenosaura similis,Ctenosaura similis,csim_garl,csim_garl,40,0.918,3.24625,0.511381963,127.7170787,21.41351824,761.7455487,maximal O2 uptake,rest_max,maximal,12
-272,air-breather,Plethodon albagula,Plethodon albagula,palb_care,palb_care_10,10,0.549,0.06417,-1.192667961,1.661324773,0.6,4.6,standard MR,rest_max,minimal,15
-273,air-breather,Plethodon albagula,Plethodon albagula,palb_care,palb_care_10,10,0.608,0.17171,-0.765204412,1.661324773,0.6,4.6,maximum MR,rest_max,maximal,15
-274,air-breather,Plethodon albagula,Plethodon albagula,palb_care,palb_care_15,15,0.567,0.09812,-1.00824246,1.661324773,0.6,4.6,standard MR,rest_max,minimal,15
-275,air-breather,Plethodon albagula,Plethodon albagula,palb_care,palb_care_15,15,0.697,0.23691,-0.625416607,1.661324773,0.6,4.6,maximum MR,rest_max,maximal,15
-276,air-breather,Plethodon albagula,Plethodon albagula,palb_care,palb_care_20,20,0.544,0.11655,-0.933487722,1.661324773,0.6,4.6,standard MR,rest_max,minimal,15
-277,air-breather,Plethodon albagula,Plethodon albagula,palb_care,palb_care_20,20,0.684,0.33202,-0.478835755,1.661324773,0.6,4.6,maximum MR,rest_max,maximal,15
-278,air-breather,Plethodon albagula,Plethodon albagula,palb_care,palb_care_25,25,0.707,0.14258,-0.84594139,1.661324773,0.6,4.6,standard MR,rest_max,minimal,15
-279,air-breather,Plethodon albagula,Plethodon albagula,palb_care,palb_care_25,25,0.654,0.42789,-0.368667863,1.661324773,0.6,4.6,maximum MR,rest_max,maximal,15
-280,air-breather,Varanus exanthematicus,Varanus exanthematicus,vame_wood,vame_wood,25,0.57,0.06332,-1.198459094,1135.781669,172,7500,resting,rest_act,minimal,42
-281,air-breather,Varanus exanthematicus,Varanus exanthematicus,vame_wood,vame_wood,25,0.87973,0.55137,-0.258556868,1129.457497,170.2885,7491.253,maximum spontaneous activity,rest_act,active,42
+ID,group,species,species_phylo,experiment,experiment2,temp,b,L,log10_L,mass_mid.g,min_mass.g,max_mass.g,n,L_state_study,comp_L,L_state,study_id
+1,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_5,5,0.65,0.017990026,-1.744968209,25.64589253,1.252177678,525.2543751,15,standard,rest_rout,minimal,19
+2,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_10,10,0.72,0.031977134,-1.495160463,34.23703261,2.197595674,533.3894745,14,standard,rest_rout,minimal,19
+3,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_15,15,0.73,0.053203814,-1.274057233,28.94655612,1.527779849,548.4449292,15,standard,rest_rout,minimal,19
+4,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_20,20,0.7,0.079228494,-1.101118599,35.9215676,2.349050203,549.3109585,26,standard,rest_rout,minimal,19
+5,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_23,23,0.69,0.106424533,-0.972958247,35.20916637,2.607219321,475.4818231,6,standard,rest_rout,minimal,19
+6,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_5,5,0.68,0.037179504,-1.429696408,25.64589253,1.252177678,525.2543751,15,routine,rest_rout,routine,19
+7,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_10,10,0.78,0.061590773,-1.210484345,34.23703261,2.197595674,533.3894745,14,routine,rest_rout,routine,19
+8,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_15,15,0.67,0.094526792,-1.024445081,28.94655612,1.527779849,548.4449292,15,routine,rest_rout,routine,19
+9,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_20,20,0.68,0.119211342,-0.923682423,35.9215676,2.349050203,549.3109585,26,routine,rest_rout,routine,19
+10,water-breather,Abramis brama,Abramis brama,abra_holk,abra_holk_23,23,0.68,0.148132773,-0.829348847,35.20916637,2.607219321,475.4818231,6,routine,rest_rout,routine,19
+11,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_15,15,0.83,0.096903208,-1.013661845,236.8543856,25,2244,10,active,rest_act,active,9
+12,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_15,15,0.83,0.082478007,-1.083661842,236.8543856,25,2244,10,routine,rest_act,routine,9
+13,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_15,15,0.85,0.068206817,-1.166172217,236.8543856,25,2244,10,standard,rest_act,minimal,9
+14,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_20,20,0.72,0.15594986,-0.807015011,284.2006334,41,1970,10,active,rest_act,active,9
+15,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_20,20,0.79,0.12154546,-0.915261258,284.2006334,41,1970,10,routine,rest_act,routine,9
+16,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_20,20,0.84,0.099407693,-1.002580005,284.2006334,41,1970,10,standard,rest_act,minimal,9
+17,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_25,25,0.67,0.210136725,-0.677498041,396.7152631,81,1943,10,active,rest_act,active,9
+18,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_25,25,0.8,0.169943367,-0.769695782,396.7152631,81,1943,10,routine,rest_act,routine,9
+19,water-breather,Acroteriobatus annulatus,Acroteriobatus annulatus,ann_dupr,aann_dupr_25,25,0.83,0.128309433,-0.891741414,396.7152631,81,1943,10,standard,rest_act,minimal,9
+20,water-breather,Chalcalburnus chalcoides,Alburnus chalcoides,ccha_kauf,ccha_kauf,20,0.776,0.497797739,-0.30294708,0.067527772,0.008,0.57,24,standard,rest_rout,minimal,23
+21,water-breather,Chalcalburnus chalcoides,Alburnus chalcoides,ccha_kauf,ccha_kauf,20,0.787,0.545018839,-0.263588486,0.067527772,0.008,0.57,24,routine,rest_rout,routine,23
+22,water-breather,Chalcalburnus chalcoides,Alburnus chalcoides,ccha_kauf,ccha_kauf,20,0.874,1.527014118,0.183843052,0.067527772,0.008,0.57,24,active,NA,active,23
+23,water-breather,Carassius auratus,Carassius auratus,caur_huan,caur_huan,25,0.776,0.093868035,-1.027482273,38.17787317,4.5,323.9,80,resting,rest_max,minimal,20
+24,water-breather,Carassius auratus,Carassius auratus,caur_huan,caur_huan,25,0.785,0.344354006,-0.46299486,38.17787317,4.5,323.9,80,maximum,rest_max,maximal,20
+25,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_4,4,0.944,0.06606335,-1.180039407,27.65863337,10.2,75,14,standard,rest_act,minimal,31
+26,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_8,8,0.843,0.0976128,-1.010493229,24.80040322,10.2,60.3,14,standard,rest_act,minimal,31
+27,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_15,15,0.712,0.162257955,-0.789794002,31.11655508,13.3,72.8,14,standard,rest_act,minimal,31
+28,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_4,4,0.89293,0.074343531,-1.128756816,27.65863337,10.2,75,14,active MR - speed 1,rest_act,active,31
+29,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_8,8,0.88667,0.093191433,-1.03062401,24.80040322,10.2,60.3,14,active MR - speed 1,rest_act,active,31
+30,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_15,15,0.73,0.161793955,-0.791037709,31.11655508,13.3,72.8,14,active MR - speed 1,rest_act,active,31
+31,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_4,4,0.9403,0.078075128,-1.107487295,27.65863337,10.2,75,14,active MR - speed 2,rest_act,active,31
+32,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_8,8,0.8871,0.095074841,-1.021934392,24.80040322,10.2,60.3,14,active MR - speed 2,rest_act,active,31
+33,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_15,15,0.74151,0.168463812,-0.773493376,31.11655508,13.3,72.8,14,active MR - speed 2,rest_act,active,31
+34,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_4,4,0.9826,0.086910479,-1.060927856,27.65863337,10.2,75,14,active MR - speed 3,rest_act,active,31
+35,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_8,8,0.95702,0.101231614,-0.994683839,24.80040322,10.2,60.3,14,active MR - speed 3,rest_act,active,31
+36,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_15,15,0.79264,0.182575829,-0.738556719,31.11655508,13.3,72.8,14,active MR - speed 3,rest_act,active,31
+37,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_4,4,1.05268,0.107205148,-0.969784359,27.65863337,10.2,75,14,active MR - speed 4,rest_act,active,31
+38,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_8,8,1.09916,0.119592661,-0.922295471,24.80040322,10.2,60.3,14,active MR - speed 4,rest_act,active,31
+39,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_15,15,0.89592,0.209338662,-0.679150556,31.11655508,13.3,72.8,14,active MR - speed 4,rest_act,active,31
+40,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_4,4,1.10502,0.131407775,-0.881378938,27.65863337,10.2,75,14,active MR - speed 5,rest_act,active,31
+41,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_8,8,1.21042,0.155755004,-0.807557992,24.80040322,10.2,60.3,14,active MR - speed 5,rest_act,active,31
+42,water-breather,Coregonus albula,Coregonus albula,calb_ohlb,calb_ohlb_15,15,0.99136,0.251866585,-0.598829446,31.11655508,13.3,72.8,14,active MR - speed 5,rest_act,active,31
+43,water-breather,Coreius guichenoti,Coreius guichenoti,cgui_luo,cgui_luo,25,0.728,0.142485704,-0.846228707,34.48303931,3.6,330.3,65,resting,rest_max,minimal,26
+44,water-breather,Coreius guichenoti,Coreius guichenoti,cgui_luo,cgui_luo,25,0.732,0.347473522,-0.459078284,34.48303931,3.6,330.3,65,maximum,rest_max,maximal,26
+45,water-breather,Ctenopharyngodon idellus,Ctenopharyngodon idella,cide_zhan,cide_zhan,25,0.831,0.126241678,-0.898797241,42.84857057,4,459,81,standard,rest_max,minimal,44
+46,water-breather,Ctenopharyngodon idellus,Ctenopharyngodon idella,cide_zhan,cide_zhan,25,0.863,0.493656343,-0.306575278,42.84857057,4,459,81,maximum,rest_max,maximal,44
+47,water-breather,Cyclopterus lumpus,Cyclopterus lumpus,clum_kill,clum_kill,11,0.821,0.132516782,-0.877729119,21.76448245,0.162899792,2907.877847,38,standard,rest_max,minimal,24
+48,water-breather,Cyclopterus lumpus,Cyclopterus lumpus,clum_kill,clum_kill,11,0.872,0.292648815,-0.53365323,13.93284273,0.162899792,1191.678051,23,maximal,rest_max,maximal,24
+49,water-breather,Cyprinus carpio,Cyprinus carpio,ccar_luo,ccar_luo,25,0.814,0.132233608,-0.878658152,82.70217651,14.5,471.7,81,resting,rest_max,minimal,26
+50,water-breather,Cyprinus carpio,Cyprinus carpio,ccar_luo,ccar_luo,25,0.771,0.416187106,-0.380711379,82.70217651,14.5,471.7,81,maximum,rest_max,maximal,26
+51,water-breather,Danio rerio,Danio rerio,drar_luca,drar_luca,28,0.969,0.291082498,-0.535983907,0.179726678,0.060574219,0.533257865,50,standard,rest_max,minimal,25
+52,water-breather,Danio rerio,Danio rerio,drar_luca,drar_luca,28,0.931,0.910072889,-0.040923823,0.181559712,0.056094595,0.587648937,78,active,rest_max,maximal,25
+53,water-breather,Esox lucius,Esox lucius,eluc_arms,eluc_arms,15,0.8,0.054728859,-1.261783606,227.2443619,40,1291,14,resting,rest_max,minimal,1
+54,water-breather,Esox lucius,Esox lucius,eluc_arms,eluc_arms,15,0.99,0.153444061,-0.814049916,227.2443619,40,1291,10,maximum,rest_max,maximal,1
+55,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_2,2,0.82,0.03900106,-1.408923589,82.45978028,16.35396061,415.7778977,49,standard,rest_max,minimal,38
+56,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_2,2,0.871,0.157977802,-0.801403933,118.2765674,29.98089108,466.6087597,38,maximum,rest_max,maximal,38
+57,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_5,5,0.889,0.053584369,-1.270961879,81.20194955,15.02818399,438.7593747,59,standard,rest_max,minimal,38
+58,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_5,5,0.931,0.183517777,-0.73632186,108.056312,28.08633279,415.7241405,50,maximum,rest_max,maximal,38
+59,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_10,10,0.884,0.074055242,-1.130444195,74.90640273,12.40109514,452.4575537,71,standard,rest_max,minimal,38
+60,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_10,10,0.904,0.252714116,-0.597370499,96.1669927,19.93428253,463.9289362,66,maximum,rest_max,maximal,38
+61,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_15,15,0.922,0.09792378,-1.00911183,91.82737995,18.92527767,445.5558252,58,standard,rest_max,minimal,38
+62,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_15,15,0.843,0.255661342,-0.592334936,125.2203015,34.03109453,460.7587301,37,maximum,rest_max,maximal,38
+63,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_20,20,0.847,0.135414922,-0.868333476,76.65359311,15.61693477,376.243701,38,standard,rest_max,minimal,38
+64,water-breather,Gadus morhua,Gadus morhua (species in domain Eukaryota),gmor_tirs,gmor_tirs_20,20,0.797,0.279752214,-0.553226468,107.3179214,28.67006669,401.7129213,38,maximum,rest_max,maximal,38
+65,water-breather,Hypophthalmichthys molitrix,Hypophthalmichthys molitrix,hmol_luo,hmol_luo,25,0.868,0.134217089,-0.872192185,55.44727225,8.4,366,90,resting,rest_max,minimal,26
+66,water-breather,Hypophthalmichthys molitrix,Hypophthalmichthys molitrix,hmol_luo,hmol_luo,25,0.748,0.427899908,-0.368657807,55.44727225,8.4,366,90,maximum,rest_max,maximal,26
+67,water-breather,Hypophthalmichthys nobilis,Hypophthalmichthys nobilis,hnob_luo,hnob_luo,25,0.86,0.112114723,-0.950337352,79.87477699,22.6,282.3,72,resting,rest_max,minimal,26
+68,water-breather,Hypophthalmichthys nobilis,Hypophthalmichthys nobilis,hnob_luo,hnob_luo,25,0.735,0.374939711,-0.42603856,79.87477699,22.6,282.3,72,maximum,rest_max,maximal,26
+69,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_15,15,0.78,0.137055254,-0.863104311,75.46522378,17,335,10,standard,rest_act,minimal,7
+70,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_15,15,0.73,0.171004818,-0.766991653,75.46522378,17,335,10,routine,rest_act,routine,7
+71,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_15,15,0.71,0.216497761,-0.664546591,75.46522378,17,335,10,active,rest_act,active,7
+72,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_15,15,0.65,0.247052127,-0.607211403,75.46522378,17,335,10,induced active,rest_act,active,7
+73,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_20,20,0.85,0.169833066,-0.76997775,73.53910524,16,338,10,standard,rest_act,minimal,7
+74,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_20,20,0.71,0.181430242,-0.74129032,73.53910524,16,338,10,routine,rest_act,routine,7
+75,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_20,20,0.64,0.274191127,-0.561946603,73.53910524,16,338,10,active,rest_act,active,7
+76,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_20,20,0.61,0.515297276,-0.287942153,73.53910524,16,338,10,induced active,rest_act,active,7
+77,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_25,25,0.8,0.249471566,-0.602978947,103.4891299,30,357,10,standard,rest_act,minimal,7
+78,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_25,25,0.73,0.285744856,-0.544021579,103.4891299,30,357,10,routine,rest_act,routine,7
+79,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_25,25,0.67,0.32740457,-0.484915263,103.4891299,30,357,10,active,rest_act,active,7
+80,water-breather,Lichia amia,Lichia amia,lami_dupr,lami_dupr_25,25,0.69,0.393896963,-0.404617368,103.4891299,30,357,10,induced active,rest_act,active,7
+81,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_10,10,0.45,0.116248139,-0.934613991,373.2720188,51,2732,10,induced active,rest_act,active,10
+82,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_10,10,0.7,0.068927475,-1.161607631,373.2720188,51,2732,10,routine,rest_act,routine,10
+83,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_15,15,0.52,0.211913746,-0.673840871,253.416653,52,1235,10,induced active,rest_act,active,10
+84,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_15,15,0.55,0.157860757,-0.801725819,253.416653,52,1235,10,active,res_act,active,10
+85,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_15,15,0.62,0.122051366,-0.913457356,253.416653,52,1235,10,routine,rest_act,routine,10
+86,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_15,15,0.69,0.101113956,-0.995188898,253.416653,52,1235,10,standard,rest_act,minimal,10
+87,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_20,20,0.59,0.286158608,-0.543393185,331.490573,47,2338,10,induced active,rest_act,active,10
+88,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_20,20,0.66,0.236069455,-0.626960203,331.490573,47,2338,10,active,rest_act,active,10
+89,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_20,20,0.71,0.190135564,-0.720936643,331.490573,47,2338,10,routine,rest_act,routine,10
+90,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_20,20,0.75,0.154839658,-0.810117797,331.490573,47,2338,10,standard,rest_act,minimal,10
+91,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_25,25,0.68,0.398935366,-0.399097461,337.6210894,69,1652,10,induced active,rest_act,active,10
+92,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_25,25,0.62,0.330519255,-0.480803235,337.6210894,69,1652,10,active,rest_act,active,10
+93,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_25,25,0.71,0.255126415,-0.593244574,337.6210894,69,1652,10,routine,rest_act,routine,10
+94,water-breather,Lithognathus lithognathus,Lithognathus lithognathus,llit_dupr,llit_dupr_25,25,0.78,0.20594227,-0.686254505,337.6210894,69,1652,10,standard,rest_act,minimal,10
+95,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_10,10,0.69,0.113689471,-0.944279754,56.98245344,17,191,10,active,rest_act,active,10
+96,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_10,10,0.7,0.078212768,-1.106722344,56.98245344,17,191,10,routine,rest_act,routine,10
+97,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_15,15,0.59,0.347784968,-0.458689193,50.59644256,16,160,10,induced active,rest_act,active,10
+98,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_15,15,0.47,0.24935404,-0.603183591,50.59644256,16,160,10,active,rest_act,active,10
+99,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_15,15,0.57,0.17267458,-0.762771592,50.59644256,16,160,10,routine,rest_act,routine,10
+100,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_15,15,0.61,0.121728762,-0.914606795,50.59644256,16,160,10,standard,rest_act,minimal,10
+101,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_20,20,0.58,0.481743155,-0.317184447,98.468269,48,202,10,induced active,rest_act,active,10
+102,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_20,20,0.66,0.27056976,-0.567720744,98.468269,48,202,10,active,rest_act,active,10
+103,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_20,20,0.71,0.20986696,-0.678055928,98.468269,48,202,10,routine,rest_act,routine,10
+104,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_25,25,0.64,0.541530407,-0.266377153,85.97674104,48,154,10,induced active,rest_act,active,10
+105,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_25,25,0.73,0.434227311,-0.362282865,85.97674104,48,154,10,active,rest_act,active,10
+106,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_25,25,0.71,0.315521905,-0.500970485,85.97674104,48,154,10,routine,rest_act,routine,10
+107,water-breather,Lithognathus mormyrus,Lithognathus mormyrus,lmor_dupr,lmor_dupr_25,25,0.65,0.24152754,-0.617033342,85.97674104,48,154,10,standard,rest_act,minimal,10
+108,water-breather,Myliobatis aquila,Myliobatis aquila,maqu_dupr,maqu_dupr_10,10,0.78,0.05156606,-1.28763605,878.6182334,323,2390,5,routine,rest_act,routine,9
+109,water-breather,Myliobatis aquila,Myliobatis aquila,maqu_dupr,maqu_dupr_15,15,0.69,0.094888558,-1.022786153,879.9772724,324,2390,5,active,rest_act,active,9
+110,water-breather,Myliobatis aquila,Myliobatis aquila,maqu_dupr,maqu_dupr_15,15,0.77,0.074605624,-1.127228433,879.9772724,324,2390,5,routine,rest_act,routine,9
+111,water-breather,Myliobatis aquila,Myliobatis aquila,maqu_dupr,maqu_dupr_20,20,0.78,0.135303353,-0.868691441,584.4929426,157,2176,5,active,rest_act,active,9
+112,water-breather,Myliobatis aquila,Myliobatis aquila,maqu_dupr,maqu_dupr_20,20,0.73,0.110400133,-0.957030403,584.4929426,157,2176,5,routine,rest_act,routine,9
+113,water-breather,Myliobatis aquila,Myliobatis aquila,maqu_dupr,maqu_dupr_20,20,0.68,0.094325829,-1.025369369,584.4929426,157,2176,5,standard,rest_act,minimal,9
+114,water-breather,Myliobatis aquila,Myliobatis aquila,maqu_dupr,maqu_dupr_25,25,0.72,0.14212308,-0.847335389,597.3072911,161,2216,5,routine,rest_act,routine,9
+115,water-breather,Myliobatis aquila,Myliobatis aquila,maqu_dupr,maqu_dupr_25,25,0.68,0.120674831,-0.918383301,597.3072911,161,2216,5,standard,rest_act,minimal,9
+116,water-breather,Mylopharyngodon piceus,Mylopharyngodon piceus,mpic_lv,mpic_lv,25,0.833,0.132141846,-0.87895963,27.34538352,3.7,202.1,30,resting,rest_max,minimal,27
+117,water-breather,Mylopharyngodon piceus,Mylopharyngodon piceus,mpic_lv,mpic_lv,25,0.775,0.894748741,-0.048298904,27.34538352,3.7,202.1,30,maximum,rest_max,maximal,27
+118,water-breather,Myoxocephalus scorpius,Myoxocephalus scorpius,msco_kill,msco_kill,3,0.818,0.127103421,-0.89584276,2.360282653,0.019685191,283.0012846,42,standard,rest_max,minimal,24
+119,water-breather,Myoxocephalus scorpius,Myoxocephalus scorpius,msco_kill,msco_kill,3,0.865,0.274012135,-0.562230203,2.189684047,0.016602432,288.7960174,30,maximal,rest_max,maximal,24
+120,water-breather,Neolamprologus pulcher,Neolamprologus pulcher,npul_grant,npul_grant,27,0.86,0.124058438,-0.906373691,2.749545417,0.9,8.4,32,standard,rest_rout,minimal,16
+121,water-breather,Neolamprologus pulcher,Neolamprologus pulcher,npul_grant,npul_grant,27,0.86,0.15618032,-0.806373692,2.749545417,0.9,8.4,32,routine,rest_rout,routine,16
+122,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_wies,omyk_wies_4,4,0.96,0.100350783,-0.998479235,0.748331477,0.08,7,19,routine,rest_max,minimal,40
+123,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_wies,omyk_wies_4,4,1.11,0.340930504,-0.467334139,0.748331477,0.08,7,18,maximum,rest_max,maximal,40
+124,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_wies,omyk_wies_12,12,0.93,0.220740971,-0.656117051,0.748331477,0.08,7,20,routine,rest_max,minimal,40
+125,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_wies,omyk_wies_12,12,1.14,0.611433278,-0.213650928,0.748331477,0.08,7,20,maximum,rest_max,maximal,40
+126,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_5_sal0,5,0.7838,0.061632982,-1.210186819,70.3562364,33,150,17,standard metabolism,rest_max,minimal,35
+127,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_5_sal7.5,5,0.7345,0.06151325,-1.211031327,64.27285586,27,153,17,standard metabolism,rest_max,minimal,35
+128,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_5_sal15,5,0.8682,0.064168119,-1.192680691,64.59102105,28,149,17,standard metabolism,rest_max,minimal,35
+129,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_5_sal30,5,0.6234,0.085376054,-1.068663922,70,25,196,14,standard metabolism,rest_max,minimal,35
+130,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_15_sal0,15,0.7834,0.116671991,-0.933033391,85.38149682,54,135,16,standard metabolism,rest_max,minimal,35
+131,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_15_sal7.5,15,0.8408,0.097222467,-1.012233363,80.53570637,47,138,15,standard metabolism,rest_max,minimal,35
+132,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_15_sal15,15,0.7743,0.118458027,-0.926435505,68.93475176,24,198,14,standard metabolism,rest_max,minimal,35
+133,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_15_sal30,15,0.6226,0.157959872,-0.801453227,56.33826408,23,138,19,standard metabolism,rest_max,minimal,35
+134,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_5_sal0,5,0.7836,0.113303602,-0.945756283,70.3562364,33,150,17,18.5 cm/sec,NA,active,35
+135,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_5_sal7.5,5,0.7197,0.100440731,-0.998090135,64.27285586,27,153,17,18.5 cm/sec,NA,active,35
+136,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_5_sal15,5,0.7557,0.118542735,-0.926125057,64.59102105,28,149,17,18.5 cm/sec,NA,active,35
+137,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_5_sal30,5,0.7075,0.130079489,-0.885791178,70,25,196,14,18.5 cm/sec,NA,active,35
+138,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_15_sal0,15,0.7829,0.175590464,-0.755499074,85.38149682,54,135,16,18.5 cm/sec,NA,active,35
+139,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_15_sal7.5,15,0.7332,0.140372578,-0.852717724,80.53570637,47,138,15,18.5 cm/sec,NA,active,35
+140,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_15_sal15,15,0.794,0.187621121,-0.726718274,68.93475176,24,198,14,18.5 cm/sec,NA,active,35
+141,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_15_sal30,15,0.6249,0.205198235,-0.687826379,56.33826408,23,138,19,18.5 cm/sec,NA,active,35
+142,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_5_sal0,5,0.7909,0.189465014,-0.722470974,70.3562364,33,150,17,45.1 cm/sec,NA,active,35
+143,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_5_sal7.5,5,0.7614,0.149418584,-0.825595384,64.27285586,27,153,17,45.1 cm/sec,NA,active,35
+144,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_5_sal15,5,0.8184,0.195062029,-0.709827263,64.59102105,28,149,17,45.1 cm/sec,NA,active,35
+145,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_5_sal30,5,0.8099,0.208711732,-0.680453138,70,25,196,14,45.1 cm/sec,NA,active,35
+146,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_15_sal0,15,0.8982,0.284306749,-0.546212831,85.38149682,54,135,16,45.1 cm/sec,NA,active,35
+147,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_15_sal7.5,15,0.9601,0.228955489,-0.64024894,80.53570637,47,138,15,45.1 cm/sec,NA,active,35
+148,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_15_sal15,15,0.8218,0.286807372,-0.54240969,68.93475176,24,198,14,45.1 cm/sec,NA,active,35
+149,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_15_sal30,15,0.8558,0.342085086,-0.465865859,56.33826408,23,138,19,45.1 cm/sec,NA,active,35
+150,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_5_sal0,5,0.8564,0.239677545,-0.620372652,70.3562364,33,150,17,52.7 cm/sec,NA,active,35
+151,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_5_sal7.5,5,0.8421,0.18941416,-0.722587558,64.27285586,27,153,17,52.7 cm/sec,NA,active,35
+152,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_5_sal15,5,0.9017,0.258618791,-0.587339923,64.59102105,28,149,17,52.7 cm/sec,NA,active,35
+153,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_5_sal30,5,0.9389,0.275273567,-0.56023549,70,25,196,14,52.7 cm/sec,NA,active,35
+154,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_15_sal0,15,0.9337,0.445092814,-0.351549417,85.38149682,54,135,16,72.7 cm/sec,NA,active,35
+155,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_15_sal7.5,15,0.828,0.365232977,-0.437430017,80.53570637,47,138,15,72.7 cm/sec,NA,active,35
+156,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_15_sal15,15,0.8758,0.464371945,-0.333134026,68.93475176,24,198,14,72.7 cm/sec,NA,active,35
+157,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_15_sal30,15,1.0059,0.47493015,-0.323370259,56.33826408,23,138,19,72.7 cm/sec,NA,active,35
+158,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_5_sal0,5,1.0437,0.358944352,-0.444972876,70.3562364,33,150,17,max. swimming speed,rest_max,maximal,35
+159,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_5_sal7.5,5,1.0465,0.259820422,-0.585326716,64.27285586,27,153,17,max. swimming speed,rest_max,maximal,35
+160,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_5_sal15,5,1.0552,0.353119339,-0.452078497,64.59102105,28,149,17,max. swimming speed,rest_max,maximal,35
+161,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_5_sal30,5,0.959,0.403692778,-0.39394902,70,25,196,14,max. swimming speed,rest_max,maximal,35
+162,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal0,omyk_rao_15_sal0,15,0.9916,0.58772822,-0.230823456,85.38149682,54,135,16,max. swimming speed,rest_max,maximal,35
+163,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal7.5,omyk_rao_15_sal7.5,15,1.1581,0.470258633,-0.327663223,80.53570637,47,138,15,max. swimming speed,rest_max,maximal,35
+164,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal15,omyk_rao_15_sal15,15,1.05,0.584684944,-0.233078089,68.93475176,24,198,14,max. swimming speed,rest_max,maximal,35
+165,water-breather,Oncorhynchus mykiss,Oncorhynchus mykiss (species in domain Eukaryota),omyk_rao_sal30,omyk_rao_15_sal30,15,1.1919,0.559344258,-0.252320816,56.33826408,23,138,19,max. swimming speed,rest_max,maximal,35
+166,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret73,oner_bret73_5.3,5.3,0.9141,0.038040695,-1.419751557,100,5,2000,27,standard,NA,minimal,4
+167,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret73,oner_bret73_5.3,5.3,0.9989,0.464341822,-0.333162199,100,5,2000,27,active,NA,active,4
+168,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret73,oner_bret73_15,15,0.8465,0.073877436,-1.131488186,100,5,2000,28,standard,NA,minimal,4
+169,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret73,oner_bret73_15,15,0.9632,0.803003608,-0.095282503,100,5,2000,28,active,NA,active,4
+170,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret73,oner_bret73_20,20,0.8844,0.127352019,-0.894994165,46.9041576,1,2200,25,standard,NA,minimal,4
+171,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret73,oner_bret73_20,20,0.9947,0.807070821,-0.093088354,46.9041576,1,2200,25,active,NA,active,4
+172,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret65,oner_bret65,15,0.775,0.091281855,-1.039615543,64.80740698,3,1400,7,standard,rest_max,minimal,3
+173,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret65,oner_bret65,15,0.846,0.157764689,-0.801990194,64.80740698,3,1400,5,1/4 maximum,NA,active,3
+174,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret65,oner_bret65,15,0.89,0.277792994,-0.556278711,64.80740698,3,1400,5,1/2 maximum,NA,active,3
+175,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret65,oner_bret65,15,0.926,0.439480668,-0.357060224,64.80740698,3,1400,4,3/4 maximum,NA,active,3
+176,water-breather,Oncorhynchus nerka,Oncorhynchus nerka,oner_bret65,oner_bret65,15,0.97,0.786414044,-0.104348739,64.80740698,3,1400,6,maximum,rest_max,maximal,3
+177,water-breather,Pagothenia borchgrevinki,Pagothenia borchgrevinki,pbor_fors,pbor_fors,0,0.801,0.056391731,-1.248784574,73.8774903,27.33627592,199.6571731,18,"resting, 1 days after capture (routine)",NA,minimal (some stress),11
+178,water-breather,Pagothenia borchgrevinki,Pagothenia borchgrevinki,pbor_fors,pbor_fors,0,0.828,0.052236983,-1.282021914,50.57113327,19.1478396,133.5628235,17,"resting,  2-4  days after capture (routine)",rest_max,minimal,11
+179,water-breather,Pagothenia borchgrevinki,Pagothenia borchgrevinki,pbor_fors,pbor_fors,0,0.823,0.211866106,-0.673938515,66.36900487,30.35075974,145.1312865,6,maximum,rest_max,maximal,11
+180,water-breather,Perca fluviatilis,Perca fluviatilis,pflu_chris,pflu_chris_15,15,0.823,0.304038561,-0.517071332,73.25036323,6.005270974,893.4843635,28,maximum,rest_max,maximal,5
+181,water-breather,Perca fluviatilis,Perca fluviatilis,pflu_chris,pflu_chris_20,20,0.883,0.338935335,-0.469883152,60.99947356,4.489251258,828.8544259,32,maximum,rest_max,maximal,5
+182,water-breather,Perca fluviatilis,Perca fluviatilis,pflu_chris,pflu_chris_25,25,0.822,0.418779153,-0.378014946,78.22442713,7.044109314,868.6777457,25,maximum,rest_max,maximal,5
+183,water-breather,Perca fluviatilis,Perca fluviatilis,pflu_chris,pflu_chris_28,28,0.793,0.468509876,-0.32928125,55.01601509,5.071810792,596.7813154,35,maximum,rest_max,maximal,5
+184,water-breather,Perca fluviatilis,Perca fluviatilis,pflu_chris,pflu_chris_15,15,0.8508,0.070747383,-1.15028962,73.25036323,6.005270974,893.4843635,28,standard,rest_max,minimal,5
+185,water-breather,Perca fluviatilis,Perca fluviatilis,pflu_chris,pflu_chris_20,20,0.87515,0.078601718,-1.104567962,60.99947356,4.489251258,828.8544259,32,standard,rest_max,minimal,5
+186,water-breather,Perca fluviatilis,Perca fluviatilis,pflu_chris,pflu_chris_25,25,0.8409,0.126022829,-0.899550774,78.22442713,7.044109314,868.6777457,25,standard,rest_max,minimal,5
+187,water-breather,Perca fluviatilis,Perca fluviatilis,pflu_chris,pflu_chris_28,28,0.85493,0.162019483,-0.790432758,55.01601509,5.071810792,596.7813154,35,standard,rest_max,minimal,5
+188,water-breather,Plectropomus leopardus,Plectropomus leopardus,pleo_mess,pleo_mess_28.5,28.5,0.747,0.103608704,-0.984603759,223.3271143,21,2375,27,standard,rest_max,minimal,28
+189,water-breather,Plectropomus leopardus,Plectropomus leopardus,pleo_mess,pleo_mess_33,33,0.799,0.155347916,-0.808694568,223.3271143,21,2375,20,standard,rest_max,minimal,28
+190,water-breather,Plectropomus leopardus,Plectropomus leopardus,pleo_mess,pleo_mess_28.5,28.5,0.74,0.392334646,-0.406343339,223.3271143,21,2375,27,maximum,rest_max,maximal,28
+191,water-breather,Plectropomus leopardus,Plectropomus leopardus,pleo_mess,pleo_mess_33,33,0.789,0.421853627,-0.374838213,223.3271143,21,2375,20,maximum,rest_max,maximal,28
+192,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_15,15,0.57,0.0939668,-1.027025563,576.1354008,139,2388,10,induced active,rest_act,active,8
+193,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_15,15,0.7,0.081628653,-1.08815737,576.1354008,139,2388,10,active,rest_act,active,8
+194,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_15,15,0.78,0.068027513,-1.167315406,576.1354008,139,2388,10,routine,rest_act,routine,8
+195,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_15,15,0.86,0.056692624,-1.246473441,576.1354008,139,2388,10,standard,rest_act,minimal,8
+196,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_20,20,0.57,0.122855375,-0.910605838,308.8737606,77,1239,10,induced active,rest_act,active,8
+197,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_20,20,0.6,0.179509565,-0.745912405,308.8737606,77,1239,10,active,rest_act,active,8
+198,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_20,20,0.74,0.135724089,-0.867343065,308.8737606,77,1239,10,routine,rest_act,routine,8
+199,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_25,25,0.54,0.355368701,-0.449320825,285.1315486,60,1355,10,induced active,rest_act,active,8
+200,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_25,25,0.54,0.309513199,-0.509320826,285.1315486,60,1355,10,active,rest_act,active,8
+201,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_25,25,0.61,0.258542738,-0.587467656,285.1315486,60,1355,10,routine,rest_act,routine,8
+202,water-breather,Pomadasys commersonnii,Pomadasys commersonnii,pcom_dupr,pcom_dupr_25,25,0.66,0.206673411,-0.684715393,285.1315486,60,1355,10,standard,rest_act,minimal,8
+203,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_5,5,0.8,0.022153083,-1.654565825,24.49489743,3,200,11,standard,rest_rout,minimal,18
+204,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_10,10,0.8,0.043251256,-1.364001276,24.49489743,3,200,10,standard,rest_rout,minimal,18
+205,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_15,15,0.68,0.058571103,-1.232316597,24.49489743,3,200,13,standard,rest_rout,minimal,18
+206,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_20,20,0.73,0.095713994,-1.019024561,24.49489743,3,200,19,standard,rest_rout,minimal,18
+207,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_23,23,0.82,0.109085774,-0.962231883,24.49489743,3,200,9,standard,rest_rout,minimal,18
+208,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_5,5,0.92,0.043357275,-1.362938021,24.49489743,3,200,11,routine,rest_rout,routine,18
+209,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_10,10,0.65,0.084551885,-1.072876706,24.49489743,3,200,10,routine,rest_rout,routine,18
+210,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_15,15,0.67,0.099533913,-1.002028922,24.49489743,3,200,13,routine,rest_rout,routine,18
+211,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_20,20,0.73,0.133240626,-0.875363336,24.49489743,3,200,19,routine,rest_rout,routine,18
+212,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_holk,rrut_holk_23,23,0.75,0.150133483,-0.82352244,24.49489743,3,200,9,routine,rest_rout,routine,18
+213,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_wie,rrut_wie_15,15,0.74197,0.566091981,-0.247112997,0.104344621,0.0154,0.707,11,routine,rest_rout,active,41
+214,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_wie,rrut_wie_20,20,0.7277,0.825666809,-0.083195173,0.107450454,0.0164,0.704,11,routine,rest_rout,active,41
+215,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_wie,rrut_wie_15,15,0.78164,0.312715718,-0.504850289,0.104344621,0.0154,0.707,11,standard,rest_rout,minimal,41
+216,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_wie,rrut_wie_20,20,0.78987,0.437013692,-0.359504956,0.107450454,0.0164,0.704,11,standard,rest_rout,minimal,41
+217,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_kauf,rrut_kauf,20,0.768,0.612028623,-0.213228267,0.037416574,0.005,0.28,8,standard,rest_rout,minimal,23
+218,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_kauf,rrut_kauf,20,0.763,0.669122767,-0.174494193,0.037416574,0.005,0.28,8,routine,rest_rout,routine,23
+219,water-breather,Rutilus rutilus,Rutilus rutilus,rrut_kauf,rrut_kauf,20,0.844,1.675246721,0.224078777,0.037416574,0.005,0.28,8,active,NA,active,23
+220,water-breather,Salmo salar,Salmo salar,ssal_cutt,ssal_cutt,9,0.85,0.17895235,-0.747262594,3.057711563,1.04,8.99,63,standard,NA,minimal,6
+221,water-breather,Salmo salar,Salmo salar,ssal_cutt,ssal_cutt,9,0.83,0.322069137,-0.49205089,3.057711563,1.04,8.99,57,active,NA,active,6
+222,water-breather,Salmo trutta,Salmo trutta,strut_nor,strut_nor,15,1.092,0.075967678,-1.119371148,34.39258641,20.5,57.7,66,standard,rest_max,minimal,30
+223,water-breather,Salmo trutta,Salmo trutta,strut_nor,strut_nor,15,0.867,0.591458478,-0.228075739,34.39258641,20.5,57.7,66,maximum,rest_max,maximal,30
+224,water-breather,Salmo trutta,Salmo trutta,strut_auer,strut_auer,11.5,0.85,0.102920053,-0.987499999,8.254041853,5.377192145,12.67003393,120,standard,rest_max,minimal,2
+225,water-breather,Salmo trutta,Salmo trutta,strut_auer,strut_auer,11.5,0.82,0.653130553,-0.185,8.254041853,5.377192145,12.67003393,120,maximum,rest_max,maximal,2
+226,water-breather,Salvelinus fontinalis,Salvelinus fontinalis,sfon_job,sfon_job_5,5,0.8562,0.03834429,-1.416299299,54.27522455,5.5,535.6,25,standard,NA,minimal,22
+227,water-breather,Salvelinus fontinalis,Salvelinus fontinalis,sfon_job,sfon_job_10,10,0.855,0.077420898,-1.111141796,61.67657578,4,951,33,standard,NA,minimal,22
+228,water-breather,Salvelinus fontinalis,Salvelinus fontinalis,sfon_job,sfon_job_15,15,0.85,0.096078597,-1.017373347,56.66568627,3.8,845,46,standard,NA,minimal,22
+229,water-breather,Salvelinus fontinalis,Salvelinus fontinalis,sfon_job,sfon_job_20,20,0.801,0.137842601,-0.860616541,55.47530982,4.3,715.7,27,standard,NA,minimal,22
+230,water-breather,Salvelinus fontinalis,Salvelinus fontinalis,sfon_job,sfon_job_5,5,0.8632,0.229015313,-0.640135478,86.35600732,12.4,601.4,22,active,NA,active,22
+231,water-breather,Salvelinus fontinalis,Salvelinus fontinalis,sfon_job,sfon_job_10,10,0.8351,0.381077328,-0.418986889,67.53147414,7,651.5,23,active,NA,active,22
+232,water-breather,Salvelinus fontinalis,Salvelinus fontinalis,sfon_job,sfon_job_15,15,0.9005,0.408790428,-0.388499282,84.84432804,7.2,999.8,23,active,NA,active,22
+233,water-breather,Salvelinus fontinalis,Salvelinus fontinalis,sfon_job,sfon_job_20,20,0.7612,0.621812115,-0.206340821,51.38093031,4.4,600,22,active,NA,active,22
+234,water-breather,Sander vitreus,Sander vitreus,svvi_tarb,svvi_tarb,20,0.882,0.073930628,-1.131175605,223.3293532,74,674,8,resting,NA,minimal,37
+235,water-breather,Sander vitreus,Sander vitreus,svvi_tarb,svvi_tarb,20,0.965,0.151942877,-0.818319655,151.5519713,72,319,6,swimming,NA,active,37
+236,water-breather,Spinibarbus sinensis,Spinibarbus sinensis,ssin_pang,ssin_pang,25,0.7218,0.156399233,-0.805765381,17.14380355,10.1,29.1,40,resting,rest_max,minimal,32
+237,water-breather,Spinibarbus sinensis,Spinibarbus sinensis,ssin_pang,ssin_pang,25,0.8745,0.887164002,-0.051996089,17.14380355,10.1,29.1,40,maximum,rest_max,maximal,32
+238,water-breather,Tautogolabrus adspersus,Tautogolabrus adspersus,tads_nori,tads_nori,15,0.821,0.115268579,-0.938289061,2.962128458,0.451,19.455,68,standard,rest_max,minimal,29
+239,water-breather,Tautogolabrus adspersus,Tautogolabrus adspersus,tads_nori,tads_nori,15,0.842,0.193737826,-0.712785578,2.962128458,0.451,19.455,68,routine,rest_rout,routine,29
+240,water-breather,Tautogolabrus adspersus,Tautogolabrus adspersus,tads_nori,tads_nori,15,0.899,0.483906847,-0.315238233,2.962128458,0.451,19.455,68,active,rest_max,maximal,29
+241,water-breather,Trachurus capensis,Trachurus capensis,tcap_geis,tcap_geis,18,0.8549,0.364755434,-0.437998229,0.144222051,0.001,20.8,58,standard-routine,rest_rout,minimal,14
+242,water-breather,Trachurus capensis,Trachurus capensis,tcap_geis,tcap_geis,18,0.7738,0.647986082,-0.188434322,0.144222051,0.001,20.8,58,routine,rest_rout,routine,14
+243,water-breather,Trachurus trachurus,Trachurus trachurus,ttra_herr,ttra_herr,13,0.725,0.095845308,-1.018429143,23.36664289,1.4,390,63,standard,rest_rout,minimal,17
+244,water-breather,Trachurus trachurus,Trachurus trachurus,ttra_herr,ttra_herr,13,0.752,0.127242709,-0.895367093,23.36664289,1.4,390,63,routine,rest_rout,routine,17
+245,water-breather,Macrozoarces americanus,Zoarces americanus,mame_kill,mame_kill,8,0.834,0.095989597,-1.017775832,18.46527348,0.169716324,2009.036707,29,standard,rest_max,minimal,24
+246,water-breather,Macrozoarces americanus,Zoarces americanus,mame_kill,mame_kill,8,0.926,0.250470882,-0.601242755,19.48506501,0.189613795,2002.321398,28,maximal,rest_max,maximal,24
+247,air-breather,Testudo gigantea,Aldabrachelys gigantea,tgig_hugh,tgig_hugh,25.5,0.82,0.05713,-1.243135776,2045.262819,118,35450,9,minimal O2 uptake,rest_max,minimal,21
+248,air-breather,Testudo gigantea,Aldabrachelys gigantea,tgig_hugh,tgig_hugh,25.5,0.969,0.19745,-0.704542862,1838.368842,119,28400,9,maximal O2 uptake,rest_max,maximal,21
+249,air-breather,Bufo americanus,Anaxyrus americanus,bame_taig1,bame_taig_pred,20,0.76821,0.16496,-0.782621352,0.176523657,0.06592,0.4727033,23,resting,rest_max,minimal,36
+250,air-breather,Bufo americanus,Anaxyrus americanus,bame_taig2,bame_taig_postd,20,0.69693,0.05711,-1.24328784,9.487418399,0.834429,107.8715,26,resting,rest_max,minimal,36
+251,air-breather,Bufo americanus,Anaxyrus americanus,bame_taig1,bame_taig_pred,20,1.24,1.04778,0.020270104,0.132936075,0.047,0.376,19,maximum O2 consumption,rest_max,maximal,36
+252,air-breather,Bufo americanus,Anaxyrus americanus,bame_taig2,bame_taig_postd,20,1.02,1.54692,0.189467854,7.401073165,0.643,85.188,23,maximum O2 consumption,rest_max,maximal,36
+253,air-breather,Bufo woodhousei fowleri,Anaxyrus fowleri,bwoo_walt,bwoo_walt,22.75,0.968,1.58375,0.199686628,11.85247653,2.92,48.11,36,maximal O2 consumption,rest_max,maximal,39
+254,air-breather,Bufo woodhousei fowleri,Anaxyrus fowleri,bwoo_walt,bwoo_walt,22.75,1.084,0.1147,-0.940436582,11.6356693,2.88,47.01,36,resting,rest_max,minimal,39
+255,air-breather,Chalcides ocellatus,Chalcides ocellatus,coce_poug,coce_poug,33,0.663,0.14334,-0.8436326,10.28494045,4.3,24.6,28,standard MR,rest_max,minimal,33
+256,air-breather,Chalcides ocellatus,Chalcides ocellatus,coce_poug,coce_poug,33,0.626,0.18708,-0.727972639,10.28494045,4.3,24.6,28,resting,NA,minimal,33
+257,air-breather,Chalcides ocellatus,Chalcides ocellatus,coce_poug,coce_poug,33,0.767,1.4878,0.172544554,10.28494045,4.3,24.6,28,exercise MR,rest_max,maximal,33
+258,air-breather,Chelonia mydas,Chelonia mydas,cmyd_pran,cmyd_pran,25,0.826,0.03547,-1.450138812,2060.339778,30,141500,3,minimal O2 uptake,rest_max,minimal,34
+259,air-breather,Chelonia mydas,Chelonia mydas,cmyd_pran,cmyd_pran,25,0.944,0.17318,-0.761502265,2060.339778,30,141500,3,maximal O2 uptake,rest_max,maximal,34
+260,air-breather,Cocodrylus porosus,Crocodylus porosus,cpor_wrig,cpor_wrig_20,20,0.649,0.05021,-1.299209779,447.0145412,49,4078,15,resting,rest_max,minimal,43
+261,air-breather,Cocodrylus porosus,Crocodylus porosus,cpor_wrig,cpor_wrig_20,20,0.824,0.2273,-0.643400564,447.0145412,49,4078,10,maximal,rest_max,maximal,43
+262,air-breather,Cocodrylus porosus,Crocodylus porosus,cpor_wrig,cpor_wrig_25,25,0.729,0.06836,-1.165197946,447.0145412,49,4078,18,resting,rest_max,minimal,43
+263,air-breather,Cocodrylus porosus,Crocodylus porosus,cpor_wrig,cpor_wrig_25,25,0.888,0.28198,-0.549781694,447.0145412,49,4078,11,maximal,rest_max,maximal,43
+264,air-breather,Cocodrylus porosus,Crocodylus porosus,cpor_wrig,cpor_wrig_30,30,0.732,0.09157,-1.038246786,447.0145412,49,4078,17,resting,rest_max,minimal,43
+265,air-breather,Cocodrylus porosus,Crocodylus porosus,cpor_wrig,cpor_wrig_30,30,1.127,0.28096,-0.551355506,447.0145412,49,4078,11,maximal,rest_max,maximal,43
+266,air-breather,Cocodrylus porosus,Crocodylus porosus,cpor_wrig,cpor_wrig_33,33,0.793,0.11788,-0.928559873,447.0145412,49,4078,14,resting,rest_max,minimal,43
+267,air-breather,Cocodrylus porosus,Crocodylus porosus,cpor_wrig,cpor_wrig_33,33,0.561,0.68322,-0.165439429,447.0145412,49,4078,11,maximal,rest_max,maximal,43
+268,air-breather,Amphibolurus nuchalis,Ctenophorus nuchalis,anuc_garl,anuc_garl,40,0.948,4.92711,0.692592258,7.899367063,1.3,48,57,maximal O2 consumption,rest_max,maximal,13
+269,air-breather,Amphibolurus nuchalis,Ctenophorus nuchalis,anuc_garl,anuc_garl,40,0.83,0.4072,-0.390192231,7.899367063,1.3,48,59,standard MR,rest_max,minimal,13
+270,air-breather,Ctenosaura similis,Ctenosaura similis,csim_garl,csim_garl,40,0.858,0.34576,-0.46122525,102.6116429,12.00244808,877.2501395,22,standard MR,rest_max,minimal,12
+271,air-breather,Ctenosaura similis,Ctenosaura similis,csim_garl,csim_garl,40,0.918,3.24625,0.511381963,127.7170787,21.41351824,761.7455487,18,maximal O2 uptake,rest_max,maximal,12
+272,air-breather,Plethodon albagula,Plethodon albagula,palb_care,palb_care_10,10,0.549,0.06417,-1.192667961,1.661324773,0.6,4.6,19,standard MR,rest_max,minimal,15
+273,air-breather,Plethodon albagula,Plethodon albagula,palb_care,palb_care_10,10,0.608,0.17171,-0.765204412,1.661324773,0.6,4.6,19,maximum MR,rest_max,maximal,15
+274,air-breather,Plethodon albagula,Plethodon albagula,palb_care,palb_care_15,15,0.567,0.09812,-1.00824246,1.661324773,0.6,4.6,19,standard MR,rest_max,minimal,15
+275,air-breather,Plethodon albagula,Plethodon albagula,palb_care,palb_care_15,15,0.697,0.23691,-0.625416607,1.661324773,0.6,4.6,19,maximum MR,rest_max,maximal,15
+276,air-breather,Plethodon albagula,Plethodon albagula,palb_care,palb_care_20,20,0.544,0.11655,-0.933487722,1.661324773,0.6,4.6,19,standard MR,rest_max,minimal,15
+277,air-breather,Plethodon albagula,Plethodon albagula,palb_care,palb_care_20,20,0.684,0.33202,-0.478835755,1.661324773,0.6,4.6,19,maximum MR,rest_max,maximal,15
+278,air-breather,Plethodon albagula,Plethodon albagula,palb_care,palb_care_25,25,0.707,0.14258,-0.84594139,1.661324773,0.6,4.6,19,standard MR,rest_max,minimal,15
+279,air-breather,Plethodon albagula,Plethodon albagula,palb_care,palb_care_25,25,0.654,0.42789,-0.368667863,1.661324773,0.6,4.6,19,maximum MR,rest_max,maximal,15
+280,air-breather,Varanus exanthematicus,Varanus exanthematicus,vame_wood,vame_wood,25,0.57,0.06332,-1.198459094,1135.781669,172,7500,14,resting,rest_act,minimal,42
+281,air-breather,Varanus exanthematicus,Varanus exanthematicus,vame_wood,vame_wood,25,0.87973,0.55137,-0.258556868,1129.457497,170.2885,7491.253,13,maximum spontaneous activity,rest_act,active,42
