@@ -4,7 +4,7 @@ This repository contains codes and data needed to reproduce the analyses and fig
 García-Gómez, G., Hirst A., Spencer, M., and Atkinson, D. (2023). Responses of intraspecific metabolic scaling to temperature and activity differ between water- and air-breathing ectothermic vertebrates.
 
 ## Cite the repository as:
-García-Gómez, G., Hirst A., Spencer, M., and Atkinson, D. (2023). Responses of intraspecific metabolic scaling to temperature and activity differ between water- and air-breathing ectothermic vertebrates.
+García-Gómez, G., Hirst A., Spencer, M., and Atkinson, D. (2023). Draft version of data and code of manuscript: Responses of intraspecific metabolic scaling to temperature and activity differ between water- and air-breathing ectothermic vertebrates. OSF: https://osf.io/n6m5j/
 
 ## Scripts
 * **Model_temperature_test.R** This script contains all the code necessary to reproduce the results from the Bayesian model analysing the relationship between the scaling slope and the *temperature-increased metabolic level* within ectothermic vertebrate species. 
@@ -47,7 +47,7 @@ There are two datasets used in the analysis, which are included in the appendix 
   * *study_id* identification number of the original study from which the data were compiled (see word file with the reference list for Table S1 and S2)
 
 * **Table S2**, file: **table_S2.csv** contains data on metabolic scaling regressions performed in animals at different activity levels, from experiments that sometimes cover various temperatures. These experiments measured from low activity levels as resting to routine metabolism (i.e., none or some spontaneous activity) to high activity levels as active and maximum metabolism (i.e., sustained activity or until exhaustion) by forcing locomotion. The columns are as in Table S1, plus two additional columns:
-  * *experiment2* label for a set of scaling regressions measured at a single temperature in the same experiment, containing at least two regressions measured at different activity levels, whereas other conditions (e.g., metabolic state of animals) remain the same
+  * *experiment2* label for a set of scaling regressions measured at a single temperature in the same experiment, containing at least two regressions measured at different activity levels, whereas other experimental conditions remain the same
   * *comp_L* label for the minimum and maximum activity levels that were measured in an experiment (e.g., "rest_max" means a experiment included measurements on resting and maximum metabolism).
 
 Some of the compiled studies here are present in both Table S1 and S2, since these studies contained metabolic scaling regressions of animals at various temperatures as well as activity levels (e.g., Du Preez et al. 1988;  Wright 1986; Hölker 2003; Gifford et al. 2013; see list of references), measuring from resting or routine (Table S1) to active states (Table S2).
@@ -59,7 +59,7 @@ All data processing was carried out in the R software version 4.0.2. The R folde
 The R packages used for each R script are enlisted in the corresponding R session files.
 
 ## Licence
-This repository was provided by the authors under the (*replace with type of license) License.
+This repository was provided by the authors under the MIT License.
 
 ## Further information
 In case of further questions, please contact: Guillermo García-Gómez, email: guillegar.gz@gmail.com
