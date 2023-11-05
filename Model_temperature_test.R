@@ -83,7 +83,7 @@ ggtree(all_temp.tree, layout = "fan", open.angle=0, ladderize = TRUE, size=0.75)
   geom_tiplab(size=2.1, hjust = -.1, color='blue')
 
 # group species colour-coded according to respiration mode by selecting nodes in the tree 
-(tree2 <- groupClade(all_temp.tree, c(112, 156, 114)))
+(tree2 <- groupClade(all_temp.tree, c(113, 157, 115)))
 
 # plot species colour-coded by respiration mode
 (p <- ggtree(tree2, aes(color=group), layout = "fan", ladderize = TRUE, size=0.5) + 
@@ -108,7 +108,7 @@ all_temp.tree_p <- multi2di(all_temp.tree) # resolve polytomies before calculati
 is.binary(all_temp.tree_p)
 
 # plot new tree without polytomies
-(all_temp.tree_p_2 <- groupClade(all_temp.tree_p, c(112, 156, 114)))
+(all_temp.tree_p_2 <- groupClade(all_temp.tree_p, c(113, 157, 115)))
 
 (p <- ggtree(all_temp.tree_p_2, aes(color=group), layout = "fan", ladderize = TRUE, size=0.5) + 
     xlim(0,30) +
@@ -179,7 +179,7 @@ if(fitt){
     save_pars = save_pars(all = TRUE),
     iter = 7000, warmup = 3000, chains = 4, cores = 4)
   
-  # total running time: 40 min # Bulk_ESS seems fine for all parameters (i.e. > 1000)
+  # total running time: 30 min # Bulk_ESS seems fine for all parameters (i.e. > 1000)
   
   # Model summary ####
   summary(m_all.temp_complex.info, prob = 0.95) %>% print(digits = 3)
@@ -194,31 +194,27 @@ if(fitt){
   #  Group-Level Effects: 
   #    ~experiment (Number of levels: 149) 
   #                         Estimate Est.Error l-95% CI u-95% CI  Rhat Bulk_ESS Tail_ESS
-  #  sd(Intercept)             0.122     0.017    0.091    0.157 1.001     2590     5642
-  #  sd(log10_L)               0.096     0.019    0.061    0.135 1.003     1073     2461
-  #  cor(Intercept,log10_L)    0.415     0.193   -0.048    0.705 1.002     1302     2571
+  #  sd(Intercept)             0.122     0.017    0.091    0.157 1.001     2866     5990
+  #  sd(log10_L)               0.097     0.018    0.063    0.135 1.004     1230     2563
+  #  cor(Intercept,log10_L)    0.422     0.184   -0.005    0.707 1.003     1540     3580
   
-  #  ~phylo (Number of levels: 111) 
+  #  ~phylo (Number of levels: 112) 
   #                Estimate Est.Error l-95% CI u-95% CI  Rhat Bulk_ESS Tail_ESS
-  #  sd(Intercept)    0.065     0.041    0.003    0.153 1.003     1293     3731
+  #  sd(Intercept)    0.068     0.041    0.004    0.157 1.005     1439     4266
   
   #  Population-Level Effects: 
   #                              Estimate Est.Error l-95% CI u-95% CI  Rhat Bulk_ESS Tail_ESS
-  #  Intercept                      0.725     0.070    0.581    0.873 1.001     8649     6473
-  #  log10_L                       -0.002     0.021   -0.043    0.038 1.001     6182     8591
-  #  groupwaterMbreather           -0.027     0.085   -0.198    0.160 1.001     8600     6621
-  #  log10_L:groupwaterMbreather   -0.090     0.028   -0.145   -0.035 1.001     5883     8162
+  #  Intercept                      0.726     0.070    0.581    0.875 1.002    11715     8065
+  #  log10_L                       -0.002     0.021   -0.043    0.039 1.000     7300     9856
+  #  groupwaterMbreather           -0.027     0.087   -0.206    0.155 1.002    10759     8228
+  #  log10_L:groupwaterMbreather   -0.090     0.029   -0.147   -0.035 1.000     6741     8839
   
   #  Family Specific Parameters: 
-  #    Estimate Est.Error l-95% CI u-95% CI  Rhat Bulk_ESS Tail_ESS
-  #  sigma    0.031     0.004    0.024    0.039 1.001     2161     5709
-  #  nu       1.782     0.266    1.339    2.374 1.000     4237     8438
+  #        Estimate Est.Error l-95% CI u-95% CI  Rhat Bulk_ESS Tail_ESS
+  #  sigma    0.031     0.004    0.024    0.039 1.001     2976     6283
+  #  nu       1.783     0.265    1.339    2.375 1.000     5800     9221
   
-  #  Draws were sampled using sampling(NUTS). For each parameter, Bulk_ESS
-  #  and Tail_ESS are effective sample size measures, and Rhat is the potential
-  #  scale reduction factor on split chains (at convergence, Rhat = 1).
-  
-  # create a folder named 'Model_outputs', and save model (so that they don't need to be rerun for every session) ####
+  # create a folder named 'Model_outputs', and save the model (so it doesn't need to be rerun for every session) ####
   # note: saved models are too large to be pushed in git standard repositories
   
   saveRDS(m_all.temp_complex.info,"../Model_outputs/m_all.temp.rds")
@@ -249,26 +245,40 @@ if(fitt){
   # This is a necessary step to calculate Monte Carlo SE of elpd_loo
   
   reloo_model_all_temp <- reloo(loo_model_all_temp, m_all.temp, chains = 1)
-  reloo_model_all_temp # negligible improve of LOOIC (-1173.5 vs. -1173.8). 
+  reloo_model_all_temp # negligible improve of LOOIC (-1172.0 vs. -1172.3). 
   
   # Computed from 16000 by 523 log-likelihood matrix
   
   #           Estimate   SE
-  #  elpd_loo    586.9 27.7
-  #  p_loo       290.2 13.1
-  #  looic     -1173.8 55.4
+  #  elpd_loo    586.1 27.7
+  #  p_loo       290.5 13.1
+  #  looic     -1172.3 55.3
   #  ------
   #    Monte Carlo SE of elpd_loo is 0.3.
   
   #  Pareto k diagnostic values:
   #                           Count Pct.    Min. n_eff
-  #  (-Inf, 0.5]   (good)     510   97.5%   197       
-  #   (0.5, 0.7]   (ok)        13    2.5%   967       
+  #  (-Inf, 0.5]   (good)     507   96.9%   259       
+  #   (0.5, 0.7]   (ok)        16    3.1%   378       
   #     (0.7, 1]   (bad)        0    0.0%   <NA>      
   #     (1, Inf)   (very bad)   0    0.0%   <NA>      
   
   #  All Pareto k estimates are ok (k < 0.7).
   #  See help('pareto-k-diagnostic') for details.
+  
+  # Calculate phylogenetic signal (equivalent lambda):
+  hyp <- "sd_phylo__Intercept^2 / (sd_phylo__Intercept^2 + sigma^2) = 0"
+  
+  (hyp_temp <- hypothesis(m_all.temp, hyp, class = NULL) %>% print(digits = 3))
+  
+  # Hypothesis Tests for class :
+  #                 Hypothesis Estimate Est.Error CI.Lower CI.Upper Evid.Ratio Post.Prob Star
+  # 1 (sd_phylo__Interc... = 0    0.696     0.278    0.014    0.965      0.331     0.249    *
+  #     ---
+  #     'CI': 90%-CI for one-sided and 95%-CI for two-sided hypotheses.
+  #   '*': For one-sided hypotheses, the posterior probability exceeds 95%;
+  #   for two-sided hypotheses, the value tested against lies outside the 95%-CI.
+  #   Posterior probabilities of point hypotheses assume equal prior probabilities.
   
 }
 
@@ -339,7 +349,7 @@ if(fitgaussian){
   # Check that model performance is better using a Student-t distribution than a Gaussian distribution:
   m_all.temp_gaussian <- update(m_all.temp, family = gaussian())
   
-  # total running time: 25 min # Bulk_ESS are fine (i.e.> 1000)
+  # total running time: 20 min # Bulk_ESS are fine (i.e.> 1000)
   
   # save model (so that they don't need to be rerun for every session)
   # saveRDS(m_all.temp_gaussian,"../Model_outputs/m_all.temp_gaussian.rds")
@@ -351,7 +361,7 @@ if(fitgaussian){
   # Model comparisons:
   #                             elpd_diff se_diff
   # m_all.temp_complex.info       0.0       0.0  
-  # m_all.temp_complex_gaussian -94.4      18.5  
+  # m_all.temp_complex_gaussian -96.4      18.7  
   
 }
 #-------------------------------------------------------------------------------
