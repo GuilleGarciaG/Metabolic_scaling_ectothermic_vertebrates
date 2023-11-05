@@ -94,7 +94,7 @@ ggtree(all_temp.tree, layout = "fan", open.angle=0, ladderize = TRUE, size=0.75)
     theme(legend.position = "none"))
 
 # The tree object contains information on the relationship between species. 
-# Using this information, we can construct a covariance matrix of species (Hadfield & Nakagawa, 2010).
+# Using this information, we can construct a covariance matrix of species.
 
 all_temp$phylo <- gsub(' ','_',all_temp$species_phylo)# On the tree, names have underscores instead of spaces.
 
@@ -125,8 +125,6 @@ all_temp.tree.bl <- compute.brlen(all_temp.tree_p, method="Grafen", power = 1) #
 # This is how a transformation of rho = 1 looks like:
 ggtree(all_temp.tree.bl, layout = "fan", open.angle=0, ladderize = TRUE, size=0.75) +
   geom_tiplab(size=2.1, hjust = -.1, color='blue')
-
-# should we try a different tree transformation (rho different from 1) based on model performance, as in Verberk et al. 2022?
 
 A <- vcv.phylo(all_temp.tree.bl) # calculate covariance matrix from tree
 
@@ -364,6 +362,15 @@ if(fitgaussian){
   # m_all.temp_complex_gaussian -96.4      18.7  
   
 }
+
+# References:
+
+# Glazier, D.S. (2005). Beyond the ‘3/4-power law’: variation in the intra- and interspecific scaling of metabolic rate in animals. Biol. Rev., 80, 611-662.
+
+# Glazier, D.S. (2010). A unifying explanation for diverse metabolic scaling in animals and plants. Biol. Rev., 85, 111-138.
+
+# Killen, S.S., Atkinson, D. & Glazier, D.S. (2010). The intraspecific scaling of metabolic rate with body mass in fishes depends on lifestyle and temperature. Ecol. Lett., 13, 184-193.
+
 #-------------------------------------------------------------------------------
 # Save data on the R session and packages versions for reproducibility shake ####
 sink("../R_session/Bayesian_models_temp_R_session.txt") # Create folder named 'R_session' 
