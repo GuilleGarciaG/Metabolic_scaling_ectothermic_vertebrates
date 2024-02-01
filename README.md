@@ -1,10 +1,10 @@
 # Intraspecific response of metabolic scaling to temperature and activity in water- and air-breathing ectothermic vertebrates
 This repository contains codes and data needed to reproduce the analyses and figures of the manuscript:
 
-García-Gómez, G., Hirst A., Spencer, M., and Atkinson, D. (2023). Responses of intraspecific metabolic scaling to temperature and activity differ between water- and air-breathing ectothermic vertebrates.
+García-Gómez, G., Hirst, A.G., Spencer, M., & Atkinson, D. (2024). Responses of intraspecific metabolic scaling to temperature and activity differ between water- and air-breathing ectothermic vertebrates.
 
 ## Cite the repository as:
-García-Gómez, G., Hirst A., Spencer, M., and Atkinson, D. (2023). Draft version of data and code of manuscript: Responses of intraspecific metabolic scaling to temperature and activity differ between water- and air-breathing ectothermic vertebrates. OSF: https://osf.io/n6m5j/
+García-Gómez, G., Hirst, A.G., Spencer, M., & Atkinson, D. (2024). Data, code, and model outputs of the manuscript: Responses of intraspecific metabolic scaling to temperature and activity differ between water- and air-breathing ectothermic vertebrates. OSF (DOI 10.17605/OSF.IO/N6M5J): https://osf.io/n6m5j/
 
 ## Scripts
 * **Model_temperature_test.R** This script contains all the code necessary to reproduce the results from the Bayesian model analysing the relationship between the scaling slope and the *temperature-increased metabolic level* within ectothermic vertebrate species. 
@@ -57,7 +57,7 @@ Some of the compiled studies here are present in both Table S1 and S2, since the
 All data processing was carried out in the R software version 4.2.0. The R folder contains the scripts to reproduce the statistical analyses and figures presented in this manuscript. To improve clarity, figures were slightly edited by the addition of side annotations and shapes.
 
 ## R packages
-The R packages used for each R script are enlisted in the corresponding R session files.
+The R packages used for each R script are enlisted in the corresponding R session files. Note that a C++ compiler is required for running these scripts.
 
 ## Licence
 This repository was provided by the authors under the MIT License.
