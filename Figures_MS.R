@@ -2,10 +2,13 @@
 # Script to reproduce Figures in the manuscript
 # (note that these were edited in the paper to add silhouettes and text)
 # Authors: Guillermo García-Gómez (guillegar.gz@gmail.com) & Matthew Spencer
-# Date: 08062023
+# Date: 07112023
 # Operating System: Windows 10 Pro 21H2
 # ------------------------------------------------------------------------------
-# Cite as: ?
+# Cite as:
+# García-Gómez, G., Hirst, A.G., Spencer, M., & Atkinson, D. (2024). 
+# Responses of intraspecific metabolic scaling to temperature and activity differ between water- and air-breathing ectothermic vertebrates.
+# OSF (DOI 10.17605/OSF.IO/N6M5J)
 # ------------------------------------------------------------------------------
 rm(list=ls())# clear the work environment
 # ------------------------------------------------------------------------------
@@ -1260,6 +1263,10 @@ pdf(file = "../Figures/Figure 4.pdf", width = 13, height = 10, useDingbats = FAL
 Fig_4
 
 dev.off()
+
+# References:
+
+# Glazier, D.S. (2010). A unifying explanation for diverse metabolic scaling in animals and plants. Biol. Rev., 85, 111-138.
 
 # ------------------------------------------------------------------------------
 # Save data on R session and packages versions for reproducibility shake:
