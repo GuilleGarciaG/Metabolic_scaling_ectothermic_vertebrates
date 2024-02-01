@@ -2,10 +2,13 @@
 # Script to fit phylogenetic multilevel model using brms: Part 2
 # Title: Activity effect on metabolic scaling of ectothermic vertebrates
 # Authors: Guillermo García-Gómez (guillegar.gz@gmail.com) & Matthew Spencer
-# Date: 16032023
+# Date: 07112023
 # Operating System: Windows 10 Pro 21H2
 # ------------------------------------------------------------------------------
-# Cite as: ?
+# Cite as:
+# García-Gómez, G., Hirst, A.G., Spencer, M., & Atkinson, D. (2024). 
+# Responses of intraspecific metabolic scaling to temperature and activity differ between water- and air-breathing ectothermic vertebrates.
+# OSF (DOI 10.17605/OSF.IO/N6M5J)
 # ------------------------------------------------------------------------------
 rm(list=ls())# clear the work environment
 # ------------------------------------------------------------------------------
